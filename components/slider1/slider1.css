@@ -1,0 +1,29 @@
+.forSlickSlider {
+    display: flex;
+}
+.forSlickSlider .item {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    position: relative;
+}
+.forSlickSlider .item img {
+    width: 350px;
+    height: 250px;
+    transition: all linear .4s;
+}
+.forSlickSlider .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.64);
+    transition: all linear .4s;
+}
+.forSlickSlider .slick-center img, .forSlickSlider .slick-center .overlay {
+    transform: scale(1.2);
+}
+.forSlickSlider .slick-center .overlay {
+    opacity: 0;
+}

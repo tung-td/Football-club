@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="assests/css/slick.css">
+    <style>
+        .forSlickSlider {
+            display: flex;
+        }
+        .forSlickSlider .item {
+            width: 350px;
+            height: 250px;
+            margin: 20px;
+            position: relative;
+        }
+        .forSlickSlider .item img {
+            width: 350px;
+            height: 250px;
+            transition: all linear .4s;
+        }
+        .forSlickSlider .item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.64);
+            transition: all linear .4s;
+        }
+        .forSlickSlider .slick-center img, .forSlickSlider .slick-center .overlay {
+            transform: scale(1.2);
+        }
+        .forSlickSlider .slick-center .overlay {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="forSlickSlider center">
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img1">
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img2">
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img3">
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img4">
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img5">
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="img6">
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="assests/js/slick.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.single-item').slick();
+            $('.center').slick({
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+        });
+    </script>
+</body>
+</html>
