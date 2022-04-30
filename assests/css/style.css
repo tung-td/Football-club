@@ -12,6 +12,7 @@
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
+    --text-grey: #666666;
     --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
 }
 
@@ -21,11 +22,12 @@
     background-color: #1E1E1E;
     display: block;
     width: 100%;
-    height: 610px;
+    height: 528px;
+    padding: 18px 0px;
 }
 
 .Moment_header {
-    color: #666666;
+    color: var(--text-grey);
     width: 1200px;
     height: 127px;
     align-items: center;
@@ -64,6 +66,33 @@
     margin: auto;
     height: 258px;
     width: 360px;
+}
+
+.Moment_footer {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 142px;
+}
+
+.Moment_footer .footer_title{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-family: var(--font-moments);
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-grey);
+}
+
+.Moment_footer .footer_title:hover {
+    color: var(--dirty-white);
+}
+
+.ti-arrow-right {
 }
 
 
