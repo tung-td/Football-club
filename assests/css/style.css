@@ -21,7 +21,7 @@
 .Moments {
     background-color: #1E1E1E;
     display: block;
-    width: 100%;
+    width: 100% !important;
     height: 528px;
     padding: 18px 0px;
 }
@@ -92,8 +92,6 @@
     color: var(--dirty-white);
 }
 
-.ti-arrow-right {
-}
 
 
 
