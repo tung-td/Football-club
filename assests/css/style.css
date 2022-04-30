@@ -20,10 +20,8 @@
 .Moments {
     background-color: #1E1E1E;
     display: block;
-    width: 1200px;
+    width: 100%;
     height: 610px;
-    padding: 45px 0px;
-    margin: 0px 352px;
 }
 
 .Moment_header {
@@ -31,6 +29,7 @@
     width: 1200px;
     height: 127px;
     align-items: center;
+    margin: auto;
 }
 
 .header_logo {
@@ -54,8 +53,10 @@
 }
 
 .Moment_slide {
+    width: 1200px;
     display: flex !important;
     justify-content: center;
+    margin: auto;
 }
 
 .Moment_slide .items img {
