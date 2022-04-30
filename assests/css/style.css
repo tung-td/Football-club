@@ -54,73 +54,18 @@
 }
 
 .Moment_slide {
-    height: 420px;
-    width: 1200px;
+    display: flex !important;
+    justify-content: center;
 }
 
-.list {
-    height: 200px;
-    position: absolute;
-    top: 27%;
-    left: 36%;
-    
-    transform: translate(-50%, -50%)
+.Moment_slide .items img {
+    border-radius: 5px;
+    margin: auto;
+    height: 258px;
+    width: 360px;
 }
 
-.list li {
-    list-style-type: none;
-    width: 630px;
-    height: 460px;
-    opacity: .25;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    border-radius: 2px;
-    background-color: #C70101;
-    transition: transform 1s, opacity 1s;
-}
 
-.list .act {
-    opacity: 1;
-}
 
-.list .prev,
-.list .next {
-    cursor: pointer;
-}
 
-.list .prev {
-    transform: translateX(-220px) scale(.85);
-}
 
-.list .next {
-    transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-    transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-    transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
-    opacity: 0;
-    transition: opacity .5s, transform .5s;
-}
-
-.swipe {
-    width: 630px;
-    height: 460px;
-    position: absolute;
-    background-color: green;
-    border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.Moment_footer {}
