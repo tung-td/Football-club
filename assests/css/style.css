@@ -78,7 +78,7 @@
 }
 
 .items.slick-slide:hover {
-    opacity: 0.6;
+    opacity: 0.7;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -97,8 +97,9 @@
     opacity: 0.7;
     height: 160px;
     width: 320px;
-    background-color: #4a4a4a;
+    background-color: var(--basic-grey);
     border-radius: 0 0 5px 5px;
+    border-bottom: solid 6px #b62f2f;
 }
 
 .Moment_footer {
