@@ -61,8 +61,8 @@
 .list {
     height: 200px;
     position: absolute;
-    top: 27%;
-    left: 36%;
+    top: 29%;
+    left: 38.5%;
     
     transform: translate(-50%, -50%)
 }
