@@ -1,10 +1,12 @@
 /* RESET CSS */
-*{ 
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-size: 100%;
-   }
+}
 
 :root {
     --main-bg-color: brown;
@@ -13,3 +15,171 @@
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
 }
+
+#main {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: var(--basic-red);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 40%);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    text-transform: uppercase;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.header-logo {
+    /* position: absolute; */
+    float: left;
+    margin: 7.5px 12px;
+}
+
+.header-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: var(--dirty-white);
+    text-transform: uppercase;
+}
+
+#nav li a {
+    color: var(--dirty-white);
+    text-decoration: none;
+    line-height: 75px;
+    padding: 0 6px;
+    font-weight: 550;
+}
+
+#nav li:hover .subnav {
+    display: block;
+    border-radius: 5px;
+}
+
+#nav>li:hover::after,
+
+/* .search-btn:hover:after, */
+
+.sign-items:hover::after {
+    transform: scale(1);
+}
+
+#nav>li::after,
+
+/* .search-btn::after, */
+
+.sign-items::after {
+    content: " ";
+    display: block;
+    height: 3.5px;
+    background-color: var(--dirty-white);
+    /* margin-top: 2px; */
+    transform: scale(0);
+    transition: all 0.5s;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+#nav .subnav li:hover {
+    color: #000 !important;
+    background-color: #ccc;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 40px;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+    float: right;
+    line-height: 75px;
+}
+
+.header-options .search-btn,
+.header-options select,
+.header-options .header-sign {
+    padding: 0 24px;
+}
+
+.header-options select {
+    background-color: var(--basic-red);
+    white-space: pre;
+    color: var(--dirty-white);
+}
+
+.header-options select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+.header-sign {
+    display: flex;
+}
+
+.header-sign .sign-items {
+    text-decoration: none;
+    padding: 0 1em;
+    color: var(--dirty-white);
+}
+
+.header-options .search-btn {
+    color: #fff;
+    font-size: 26px;
+}
+
+.header-options .search-btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+/* slider */
+
+.slider {
+    background-color: #2A2A2A;
+    margin-top: 75px;
+    padding-top: 50%;
+    min-height: 500px;
+    position: relative;
+}
+
+.content {}
+
+.footer {}
