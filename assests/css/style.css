@@ -1,10 +1,10 @@
 /* RESET CSS */
-*{ 
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-   }
+}
 
 :root {
     --main-bg-color: brown;
@@ -12,4 +12,115 @@
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
+    --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
 }
+
+/* Moments */
+
+.Moments {
+    background-color: #1E1E1E;
+    display: block;
+    width: 1200px;
+    height: 610px;
+    padding: 45px 0px;
+    margin: 0px 352px;
+}
+
+.Moment_header {
+    color: #666666;
+    width: 1200px;
+    height: 127px;
+    align-items: center;
+}
+
+.header_logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_tile {
+    font-family: var(--font-moments);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+.Moment_slide {
+    height: 420px;
+    width: 1200px;
+}
+
+.list {
+    height: 200px;
+    position: absolute;
+    top: 27%;
+    left: 36%;
+    
+    transform: translate(-50%, -50%)
+}
+
+.list li {
+    list-style-type: none;
+    width: 630px;
+    height: 460px;
+    opacity: .25;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 2px;
+    background-color: #C70101;
+    transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+    opacity: 1;
+}
+
+.list .prev,
+.list .next {
+    cursor: pointer;
+}
+
+.list .prev {
+    transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+    transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+    transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+    transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+    width: 630px;
+    height: 460px;
+    position: absolute;
+    background-color: green;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.Moment_footer {}
