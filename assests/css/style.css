@@ -1,0 +1,15 @@
+/* RESET CSS */
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+
+:root {
+    --main-bg-color: brown;
+    --basic-red: #C70101;
+    --basic-black: #1A1A1A;
+    --dirty-white: #F8F8F8;
+    --basic-grey: #2A2A2A;
+}
