@@ -3,7 +3,9 @@
 {
     position: relative;
 
-    display: block;
+    /* display: block; */
+    display: flex;
+
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -57,6 +59,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 .slick-track:before,
 .slick-track:after
@@ -117,3 +120,26 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* custome slick */
+
+.slick-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slick-prev, .ti-angle-left {
+    left: 5%;
+}
+
+.slick-next, .ti-angle-right {
+    right: 5%;
+}
+
+.ti-angle-left:hover , .ti-angle-right:hover {
+    opacity: 1;
+}
+
+/* end custome slick */
