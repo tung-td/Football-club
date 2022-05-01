@@ -120,7 +120,7 @@
     background-color: #1E1E1E;
     display: block;
     width: 100% !important;
-    height: 700px !important;
+    height: 744px !important;
     padding: 18px 0px;
 }
 
@@ -194,7 +194,7 @@
     font-family: var(--font-moments);
     opacity: 0.7;
     height: 160px;
-    width: 320px;
+    width: 360px;
     background-color: var(--basic-grey);
     border-radius: 0 0 5px 5px;
     border-bottom: solid 6px #b62f2f;
