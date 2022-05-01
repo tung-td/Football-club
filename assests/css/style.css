@@ -302,11 +302,11 @@ h3.h3 {
 
 .product-grid5 .title a {
     text-decoration: unset;
-    color: #222
+    color: #b62f2f
 }
 
 .product-grid5 .title a:hover {
-    color: #b62f2f
+    color: #222
 }
 
 .product-grid5 .price {
