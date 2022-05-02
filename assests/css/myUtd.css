@@ -1,0 +1,189 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ :root {
+    --main-bg-color: brown;
+    --basic-red: #b62f2f;
+    --basic-black: #1A1A1A;
+    --dirty-white: #F8F8F8;
+    --basic-grey: #2A2A2A;
+    --text-grey: #666666;
+    --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
+}
+
+.mt-2em {
+    margin-top: 2em;
+}
+
+.pt-2em {
+    padding-top: 2em;
+}
+
+#main__my-utd {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    color: #F8F8F8;
+    height: 650px;
+    margin: 0em;
+}
+
+.content {}
+
+#first-team {
+    position: relative;
+    margin: 0 auto;
+    width: 66.66%;
+    padding-bottom: 4em;
+}
+
+.roler {
+    font-size: 30px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: black;
+    margin-left: -3em;
+}
+
+.roler::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 163px;
+    background-color: red;
+}
+
+.team-position {}
+
+.position-names {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+    border-bottom: solid rgb(216, 216, 216) 1px;
+}
+
+.sub-position {
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+}
+
+.position-btn:hover {
+    cursor: pointer;
+}
+
+.position-btn {
+    width: 200px;
+    height: 220px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.position-btn:hover .position-img {
+    transform: scale(1.1);
+}
+
+.position-img {
+    width: 250px;
+    transition: 1s;
+    height: auto;
+}
+
+.position-info {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.position-number {
+    font-size: 15px;
+}
+
+.position-number::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    width: 20px;
+    background-color: red;
+    transition: 1s;
+}
+
+.position-name {
+    width: 50%;
+    font-size: 20px;
+}
+
+
+/* end first team */
+
+
+/* start man-players */
+
+.grey-wall {
+    background-color: #3f3f3f;
+}
+
+.list-part {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 4em;
+}
+
+.role {
+    /* padding-bottom: 1em; */
+    font-size: 1.9em;
+    position: relative;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: -3em;
+    color: #fff !important;
+}
+
+.role::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 150px;
+    background-color: red;
+}
+
+.sub-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.player-btn {
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.player-btn:hover {
+    cursor: pointer;
+}
+
+.player-btn:hover .position-img {
+    transform: scale(1.1);
+}
