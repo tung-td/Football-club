@@ -2,8 +2,8 @@
     display: flex;
 }
 .forSlickSlider .item {
-    width: 350px;
-    height: 250px;
+    width: 700px;
+    height: 350px;
     margin: 20px;
     position: relative;
 }
@@ -22,7 +22,7 @@
     transition: all linear .4s;
 }
 .forSlickSlider .slick-center img, .forSlickSlider .slick-center .overlay {
-    transform: scale(1.2);
+    transform: scale(2);
 }
 .forSlickSlider .slick-center .overlay {
     opacity: 0;

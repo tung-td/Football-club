@@ -117,3 +117,13 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* custom slick center */
+
+.slick-current {
+    z-index: 1;
+}
+.slick-slide {
+    
+}
+/* end custom slick center */
