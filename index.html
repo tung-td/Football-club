@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manchester United</title>
 
-    <link rel="stylesheet" href="./index.js">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.manutd.com/Assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.manutd.com/Assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.manutd.com/Assets/images/favicons/favicon-16x16.png" />
+
+    <title>Manchester United Website</title>
+
     <link rel="stylesheet" href="./assests/css/style.css">
-    <link rel="stylesheet" href="./assests/css/slick.css">
     <link rel="stylesheet" href="./assests/icons/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assests/css/slick.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap_css/bootstrap.min.css">
 
 </head>
 
 <body>
+
+
+    <!-- NAM -->
     <div id="main">
         <div class="header">
             <ul id="nav">
@@ -58,13 +66,295 @@
             </div>
 
         </div>
-        <div class="slider"></div>
+        <div class="slider">
+            
+
+        </div>
+
         <div class="content">
+
+            <!-- Video background -->
+            <div style="display: flex; position: relative;">
+                <video autoplay muted loop id="myVideo" style="width: 100%; position: relative;">
+                    <source src="assests/img/video/GloryGloryManUnited.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div style="position: absolute; bottom: 0; z-index: 1; font-size: 70px; ">
+                    <button style="background-color: Transparent; cursor:pointer;" onclick="vidCarouselControlFunction()">
+                        <div id="videoCarouselControl" class="ti-control-pause" style="color: #2a2a2a;"></div>
+                    </button>
+                    <button style="background-color: Transparent; cursor:pointer;" onclick="vidCarouselSoundFunction()">
+                        <div id="videoCarouselSound" class="ti-volume" style="color: #2a2a2a;"></div>
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                var video = document.getElementById("myVideo");
+                var btn1 = document.getElementById("videoCarouselControl");
+                var btn2 = document.getElementById("videoCarouselSound");
+
+                function vidCarouselControlFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn1.classList.add('ti-control-pause');
+                        btn1.classList.remove('ti-control-play');
+                    } else {
+                        video.pause();
+                        btn1.classList.add('ti-control-play');
+                        btn1.classList.remove('ti-control-pause');
+                    }
+                }
+
+                function vidCarouselSoundFunction() {
+                    if (video.muted) {
+                        video.muted = false;
+                        btn2.classList.add('ti-close');
+                    } else {
+                        video.muted = true;
+                        btn2.classList.remove('ti-close');
+                    }
+                }
+            </script>
+
+            <!-- End Video background -->
+
+            <!-- Tickets | use bootstrap -->
+
+            <div class="ticket-bg container-fluid py-5" style="height: 100% !important;font-weight: lighter; background-color: whitesmoke;">
+                <div class="text-center" style="opacity: 0.9;">
+                    <div class="row">
+                        <h1 class="" style="font-size: 4rem !important; color: white;">
+                            FIRST TEAM TICKETS
+                        </h1>
+                    </div>
+                    <div class="container rounded bg-light py-4" style="border-radius: 20px !important; width: 60%;">
+                        <div class="row px-5" style="margin: 0px !important;">
+                            <div class="col-sm-6 text-center px-5">
+                                <div class="">
+                                    <img style="width: 150px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="PremierLeague">
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <div class="text-center">
+                                        <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
+                                        <h2>MAN UTD</h2>
+                                    </div>
+                                    <div class="mx-3">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="text-center">
+                                        <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
+                                        <h2>BRENTFORD</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 text-center px-5">
+                                <div class="date-time d-flex">
+                                    <div class="">
+                                        <h1 style="font-size: 3rem !important; margin: 0px !important;">21:00</h1>
+                                    </div>
+                                    <div class="border border-dark mx-2"></div>
+                                    <div class="" style="text-align: left !important;">
+                                        <div class="m-0"><h6>WED</h6></div>
+                                        <div class="m-0"><h5><b>04 MAY</b></h5></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Tickets -->
+
+            
+
+            <!-- STORE -->
+            <div class="container">
+                <h3 class="h3"> MANCHESTER UNITED FOOTBALL KITS </h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid5">
+                            <div class="product-image5">
+                                <a href="#">
+                                    <img class="pic-1" src="./assests/img/home_1.jpg">
+                                    <img class="pic-2" src="./assests/img/home_2.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="" data-tip="Quick View"><i class="ti-search"></i></a></li>
+                                    <li><a href="" data-tip="Add to Wishlist"><i class="ti-heart"></i></a></li>
+                                    <li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Home kits</a></h3>
+                                <div class="price">$11.00 - $15.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid5">
+                            <div class="product-image5">
+                                <a href="#">
+                                    <img class="pic-1" src="./assests/img/away_1.jpg">
+                                    <img class="pic-2" src="./assests/img/away_2.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="" data-tip="Quick View"><i class="ti-search"></i></a></li>
+                                    <li><a href="" data-tip="Add to Wishlist"><i class="ti-heart"></i></a></li>
+                                    <li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Away kits</a></h3>
+                                <div class="price">$10.00 - $12.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid5">
+                            <div class="product-image5">
+                                <a href="#">
+                                    <img class="pic-1" src="./assests/img/third_1.jpg">
+                                    <img class="pic-2" src="./assests/img/third_2.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="" data-tip="Quick View"><i class="ti-search"></i></a></li>
+                                    <li><a href="" data-tip="Add to Wishlist"><i class="ti-heart"></i></a></li>
+                                    <li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Third kits</a></h3>
+                                <div class="price">$11.00 - $15.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid5">
+                            <div class="product-image5">
+                                <a href="#">
+                                    <img class="pic-1" src="./assests/img/goal_1.jpg">
+                                    <img class="pic-2" src="./assests/img/goal_2.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="" data-tip="Quick View"><i class="ti-search "></i></a></li>
+                                    <li><a href="" data-tip="Add to Wishlist"><i class="ti-heart"></i></a></li>
+                                    <li><a href="" data-tip="Add to Cart"><i class="ti-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Goalkeeper kits</a></h3>
+                                <div class="price">$11.00 - $15.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Store -->
+
+            <!-- Moments -->
+            <div class="Moments">
+                <div class="Moment_header">
+                    <img class="header_logo" src="./assests/img/mu_logo.png" alt="">
+
+                    <div class="header_tile">Manchester united's moments</div>
+                </div>
+                <div class="Moment_slide multiple-items">
+                    <div class="items">
+                        <img src="./assests/img/img_1.jpg" alt="">
+                        <div class="describe">
+                            Manchester United have won the Premier League title 13 times.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_2.jpg " alt="">
+                        <div class="describe">
+                            Manchester United won the Premier League title in 2010-11, finishing nine points ahead of Chelsea in second.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_3.jpg " alt="">
+                        <div class="describe">
+                            Neville lifts the Premier League trophy in May, 2007, with United team-mate and friend Ryan Giggs.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_4.jpg " alt="">
+                        <div class="describe">
+                            United overtook Liverpool by winning the most number of league championships.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_5.jpg " alt="">
+                        <div class="describe">
+                            Ferguson won 13 Premier League titles and two Champions League crowns at Old Trafford.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_6.jpg " alt="">
+                        <div class="describe">
+                            Rooney will want to spearhead another Premier League title charge.
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./assests/img/img_7.jpg " alt="">
+                        <div class="describe">
+                            Man Utd's 1999 and 2008 sides were among the finest teams the Premier League has seen.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Moment_footer">
+                    <a href="#" class="footer_title">
+                        See more moments
+                        <i class="ti-angle-double-right"></i>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- End Moments -->
+
+            <!-- Slider -->
+            <div style="display: block;">
+                <div class="forSlickSlider single-item">
+                    <div class="item">
+                        <img src="./assests/img/carousel/wall6.jpg" alt="img1">
+                    </div>
+                    <div class="item">
+                        <img src="./assests/img/carousel/wall2.jpg" alt="img2">
+                    </div>
+                    <div class="item">
+                        <img src="./assests/img/carousel/sirAlex.jpg" alt="img3">
+                    </div>
+                    <div class="item">
+                        <img src="./assests/img/carousel/wall1.jpg" alt="img4">
+                    </div>
+                    <div class="item">
+                        <img src="./assests/img/carousel/wall4.jpg" alt="img5">
+                    </div>
+                    <div class="item">
+                        <img src="./assests/img/carousel/cris2.jpeg" alt="img6">
+                    </div>
+                </div>
+                <div class="ti-angle-left"></div>
+                <div class="ti-angle-right"></div>
+            </div>
+
+            <!-- End Slider -->
 
             <!-- Cup Trophies -->
             <div class="content__cup">
                 <div class="cup-logo">
-                    <img src="./assests/img/logo-mu.png" alt="">
+                    <img src="./assests/img/logo/mu_black.png" alt="">
                 </div>
 
 
@@ -143,13 +433,14 @@
                     </figure>
                 </div>
             </div>
+            <!-- End cup tropies -->
         </div>
 
         <!-- FOOTER -->
         <div class="footer ">
             <div class="footer__social-links">
                 <div class="footer-logo ">
-                    <img src="./assests/img/logo-mu.png " alt=" ">
+                    <img src="./assests/img/logo/mu_black.png " alt=" ">
                 </div>
 
                 <div class="social-list ">
@@ -198,10 +489,14 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+    <script src="./assests/js/jquery.min.js"></script>
+    <script src="./assests/js/slick.min.js"></script>
+    <script src="./assests/js/index.js"></script>
+    <script src="./assests/js/bootstrap_js/js/bootstrap.min.js"></script>
 
-    <script src="./assests/js/slick.min.js "></script>
 </body>
 
 </html>
