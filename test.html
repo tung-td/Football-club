@@ -19,6 +19,7 @@
             </div>
             <div class="container rounded bg-light py-4" style="border-radius: 20px !important; width: 60%;">
                 <div class="row px-5" style="margin: 0px !important;">
+<<<<<<< Updated upstream
                     <div class="col-sm-6 text-center px-5">
                         <div class="bg-secondary">
                             <img style="width: 150px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="PremierLeague">
@@ -27,6 +28,47 @@
                             <div class="text-right">
                                 <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
                                 <h2>MANUTD</h2>
+=======
+                    <div class="col-sm-8 text-center px-5">
+                        <div class="bg-secondary rounded text-light">
+                            <p id="ticketCountdown"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 20, 2022 21:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("ticketCountdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("ticketCountdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+                        </div>
+                        <!-- <div class="d-flex justify-content-around align-items-center">
+                            <div class="text-right">
+                                <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
+                                <h2>MAN UTD</h2>
+>>>>>>> Stashed changes
                             </div>
                             <div class="mx-3 text-center">
                                 <h3>VS</h3>
@@ -35,17 +77,56 @@
                                 <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
                                 <h2>BRENTFORD</h2>
                             </div>
+<<<<<<< Updated upstream
                         </div>
                     </div>
                     <div class="col-sm-6 text-center px-5">
+=======
+                        </div> -->
+
+                        <div class="d-flex justify-content-center align-items-center ml-2">
+                            <div>
+                                <div>
+                                    <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
+                                </div>
+                                <div class="text-nowrap">
+                                    <h2>MAN UTD</h2>
+                                </div>
+                            </div>
+                            <div class="col mx-3">
+                                <h3>VS</h3>
+                            </div>
+                            <div>
+                                <div>
+                                    <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
+                                </div>
+                                <div class="text-nowrap">
+                                    <h2>BRENTFORD</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="bg-secondary rounded mb-2">
+                            <img style="width: 150px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="PremierLeague">
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-4 text-center px-5">
+>>>>>>> Stashed changes
                         <div class="date-time d-flex">
                             <div class="">
                                 <h1 style="font-size: 3rem !important; margin: 0px !important;">21:00</h1>
                             </div>
                             <div class="border border-dark mx-2"></div>
                             <div class="" style="text-align: left !important;">
+<<<<<<< Updated upstream
                                 <div class="m-0"><h6>WED</h6></div>
                                 <div class="m-0"><h5><b>04 MAY</b></h5></div>
+=======
+                                <div class="m-0"><h6>TUE</h6></div>
+                                <div class="m-0 text-nowrap"><h5><b>20 SEP</b></h5></div>
+>>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>
@@ -53,5 +134,17 @@
             </div>
         </div>
     </div>
+<<<<<<< Updated upstream
+=======
+
+    <div class="bg-dark" style="width: 100%; height: 500px;">
+        <div class="position-absolute" style="width: inherit;">
+            <img style="width: inherit; opacity: 0.3;" src="https://virtualbackgrounds.site/wp-content/uploads/2020/07/old-trafford-stadium.jpg" alt="old trafford">
+        </div>
+        <div class="text-center"  style="width: 100%; height: inherit; opacity: 0.7;">
+            <div class="container bg-light my-5" style="width: 500px; height: 200px;">oke</div>
+        </div>
+    </div>
+>>>>>>> Stashed changes
 </body>
 </html>
