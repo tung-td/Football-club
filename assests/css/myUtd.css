@@ -114,6 +114,12 @@
     font-size: 15px;
 }
 
+.position-btn:hover .position-number::after {
+    /* transform: scale(2.0); */
+    width: 45px;
+    height: 1.5px;
+}
+
 .position-number::after {
     display: block;
     content: " ";
@@ -186,4 +192,43 @@
 
 .player-btn:hover .position-img {
     transform: scale(1.1);
+}
+
+.player-btn:hover .position-number::after {
+    /* transform: scale(2.0); */
+    width: 65px;
+    height: 2.5px;
+}
+
+.player-btn .position-number::after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 30px;
+    background-color: red;
+    transition: 1s;
+}
+
+
+/* MAIN MY UNITED PAGE */
+
+.slider_my-utd {
+    margin-top: 75px;
+    padding-top: 50%;
+    background: url(/assests/img/oldTraford/wallpaper3.jpg) top center / cover;
+    position: relative;
+}
+
+.my-utd_text_heading {
+    max-width: 85%;
+    padding-left: 90px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+    font-size: 60px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    /* padding: 0 20px; */
 }
