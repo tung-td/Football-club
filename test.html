@@ -25,7 +25,7 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 20, 2022 21:00:00").getTime();
+var countDownDate = new Date("Jun 04, 2022 21:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -41,6 +41,10 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  hours = checkTime(hours);
+  minutes = checkTime(minutes);
+  seconds =  checkTime(seconds);
     
   // Output the result in an element with id="demo"
   document.getElementById("ticketCountdown").innerHTML = days + "d " + hours + "h "
@@ -52,6 +56,11 @@ var x = setInterval(function() {
     document.getElementById("ticketCountdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
 </script>
                         </div>
                         <!-- <div class="d-flex justify-content-around align-items-center">
@@ -72,7 +81,7 @@ var x = setInterval(function() {
                         </div> -->
 
                         <div class="d-flex justify-content-center align-items-center ml-2">
-                            <div class="position-absolute">
+                            <div class="position-">
                                 <div>
                                     <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
                                 </div>
@@ -84,7 +93,7 @@ var x = setInterval(function() {
                                 <h3>VS</h3>
                             </div>
                             <div class="position-relative">
-                                <div class="position-absolute" >
+                                <div class="position-" >
                                     <div>
                                         <img style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
                                     </div>
@@ -109,7 +118,7 @@ var x = setInterval(function() {
                             <div class="border border-dark mx-2"></div>
                             <div class="" style="text-align: left !important;">
                                 <div class="m-0"><h6>TUE</h6></div>
-                                <div class="m-0 text-nowrap"><h5><b>20 SEP</b></h5></div>
+                                <div class="m-0 text-nowrap"><h5><b>04 JUNE</b></h5></div>
                             </div>
                         </div>
                     </div>
@@ -118,13 +127,13 @@ var x = setInterval(function() {
         </div>
     </div>
 
-    <!-- <div class="bg-dark" style="width: 100%; height: 500px;">
+    <div class="bg-dark" style="width: 100%; height: 500px;">
         <div class="position-absolute" style="width: inherit;">
             <img style="width: inherit; opacity: 0.3;" src="https://virtualbackgrounds.site/wp-content/uploads/2020/07/old-trafford-stadium.jpg" alt="old trafford">
         </div>
         <div class="text-center"  style="width: 100%; height: inherit; opacity: 0.7;">
             <div class="container bg-light my-5" style="width: 500px; height: 200px;">oke</div>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
