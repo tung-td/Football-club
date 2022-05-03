@@ -8,6 +8,11 @@
     font-size: 100%;
 }
 
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
  :root {
     --main-bg-color: brown;
     --basic-red: #b62f2f;
@@ -229,6 +234,95 @@
     z-index: 3;
     transform: translateY(-50%);
     font-size: 60px;
-    font-family: Helvetica, Arial, sans-serif !important;
+    /* font-family: Helvetica, Arial, sans-serif !important; */
     /* padding: 0 20px; */
+}
+
+.content_my-utd {
+    width: 80%;
+    max-width: 100%;
+    padding: 34px 0 68px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.my-btn a {
+    color: #fff;
+    background-color: #ff2850;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: block;
+    /* margin-top: 15px; */
+    border: none;
+    text-align: center;
+}
+
+.my-btn:hover a {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.my-row {}
+
+.my-col {}
+
+.my-col-full {}
+
+.player-list {
+    margin-top: 30px;
+}
+
+.my-team {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.man {
+    background: url(/assests/img/oldTraford/firstteam1.jpg) top / cover;
+}
+
+.woman {
+    background: url(/assests/img/oldTraford/womenteam.jpg) top / cover;
+}
+
+.youngs {
+    background: url(/assests/img/oldTraford/academy-min.jpg) top / cover;
+}
+
+.legends {
+    background: url(/assests/img/oldTraford/legendteam.webp) center / cover;
+}
+
+.my-team .my-heading {
+    position: absolute;
+    padding-top: 300px;
+    padding-left: 5%;
+}
+
+.my-team .my-heading h2::before {
+    display: block;
+    content: " ";
+    height: 1.5px;
+    width: 70px;
+    background-color: red;
+}
+
+.my-team .my-heading {
+    font-weight: 500;
+}
+
+.my-breadcrumbs__items .breadcrumb-item {
+    font-size: 20px;
+}
+
+.my-breadcrumbs__items .breadcrumb-item {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
 }
