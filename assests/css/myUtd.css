@@ -248,7 +248,12 @@ body {
     padding-right: 16px;
 }
 
+.my-btn {
+    border-radius: 10px !important;
+}
+
 .my-btn a {
+    border-radius: 10px !important;
     color: #fff;
     background-color: #ff2850;
     text-decoration: none;
