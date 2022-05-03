@@ -117,13 +117,13 @@
 
     border: 1px solid transparent;
 }
-.slick-arrow.slick-hidden {
+.slick-arrow.slick-hidden, .ti-angle-left.slick-hidden, .ti-angle-right.slick-hidden {
     display: none;
 }
 
 /* custome slick */
 
-.slick-arrow {
+.slick-arrow, .ti-angle-left, .ti-angle-right {
     position: absolute;
     top: 40%;
     z-index: 1;
