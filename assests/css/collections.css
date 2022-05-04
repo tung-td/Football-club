@@ -21,6 +21,13 @@ body {
     box-shadow: 5px 5px 15px #e8e8e8
 }
 
+.product-grid {
+    height: 340px;
+}
+.col-md-3.col-sm-6 {
+    margin-bottom: 14px;
+}
+
 .col-lg-4,
 .col-md-6 {
     padding-right: 0
@@ -132,16 +139,8 @@ select {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 15px;
-    float: left
-}
-
-#filterbar input[type="radio"] {
-    visibility: hidden
-}
-
-#filterbar input[type='radio']:checked {
-    background-color: #16c79a;
-    border: none
+    float: left;
+    display: block;
 }
 
 #filterbar .btn.btn-success {
@@ -221,6 +220,10 @@ label {
     border: solid rgb(0, 0, 0);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg) scale(2)
+}
+
+.form-check-input {
+    display: none;
 }
 
 .box {
@@ -758,7 +761,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .product-grid .price {
     color: #ed1d24;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 

@@ -75,13 +75,9 @@
     <!-- Nav + side bar -->
 
     <div class="container">
-        <div class="bg-white rounded d-flex align-items-center justify-content-between" id="header"> <button
-                class="btn btn-hide text-uppercase" type="button" data-toggle="collapse" data-target="#filterbar"
-                aria-expanded="false" aria-controls="filterbar" id="filter-btn" onclick="changeBtnTxt()"> <span
-                    class="fas fa-angle-left" id="filter-angle"></span> <span id="btn-txt">Filters</span> </button>
+        <div class="bg-white rounded d-flex align-items-center justify-content-between" id="header">
             <nav class="navbar navbar-expand-lg navbar-light pl-lg-0 pl-auto"> <button class="navbar-toggler"
-                    type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav"
-                    aria-expanded="false" aria-label="Toggle navigation" onclick="chnageIcon()" id="icon"> <span
+                    id="icon"> <span
                         class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse" id="mynav">
                     <ul class="navbar-nav d-lg-flex align-items-lg-center">
@@ -94,12 +90,12 @@
                         <li class="nav-item d-inline-flex align-items-center justify-content-between mb-lg-0 mb-3">
                             <div class="d-inline-flex align-items-center mx-lg-2" id="select2">
                                 <div class="pl-2">Products:</div> <select name="pro" id="pro">
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
+                                    <option value="18">12</option>
+                                    <option value="19">20</option>
+                                    <option value="20">30</option>
                                 </select>
                             </div>
-                            <div class="font-weight-bold mx-2 result">18 from 200</div>
+                            <div class="font-weight-bold mx-2 result">12 from 200</div>
                         </li>
                         <li class="nav-item d-lg-none d-inline-flex"> </li>
                     </ul>
@@ -124,21 +120,21 @@
             <div id="filterbar" class="collapse">
                 <div class="box border-bottom">
                     <div class="form-group text-center">
-                        <div class="btn-group" data-toggle="buttons"> <label class="btn btn-success form-check-label">
-                                <input class="form-check-input" type="radio"> Reset </label> <label
+                        <div class="btn-group" data-toggle="buttons"> 
+                            <label class="btn btn-success form-check-label">
+                                <input class="form-check-input" type="radio"> Reset </label> 
+                            <label
                                 class="btn btn-success form-check-label active"> <input class="form-check-input"
-                                    type="radio" checked> Apply </label> </div>
+                                    type="radio" checked> Apply </label> 
+                        </div>
                     </div>
                     <div> <label class="tick">New <input type="checkbox" checked="checked"> <span class="check"></span>
                         </label> </div>
                     <div> <label class="tick">Sale <input type="checkbox"> <span class="check"></span> </label> </div>
                 </div>
                 <div class="box border-bottom">
-                    <div class="box-label text-uppercase d-flex align-items-center">FEATURED DEPARTMENTS<button
-                            class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box"
-                            aria-expanded="false" aria-controls="inner-box" id="out" onclick="outerFilter()"> <span
-                                class="fas fa-plus"></span> </button> </div>
-                    <div id="inner-box" class="collapse mt-2 mr-1">
+                    <div class="box-label text-uppercase d-flex align-items-center">FEATURED DEPARTMENTS</div>
+                    <div id="inner-box" class="mt-2 mr-1 show">
                         <div class="my-1"> <label class="tick">Face cover <input type="checkbox" checked="checked">
                                 <span class="check"></span> </label> </div>
                         <div class="my-1"> <label class="tick">Scarves <input type="checkbox"> <span
@@ -158,11 +154,8 @@
                     </div>
                 </div>
                 <div class="box border-bottom">
-                    <div class="box-label text-uppercase d-flex align-items-center">Kits type <button
-                            class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box2"
-                            aria-expanded="false" aria-controls="inner-box2"><span class="fas fa-plus"></span></button>
-                    </div>
-                    <div id="inner-box2" class="collapse mt-2 mr-1">
+                    <div class="box-label text-uppercase d-flex align-items-center">Kits type</div>
+                    <div id="inner-box2" class="mt-2 mr-1 show">
                         <div class="my-1"> <label class="tick">Home <input type="checkbox" checked="checked"> <span
                                     class="check"></span> </label> </div>
                         <div class="my-1"> <label class="tick">Away <input type="checkbox"> <span class="check"></span>
@@ -174,10 +167,8 @@
                     </div>
                 </div>
                 <div class="box border-bottom">
-                    <div class="box-label text-uppercase d-flex align-items-center">Price <button class="btn ml-auto"
-                            type="button" data-toggle="collapse" data-target="#price" aria-expanded="false"
-                            aria-controls="price"><span class="fas fa-plus"></span></button> </div>
-                    <div class="collapse" id="price">
+                    <div class="box-label text-uppercase d-flex align-items-center">Price </div>
+                    <div class="show" id="price">
                         <div class="middle">
                             <div class="multi-range-slider"> <input type="range" id="input-left" min="0" max="100"
                                     value="10"> <input type="range" id="input-right" min="0" max="100" value="50">
@@ -196,10 +187,8 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="box-label text-uppercase d-flex align-items-center">Size <button class="btn ml-auto"
-                            type="button" data-toggle="collapse" data-target="#size" aria-expanded="false"
-                            aria-controls="size"><span class="fas fa-plus"></span></button> </div>
-                    <div id="size" class="collapse">
+                    <div class="box-label text-uppercase d-flex align-items-center">Size</div>
+                    <div id="size" class="show">
                         <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
                                 class="btn btn-success form-check-label"> <input class="form-check-input"
                                     type="checkbox"> S </label> <label class="btn btn-success form-check-label"> <input
@@ -208,9 +197,8 @@
                                     type="checkbox" checked> L </label> <label class="btn btn-success form-check-label">
                                 <input class="form-check-input" type="checkbox" checked> XL </label> <label
                                 class="btn btn-success form-check-label"> <input class="form-check-input"
-                                    type="checkbox" checked> XXL </label> <label
-                                class="btn btn-success form-check-label"> <input class="form-check-input"
-                                    type="checkbox" checked> XXL </label> </div>
+                                    type="checkbox" checked> XXL </label> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,7 +208,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="product-grid">
                                 <div class="product-image">
-                                    <a href="#" class="image">
+                                    <a href="./product_detail.html" class="image">
                                         <img class="pic-1" src="./assests/img/Shop/home_1.jpg">
                                         <img class="pic-2" src="./assests/img/Shop/home_2.jpg">
                                     </a>
@@ -231,7 +219,7 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="title"><a href="#">Manchester United Home Shirt 2021-22</a></h3>
+                                    <h3 class="title"><a href="./product_detail.html">Manchester United Home Shirt 2021-22</a></h3>
                                     <div class="price">$42.00</div>
                                 </div>
                             </div>
@@ -270,7 +258,7 @@
                                 </div>
                                 <div class="product-content">
                                     <h3 class="title"><a href="#">
-                                        Manchester United Third Shirt 2021-22</a></h3>
+                                            Manchester United Third Shirt 2021-22</a></h3>
                                     <div class="price">$42.00</div>
                                 </div>
                             </div>
@@ -308,7 +296,8 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="title"><a href="#">Manchester United adidas Cristiano Ronaldo T-Shirt</a></h3>
+                                    <h3 class="title"><a href="#">Manchester United adidas CR7 T-Shirt</a>
+                                    </h3>
                                     <div class="price">$13.00</div>
                                 </div>
                             </div>
@@ -384,7 +373,7 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="title"><a href="#">Manchester United Cup Home Goalkeeper Shirt 2021-22</a></h3>
+                                    <h3 class="title"><a href="#">Manchester United Cup Home Goalkeeper Shirt</a></h3>
                                     <div class="price">$76.00</div>
                                 </div>
                             </div>
@@ -422,7 +411,8 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="title"><a href="#">Manchester United adidas 3 Pack Face Coverings</a></h3>
+                                    <h3 class="title"><a href="#">Manchester United 3 Pack Face Coverings</a>
+                                    </h3>
                                     <div class="price">$14.00</div>
                                 </div>
                             </div>
