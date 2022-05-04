@@ -50,7 +50,7 @@ $(function () {
       }
     ]
     });
-    $('.variable-width-ticket').slick({
+    $('.variable-width-matches').slick({
       dots: false,
       infinite: false,
       speed: 300,
@@ -59,7 +59,7 @@ $(function () {
       variableWidth: true,
       focusOnSelect: true,
       initialSlide: 3,
-      prevArrow: '.ti-angle-left',
-      nextArrow: '.ti-angle-right',
+      prevArrow: '.matches-previous',
+      nextArrow: '.matches-next',
     });
 });
