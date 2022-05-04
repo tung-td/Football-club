@@ -22,12 +22,12 @@
 /* Slider */
 
 .slider {
-    margin-top: 75px;
     max-height: 1000px;
 }
 
 .forSlickSlider {
     display: flex;
+    position: absolute;
 }
 
 .forSlickSlider .item {
@@ -46,7 +46,7 @@
 
 /* center mode */
 
-.forSlickSlider .item .overlay {
+/* .forSlickSlider .item .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@
 
 .forSlickSlider .slick-center .overlay {
     opacity: 0;
-}
+} */
 
 
 /* end center mode */
@@ -71,19 +71,17 @@
 
 /* custome arrow */
 
-.ti-angle-left,
-.ti-angle-right {
+.slider-previous,.slider-next {
     font-size: 100px;
-    opacity: 0;
 }
 
-.forSlickSlider:hover~.ti-angle-left,
-.forSlickSlider:hover~.ti-angle-right {
+/* .forSlickSlider:hover~.slider-previous,
+.forSlickSlider:hover~.slider-next {
     opacity: 0.3;
-}
+} */
 
-.ti-angle-left,
-.ti-angle-right,
+.slider-previous,
+.slider-next,
 .slick-dots button {
     color: #1E1E1E;
 }
@@ -94,7 +92,7 @@
 
 /* custome slick dots */
 
-.slick-dots {
+/* .slick-dots {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -131,7 +129,7 @@
     background-color: #1E1E1E;
     color: #1E1E1E;
     opacity: 1;
-}
+} */
 
 
 /* end custom slick dots */
@@ -145,7 +143,6 @@
 .ticket-bg {
     background-image: url(https://wallpaperaccess.com/full/5962313.jpg);
 }
-
 
 /* End Tickets */
 
