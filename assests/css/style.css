@@ -43,6 +43,10 @@
     transition: all linear .4s;
 }
 
+.single-item {
+    max-height: 665px;
+}
+
 
 /* center mode */
 
