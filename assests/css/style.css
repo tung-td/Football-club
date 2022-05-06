@@ -889,8 +889,8 @@ html {
     flex-direction: column;
 }
 
-.match,
-.wins,
+.mana-match,
+.loses,
 .trophies {
     margin-bottom: 2em;
 }
@@ -905,7 +905,7 @@ html {
     border-bottom: grey solid 1px;
 }
 
-.info-bio .bio-title {
+.bio-title {
     text-transform: uppercase;
     color: grey;
 }
@@ -948,7 +948,6 @@ html {
 
 .germany {
     position: relative;
-    top: 0.5em;
     padding-right: 0.5em;
     width: 30px;
 }
