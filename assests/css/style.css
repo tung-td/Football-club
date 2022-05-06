@@ -200,7 +200,7 @@
 }
 
 .Moment_slide.multiple-items {
-    height: 460px;
+    height: 470px;
 }
 
 .Moment_slide .items {}
@@ -249,7 +249,7 @@
     width: 290px;
     background-color: #fff;
     /* border-radius: 0 0 5px 5px; */
-    /* border-bottom: solid 6px #b62f2f; */
+    border-bottom: solid 2px #b62f2f;
 }
 
 

@@ -331,3 +331,8 @@ body {
     display: inline-block;
     text-transform: uppercase;
 }
+
+.sSize-players .player-btn {
+    width: 240px !important;
+    height: 235px !important;
+}
