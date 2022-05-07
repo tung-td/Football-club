@@ -103,9 +103,9 @@
                                 <div class="match-date">
                                     <h5>Saturday 7 May 2022</h5>
                                 </div>
-                                <h1>VS</h1>
+                                <h1>23:30</h1>
                                 <div class="match-kick-off-time">
-                                    <h5>Kick Off 23:30</h5>
+                                    <h5>Kick Off in:</h5>
                                 </div>
                             </div>
                             <div class="col-sm-5 text-start">
@@ -178,32 +178,234 @@
 
             <!-- Match List -->
 
-            <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                    aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                    data-target="#multiCollapseExample2" aria-expanded="false"
-                    aria-controls="multiCollapseExample2">Toggle second element</button>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse"
-                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
-                    elements</button>
-            </p>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                            ea proident.
+            <div class="text-center p-4" style=" width: 100%;">
+                <div class="container" style="width: 90%;">
+                    <div class="component-title text-start m-auto pb-3">
+                        <h1>
+                            MATCH LIST
+                        </h1>
+                        <div style="width: 100px; border: 1px solid red;"></div>
+                    </div>
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div class="input-group" style="width: 20%;">
+                            <select class="custom-select border rounded px-2" id="inputGroupSelect01">
+                              <option value="1" selected>Premier League</option>
+                              <option value="2">Friendly Match</option>
+                            </select>
+                        </div>
+                        <div class="border text-start rounded" style="width: 100%;">
+                            <div style="width: 100%;">
+                                <div class="border border-danger rounded-top p-2" style="width:fit-content;">
+                                    <b>MAY</b>
+                                </div>
+                            </div>
+                            <div style="width: 100%; border: 1px solid red;"></div>
+                        </div>
+                        <button class="btn border mx-2" onclick="ticketWaytoShow(1)"><h3 class="ti-menu-alt mb-0"></h3></button>
+                        <button class="btn border" onclick="ticketWaytoShow(2)"><h3 class="ti-menu-alt mb-0" style="transform: rotate(90deg);"></h3></button>
+                    </div>
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+
+                        <!-- Matchh List 1 | Horizontal -->
+                        <div id="matchList1" class="container border rounded mt-3 p-3">
+                            <div class="match-list-item container border d-flex justify-content-between rounded p-2 mb-3">
+                                <div class="d-flex">
+                                    <!-- <div class="logo-tournament d-flex align-items-center">
+                                    </div> -->
+                                    <div class="ticket-info mx-2">
+                                        <div class="ticket-title">
+                                            <h3><b>MANCHESTER UNITED U18 v NOTTINGHAM FOREST U18</b></h3>
+                                        </div>
+                                        <div class="ticket-info-details d-flex align-items-center">
+                                            <div class=""  style="margin-right: 20px;">
+                                                <img class=" bg-danger rounded" style="height: 30px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="logo-tournament">
+                                            </div>
+                                            <div class="ticket-date d-flex">
+                                                <div class="ti-calendar"></div>
+                                                <h6 class="mx-2 mb-0">Wed 11 May</h6>
+                                            </div>
+                                            <div class="ticket-time d-flex mx-2">
+                                                <div class="ti-time"></div>
+                                                <h6 class="mx-2 mb-0">19:30</h6>
+                                            </div>
+                                            <div class="ticket-destination d-flex">
+                                                <div class="ti-map-alt"></div>
+                                                <h6 class="mx-2 mb-0">Old Trafford</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="logo-team1">
+                                        <img style="width: 70px;" src="https://manchesterunited.seatgeekenterprise.com/weblink/10026/get.resource/images/2057/1000276.png?etag=6AB3168F7DE5BACEC27C021D6F4D0CBD" alt="logo-team1">
+                                    </div>
+                                    <div class="logo-team2">
+                                        <img style="width: 70px;" src="https://manchesterunited.seatgeekenterprise.com/weblink/10026/get.resource/images/2057/1000548.png?etag=75ECC9D08F573647F5054F6274E28443" alt="logo-team2">
+                                    </div>
+                                    <div class="buy-ticket d-flex align-items-center">
+                                        <div class="btn btn-danger">BUY TICKET</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-list-item container border d-flex justify-content-between rounded p-2">
+                                <div class="d-flex">
+                                    <!-- <div class="logo-tournament d-flex align-items-center">
+                                    </div> -->
+                                    <div class="ticket-info mx-2">
+                                        <div class="ticket-title">
+                                            <h3><b>MANCHESTER UNITED U18 v NOTTINGHAM FOREST U18</b></h3>
+                                        </div>
+                                        <div class="ticket-info-details d-flex align-items-center">
+                                            <div class=""  style="margin-right: 20px;">
+                                                <img class=" bg-danger rounded" style="height: 30px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="logo-tournament">
+                                            </div>
+                                            <div class="ticket-date d-flex">
+                                                <div class="ti-calendar"></div>
+                                                <h6 class="mx-2 mb-0">Wed 11 May</h6>
+                                            </div>
+                                            <div class="ticket-time d-flex mx-2">
+                                                <div class="ti-time"></div>
+                                                <h6 class="mx-2 mb-0">19:30</h6>
+                                            </div>
+                                            <div class="ticket-destination d-flex">
+                                                <div class="ti-map-alt"></div>
+                                                <h6 class="mx-2 mb-0">Old Trafford</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="logo-team1">
+                                        <img style="width: 70px;" src="https://manchesterunited.seatgeekenterprise.com/weblink/10026/get.resource/images/2057/1000276.png?etag=6AB3168F7DE5BACEC27C021D6F4D0CBD" alt="logo-team1">
+                                    </div>
+                                    <div class="logo-team2">
+                                        <img style="width: 70px;" src="https://manchesterunited.seatgeekenterprise.com/weblink/10026/get.resource/images/2057/1000548.png?etag=75ECC9D08F573647F5054F6274E28443" alt="logo-team2">
+                                    </div>
+                                    <div class="buy-ticket d-flex align-items-center">
+                                        <div class="btn btn-danger">BUY TICKET</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                            ea proident.
+
+                    <!-- Matchh List 2 | Vertical -->
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div id="matchList2" class="container d-none d-flex border rounded mt-3 p-3">
+                            <div class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0" style="width: 300px; height: 350px;">
+                                <div class="bg-danger d-flex justify-content-between rounded-top text-light">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <h1 class="mb-0">02</h1>
+                                        </div>
+                                        <div class="py-2" style="text-align: left !important;">
+                                            <div><h5 class="mb-0">MONDAY</h5></div>
+                                            <div><h6 class="mb-0">MAY</h6></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <!-- <h5 class="mb-0">RECENT</h5>
+                                        <h5 class="mb-0">MATCH</h5> -->
+                                    </div>
+                                </div>
+                                <div class="text-dark">
+                                    <div class="px-2">
+                                        <h6>
+                                            Old Trafford
+                                        </h6>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div>
+                                            <img style="width: 80px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
+                                        </div>
+                                        <div class="text-dark px-1">
+                                            <div>
+                                                <h6 class="mb-0">
+                                                    Kick off CEST
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <h2 class="mb-0">21:30</h2>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img style="width: 80px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
+                                        </div>
+                                    </div>
+                                    <div  class="d-flex justify-content-center align-items-center text-dark pt-2">
+                                        <div class="px-2">
+                                            <img class="bg-danger rounded" style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="PremierLeague">
+                                        </div>
+                                    </div>
+                                    <div class="text-dark pt-2">
+                                        <h5 class="mb-0">
+                                            MAN UTD vs BRENTFORD
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-around pb-2">
+                                    <div class="btn btn-danger">
+                                        <h3 class="mb-0">BUY TICKET</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0" style="width: 300px; height: 350px;">
+                                <div class="bg-danger d-flex justify-content-between rounded-top text-light">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <h1 class="mb-0">02</h1>
+                                        </div>
+                                        <div class="py-2" style="text-align: left !important;">
+                                            <div><h5 class="mb-0">MONDAY</h5></div>
+                                            <div><h6 class="mb-0">MAY</h6></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <!-- <h5 class="mb-0">RECENT</h5>
+                                        <h5 class="mb-0">MATCH</h5> -->
+                                    </div>
+                                </div>
+                                <div class="text-dark">
+                                    <div class="px-2">
+                                        <h6>
+                                            Old Trafford
+                                        </h6>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div>
+                                            <img style="width: 80px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="manutd">
+                                        </div>
+                                        <div class="text-dark px-1">
+                                            <div>
+                                                <h6 class="mb-0">
+                                                    Kick off CEST
+                                                </h6>
+                                            </div>
+                                            <div>
+                                                <h2 class="mb-0">21:30</h2>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img style="width: 80px;" src="https://assets.manutd.com/AssetPicker/images/0/0/11/179/766798/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="brentford">
+                                        </div>
+                                    </div>
+                                    <div  class="d-flex justify-content-center align-items-center text-dark pt-2">
+                                        <div class="px-2">
+                                            <img class="bg-danger rounded" style="width: 100px;" src="https://assets.manutd.com/AssetPicker/images/0/0/4/255/327517/PremierLeague_logo_White1506593717803.png" alt="PremierLeague">
+                                        </div>
+                                    </div>
+                                    <div class="text-dark pt-2">
+                                        <h5 class="mb-0">
+                                            MAN UTD vs BRENTFORD
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-around pb-2">
+                                    <div class="btn btn-danger">
+                                        <h3 class="mb-0">BUY TICKET</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -409,6 +611,7 @@
     <script src="../assests/js/index.js"></script>
     <script src="../assests/js/bootstrap_js/js/bootstrap.min.js"></script>
     <script src="../assests/js/timeCountDown.js"></script>
+    <script src="../assests/js/pages/ticket.js"></script>
 
 </body>
 
