@@ -1,0 +1,22 @@
+
+
+/* Match Category */
+.ticket-cate-item {
+    overflow: hidden;
+}
+
+.ticket-cate-item:hover img {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
+.ticket-cate-item img, .ticket-cate-item .ticket-cate-progress {
+    transition-duration: 1.5s;
+}
+
+.ticket-cate-item:hover .ticket-cate-progress {
+    transform: scaleX(1.5);
+    transition-duration: 1.5s;
+}
+
+/* End Match Category */
