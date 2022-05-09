@@ -1,0 +1,289 @@
+.guide {
+	margin-top: 84px;
+    display: flex;
+}
+.guide > a {
+	margin-left: 10px;
+	font-size: 11px;
+	text-decoration: unset;
+	color: rgb(58, 52, 52);
+}
+.container_product {
+	height: 1000px;
+}
+
+.detail {
+	display: flex;
+	height: 400px;
+	width: 300px;
+	justify-content: center;
+	padding: 50px;
+}
+
+.product_slider {
+	width: 996px;
+	background-color: aqua;
+}
+
+.product_information {
+	width: 512px;
+	background-color: bisque;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+    align-items: center;
+}
+
+.column_1 {
+    width: 488px;
+	margin-bottom: 246px;
+}
+
+.column_2 {
+    width: 488px;
+    padding: 10px;
+    margin-left: 90px;
+	margin-top: 90px;
+
+}
+
+#featured {
+	max-width: 500px;
+	max-height: 600px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.thumbnail {
+	object-fit: cover;
+	max-width: 180px;
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+.thumbnail:hover {
+	opacity: 1;
+	border: 1px solid rgb(97, 90, 90);
+	border-radius: 5px;
+}
+
+.active {
+	opacity: 1;
+	border: 1px solid rgb(97, 90, 90);
+}
+
+#slide-wrapper {
+	margin-top: 30px;
+	width: 500px;
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+#slider {
+	width: 440px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	justify-content: center;
+
+}
+
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.arrow:hover {
+	opacity: .5;
+	width: 35px;
+	height: 35px;
+}
+
+#img-container {
+	z-index: 1;
+	max-width: 500px;
+	position: relative;
+}
+
+.product_cart {
+	display: block;
+    width: 468px;
+    background-color: #e6e0e0;
+    height: 202px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+select {
+    outline: none;
+    padding: 1px 9px;
+    margin: 0px 7px;
+    color: #999;
+    font-size: 16px;
+    width: 53px;
+    color: #000;
+    background-color: #e6e0e0;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.stuff {
+	padding: 5px;
+}
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	width: 49px;
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	color: #000;
+}
+
+.button > .h1, h1 {
+	margin-left: 17px;
+    margin-bottom: 0px;
+    font-size: 23px !important;
+}
+
+.button span[class^='ion'] {
+	position: relative;
+}
+
+.button:before {
+	content: '';
+	background-color: #000;
+	border-radius: 50%;
+	display: block;
+	-webkit-transform: scale(0.001, 0.001);
+	transform: scale(0.001, 0.001);
+}
+
+.button:focus {
+	outline: 0;
+	color: #fff;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.button:focus:before {
+	-webkit-animation: effect_dylan 0.8s ease-out;
+	animation: effect_dylan 0.8s ease-out;
+}
+
+.buy_column {
+	display: flex;
+}
+.buy_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92px;
+    width: 286px;
+    margin-top: 18px;
+    margin-left: 46px;
+	
+}
+
+.buy_button button {
+	height: 42px;
+	border-radius: 5px;
+} 
+
+.buy_button button:hover {
+	opacity: 0.8;
+} 
+
+#add_to {
+	background-color: #fff;
+	color: #000;
+}
+
+#buy_it {
+	background-color: #d34646;
+}
+
+#detail_product {
+	margin-left: 18px;
+    font-size: 14px;
+}
+
+.description > p,
+.shipping > li{
+	font-size: 14px;
+}
+
+.icon_product {
+	font-size: 1rem;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.row_product {
+	width: 90%;	
+}
+
+.row_1,
+.row_2 {
+	margin-top: 20px;
+}
+
+.row_1 > h3,
+.row_2 > h3 {
+	margin-top: 30px;
+}
+
+.footer_product {
+	display: flex;
+	width: 86%;
+}
+
+.footer_1,
+.footer_2,
+.footer_3{
+	width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.footer_4 {
+
+}
+
+.footer_4 > button {
+	background-color: #000;
+    color: #fff;
+    width: 212px;
+    height: 54px;
+}
+
+.footer_4 > button:hover {
+	background-color: #999 !important;
+}
+
+.footer_1 > a,
+.footer_2 > a,
+.footer_3 > a{
+	font-size: 12px;
+	text-decoration: unset;
+	color: #000;
+	margin-bottom: 12px;
+}
+
+.also_like, .recently {
+	display: flex;
+	flex-wrap: wrap;
+}

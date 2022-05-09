@@ -130,16 +130,55 @@
     cursor: pointer;
 }
 
-.slick-prev, .ti-angle-left {
+.slick-prev {
     left: 5%;
 }
 
-.slick-next, .ti-angle-right {
+.slick-next {
     right: 5%;
 }
 
-.ti-angle-left:hover , .ti-angle-right:hover {
+.slick-arrow:hover {
     opacity: 1;
 }
+
+/* slider */
+.slider-previous, .slider-next {
+    top: 20rem;
+}
+.slider-previous {
+    left: 2% !important;
+}
+.slider-next {
+    right: 2% !important;
+}
+/* end slider */
+
+/* matches */
+.matches-previous, .matches-next {
+    top: 55% !important;
+}
+.matches-previous {
+    left: 2% !important;
+}
+.matches-next {
+    right: 2% !important;
+}
+.matches.item {
+    background-color:rgba(255, 255, 255, 0.65);
+}
+.matches.slick-slide {
+    opacity: 0.9;
+    transform: scale(0.9);
+    transition: all  linear 0.4s;
+}
+.matches.slick-center {
+    opacity: 1;
+    transform: scale(1);
+}
+.matches.slick-track {
+    height: 450px !important;
+}
+/* end matches */
 
 /* end custome slick */
