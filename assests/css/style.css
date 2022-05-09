@@ -481,7 +481,7 @@ html {
 
 /* #main {} */
 
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -581,6 +581,7 @@ html {
 #nav .subnav li:hover {
     color: #000 !important;
     background-color: #ccc;
+    border-radius: 5px;
 }
 
 #nav .subnav a {
