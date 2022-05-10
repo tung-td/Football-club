@@ -10,12 +10,30 @@
 
  :root {
     --main-bg-color: brown;
-    --basic-red: #b62f2f;
+    --basic-red: #c70101;
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
     --text-grey: #666666;
     --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
+}
+
+ul {
+    margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c70101;
+    border-radius: 50px;
 }
 
 
@@ -156,7 +174,7 @@
 /* Moments */
 
 .Moments {
-    background-color: #f0f0f0;
+    background-color: #000;
     display: block;
     width: 100% !important;
     /* height: 744px !important; */
@@ -164,7 +182,7 @@
 }
 
 .Moment_header {
-    color: var(--text-grey);
+    color: var(--dirty-white);
     width: 1300px;
     /* height: 127px; */
     align-items: center;
@@ -185,7 +203,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: auto;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 .Moment_slide.multiple-items {
@@ -258,11 +276,11 @@
 .Moment_footer {
     display: flex;
     align-items: center;
-    /* height: 60px; */
+    margin-top: -36px !important;
 }
 
 .Moment_footer>.footer_title {
-    line-height: 100px;
+    line-height: 80px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -270,11 +288,13 @@
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
-    color: var(--text-grey);
+    color: var(--dirty-white);
+    opacity: 0.7;
 }
 
 .Moment_footer .footer_title:hover {
     color: var(--dirty-white);
+    opacity: 1;
 }
 
 
@@ -550,9 +570,10 @@ html {
 
 /* .search-btn:hover:after, */
 
-.sign-items:hover::after {
+
+/* .sign-items:hover::after {
     transform: scale(1);
-}
+} */
 
 #nav>li::after,
 
@@ -599,8 +620,18 @@ html {
 
 .header-options .search-btn,
 .header-options select,
-.header-options .header-sign {
-    padding: 0 24px;
+.header-options .header-sign,
+#header .mobile-menu-btn,
+.header-options .help-btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header-options .header-sign,
+#header .mobile-menu-btn {
+    padding-right: 25px !important;
 }
 
 .header-options select {
@@ -617,20 +648,26 @@ html {
     display: flex;
 }
 
-.header-sign .sign-items {
+.header-sign .sign-items,
+.header-options .search-btn,
+.header-options .help-btn {
     text-decoration: none;
-    padding: 0 1em;
+    font-size: 22px;
+    /* padding: 0 1em; */
     color: var(--dirty-white);
 }
 
-.header-options .search-btn {
-    color: #fff;
-    font-size: 20px;
-}
-
-.header-options .search-btn:hover {
+.header-options .search-btn:hover,
+#header .mobile-menu-btn:hover,
+.header-sign .sign-items:hover,
+.header-options .help-btn:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+#header .mobile-menu-btn {
+    font-size: 30px;
+    color: #fff;
 }
 
 
@@ -752,8 +789,8 @@ html {
 }
 
 .footer__social-links .social-list a:hover {
-    color: #ff2850;
-    border: solid 3px #ff2850;
+    color: #c70101;
+    border: solid 3px #c70101;
     opacity: 0.9;
 }
 
@@ -959,3 +996,42 @@ html {
 
 
 /* End Manager */
+
+
+/* Modal login */
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+    }
+    .modal-dialog .modal-content {
+        padding: 1rem;
+    }
+}
+
+.modal-header .close {
+    margin-top: -1.5rem;
+}
+
+.form-title {
+    margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+    border-radius: 3rem !important;
+}
+
+.delimiter {
+    padding: 1rem;
+}
+
+.social-buttons .btn {
+    margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+    padding: 0.3rem 0rem;
+}
+
+
+/* end modal login */

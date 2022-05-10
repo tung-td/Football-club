@@ -1,97 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assests/css/bootstrap_css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assests/css/slick.css">
-    <link rel="stylesheet" href="./assests/icons/themify-icons/themify-icons.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Customized bootstrap login forms with multiple variants. Easy to customize.">
+    <meta name="keywords" content="Bootstrap Modal, Login Form, Modal Login, Registration Form, Form, Bootstrap, Login, Registration">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <title>Bootstrap Modal Login</title>
+
+
+    <!-- font awesome v5.5.0 free version -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <!-- bootstrap version v4.0.0 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/pages/test.css">
 </head>
 
 <body>
+    <div class="main-container">
 
-    <!-- Match List -->
-
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-    </p>
-    <div class="row">
-        <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <div class="col-sm-4 ">
+            <div class="button-card mt-4">
+                <p class="text-muted"><strong class="text-danger text-uppercase">Style 2</strong> Click the button to preview</p>
+                <div class="action-buttons mb-3 mt-2">
+                    <!-- action button for modal style 2 start -->
+                    <a href="#loginModal2" data-toggle="modal" class="btn btn-theme btn-primary text-white"> Login</a>
+                    <a href="#registerModal2" data-toggle="modal" class="btn btn-theme btn-success text-white">Register</a>
+                    <!-- action button for modal style 2 end -->
                 </div>
+                <img src="https://rakibul.dev/demo/style-2-demo.jpg">
             </div>
         </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+    </div>
+
+
+
+    <!--modal style 2 start -->
+
+    <!-- login modal 2 -->
+    <div id="loginModal2" class="modal-style-2  modal ">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
+                <div class="modal-body">
+                    <!-- dont forget to add action and action method  -->
+                    <form action="" method="" class="mt-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="username" placeholder="Enter your username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on">
+                            </div>
+                        </div>
+                        <div class="row pl-1 pr-1">
+                            <div class="col text-left">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
+                                    <span class="custom-control-label">&nbsp;Remember Me</span>
+                                </label>
+                            </div>
+                            <div class="col text-right hint-text pt-0">
+                                <a href="" class="text-danger">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="form-group text-center mt-2 mb-0">
+                            <button type="submit" class="btn btn-primary btn-sm">Login</button>
+
+                        </div>
+                        <p class="hint-text mt-0">or login with</p>
+                        <div class="social-login text-center">
+                            <a class=" btn-facebook  text-uppercase" href="redirect/facebook"><i class="fab fa-facebook-f mr-2 ml-2"></i> </a>
+                            <a class=" btn-facebook  text-uppercase" href="redirect/google"><i class="fab fa-google mr-2 ml-2"></i></a>
+                            <a class=" btn-facebook  text-uppercase" href="redirect/twitter"><i class="fab fa-twitter mr-2 ml-2"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">Don't have an account? <a href="#registerModal2" data-dismiss="modal" data-toggle="modal"> Register</a></div>
             </div>
         </div>
     </div>
-
-    <!-- End Match List -->
-
-    <!-- Moments -->
-
-    <div class="container-fluid py-3">
-        <div class="d-flex m-auto p-3 multiple-items-moments" style="width: 90%; height: 400px; border-radius: 10px; background-color:rgba(0, 0, 0, 0.5);">
-            <div class="item bg-dark text-light mx-2" style="width: 310px; height: 360px; border-radius: 10px;">
-                <div class="position-absolute" style="width: inherit; height: inherit; border-radius: 10px; background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/14/50/930559/GettyImages-12767926291601305589675_small.jpg); background-size: cover;"></div>
-                <div class="position-absolute" style="width: inherit; height: inherit; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));"></div>
-                <div class="position-absolute d-flex flex-column justify-content-end" style="width: inherit; height: inherit;">
-                    <h1>OKE1</h1>
-                    <h1>OKE2</h1>
+    <!-- register modal 2 -->
+    <div id="registerModal2" class="modal-style-2  modal ">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="mt-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="name" placeholder="Enter your name" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Enter email address" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-eye-slash"></i></span>
+                                <input type="password" class="form-control" name="password_confirmation" placeholder="Retype password" required="required" autocomplete="on">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button id="signup-button" type="submit" class="btn btn-primary btn-sm">Register</button>
+
+                        </div>
+                    </form>
+
+                </div>
+                <!-- social icons -->
+                <p class="hint-text">or register with</p>
+                <div class="social-login text-center mb-2">
+                    <a class=" btn-facebook  text-uppercase" href="redirect/facebook"><i class="fab fa-facebook-f mr-2 ml-2"></i> </a>
+                    <a class=" btn-facebook  text-uppercase" href="redirect/google"><i class="fab fa-google mr-2 ml-2"></i></a>
+                    <a class=" btn-facebook  text-uppercase" href="redirect/twitter"><i class="fab fa-twitter mr-2 ml-2"></i></a>
+                </div>
+                <div class="modal-footer">Already have an account? <a href="#loginModal2" data-dismiss="modal" data-toggle="modal"> Login</a></div>
             </div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
         </div>
     </div>
+    <!--modal style 2 end -->
 
-    <div class="container-fluid py-3">
-        <div class="d-flex m-auto multiple-items-moments" style="width: 90%; height: 400px;">
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-        </div>
-    </div>
+    <!-- include scripts here -->
 
-    <!-- End Moments -->
-
-
-    <script src="./assests/js/jquery.min.js"></script>
-    <script src="./assests/js/slick.min.js"></script>
-    <script src="./assests/js/index.js"></script>
-
-    <script>
-        $(function() {
-            $('.multiple-items-moments').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                arrows: false,
-                autoplay: false,
-                autoplaySpeed: 3000,
-                dots: false,
-                centerMode: true,
-                centerPadding: '0',
-                focusOnSelect: true
-            });
-        });
-    </script>
-
+    <!-- jQuery v3.4.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
