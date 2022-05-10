@@ -502,7 +502,7 @@ html {
 /* #main {} */
 
 #header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     height: 75px;
@@ -614,6 +614,9 @@ html {
 .header-options {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
     float: right;
     line-height: 75px;
 }

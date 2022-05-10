@@ -9,7 +9,11 @@
 
 /* Tablet and mobile */
 
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+    /* #header {
+        max-width: 820px;
+    } */
+}
 
 
 /* Tablet */
@@ -19,4 +23,8 @@
 
 /* Mobile */
 
-@media (max-width: 739px) {}
+@media (max-width: 739px) {
+    #nav>li {
+        display: block;
+    }
+}
