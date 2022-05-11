@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {}
+
+@media (max-width: 1023px) {}
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+@media (max-width: 739px) {
+    .slider_my-utd {
+        margin-top: 65px !important;
+    }
+    .my-utd_text_heading {
+        max-width: 70% !important;
+        padding-left: 20px !important;
+        font-size: 1.7em !important;
+    }
+    .content_my-utd {
+        width: 100% !important;
+        max-width: 100%;
+        padding: 0px 16px 28px !important;
+    }
+    .my-team {
+        height: 240px !important;
+    }
+    .my-team .my-heading {
+        padding-top: 130px !important;
+    }
+    .my-team .my-heading h2 {
+        font-size: 1.1rem !important;
+    }
+    .my-btn a {
+        font-size: 0.7em !important;
+    }
+}

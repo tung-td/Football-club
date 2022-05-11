@@ -1,5 +1,12 @@
 /* PC */
 
+@media (min-width: 1025px) {
+    /* Cup */
+    .cups__slider .cup-items+.cup-items {
+        border-left: 1px solid #E6E6E6;
+    }
+}
+
 @media (min-width: 1024px) {
     /* Header */
     #header .mobile-menu-btn {
@@ -8,13 +15,6 @@
     .header-options {
         position: absolute;
     }
-    /* Cup */
-    .cups__slider .cup-items+.cup-items {
-        border-left: 1px solid #E6E6E6;
-    }
-    /* social list */
-    .footer__social-links {}
-    /* end social list */
 }
 
 
@@ -32,6 +32,28 @@
     .header-options {
         position: absolute;
     }
+    /* manager */
+    .manager-info {
+        width: 90% !important;
+        margin: 2em auto !important;
+    }
+    .image-name {
+        font-size: 0.7em !important;
+    }
+    .site::after {
+        display: block;
+        content: " ";
+        height: 1.5px !important;
+        width: 110px !important;
+        background-color: red;
+    }
+    .image-message {
+        width: 170% !important;
+        font-size: 1.3em !important;
+    }
+    .image-text {
+        justify-content: flex-start !important;
+    }
 }
 
 
@@ -39,10 +61,23 @@
 
 @media (max-width: 739px) {
     /* header */
+    #header {
+        height: 65px !important;
+    }
+    .header-logo img {
+        width: 50px !important;
+        height: 50px !important;
+    }
     #header #nav {
         display: none;
     }
+    .header-options {
+        line-height: 65px !important;
+    }
     /* end header */
+    .slider {
+        margin-top: 65px !important;
+    }
     /* social list */
     .footer__social-links {
         flex-direction: column;
@@ -83,10 +118,21 @@
     .manager-image {
         flex-direction: column;
     }
+    .image-image {
+        display: flex;
+        align-self: center !important;
+    }
     .site {
         padding-bottom: 0 !important;
         font-size: 1.5em !important;
         left: 1em !important;
+    }
+    .site::after {
+        display: block;
+        content: " ";
+        height: 1.5px !important;
+        width: 110px !important;
+        background-color: red;
     }
     .site-name {
         font-size: 1.4em !important;
@@ -104,6 +150,9 @@
     .image-statics {
         flex-direction: row !important;
         font-size: 0.9em!important;
+    }
+    .image-image-none {
+        display: none !important;
     }
     .mana-match,
     .wins,

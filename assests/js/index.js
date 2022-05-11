@@ -107,18 +107,30 @@ $(function() {
         centerPadding: '0',
         focusOnSelect: true,
         responsive: [{
-                breakpoint: 768,
+                breakpoint: 1100,
                 settings: {
                     arrows: false,
                     centerMode: true,
                     autoplay: true,
                     autoplaySpeed: 3000,
                     centerPadding: '0',
-                    slidesToShow: 1
+                    slidesToShow: 3
+
+                }
+            }, {
+                breakpoint: 1023,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    centerPadding: '0',
+                    slidesToShow: 2
+
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 739,
                 settings: {
                     arrows: false,
                     centerMode: true,
