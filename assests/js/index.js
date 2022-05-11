@@ -9,7 +9,26 @@ $(function() {
         dots: false,
         centerMode: true,
         centerPadding: '0',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.single-item').slick({
         autoplay: true,
@@ -73,6 +92,46 @@ $(function() {
         prevArrow: '.matches-previous',
         nextArrow: '.matches-next',
     });
+});
+
+$(function() {
+    $('.multiple-items-moments').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    centerPadding: '0',
+                    slidesToShow: 1
+                }
+            }
+        ]
+
+    });
+
 });
 
 $(document).ready(function() {

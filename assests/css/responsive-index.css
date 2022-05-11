@@ -1,12 +1,20 @@
 /* PC */
 
 @media (min-width: 1024px) {
+    /* Header */
     #header .mobile-menu-btn {
         display: none;
     }
     .header-options {
         position: absolute;
     }
+    /* Cup */
+    .cups__slider .cup-items+.cup-items {
+        border-left: 1px solid #E6E6E6;
+    }
+    /* social list */
+    .footer__social-links {}
+    /* end social list */
 }
 
 
@@ -30,7 +38,45 @@
 /* Mobile */
 
 @media (max-width: 739px) {
+    /* header */
     #header #nav {
         display: none;
+    }
+    /* end header */
+    /* social list */
+    .footer__social-links {
+        flex-direction: column;
+        justify-content: center !important;
+        height: 155px !important;
+    }
+    .footer__social-links .social-list {
+        font-size: 20px !important;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-logo img {
+        height: 50px !important;
+        text-align: center;
+        margin: 20px 20px !important;
+    }
+    .footer-sponsor {
+        padding-bottom: 20px !important;
+        padding-top: 20px !important;
+    }
+    .sponsor__primary {
+        height: 112px !important;
+        flex-wrap: wrap;
+    }
+    .sponsor__primary img {
+        height: 50px !important;
+    }
+    .sponsor__secondary img {
+        height: 35px !important;
+    }
+    .footer_copyright_text {
+        font-size: 12px !important;
+        /* end social list */
     }
 }

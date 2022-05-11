@@ -34,12 +34,15 @@
     <!-- NAM -->
     <div id="main" class="max-width: 100%">
 
+        <!-- Start Header -->
         <div id="header">
             <div class="header-logo">
                 <a href="./index.html">
                     <img src="./assests/img/logo-mu.png" alt="">
                 </a>
             </div>
+
+
             <ul id="nav">
                 <li>
                     <a href="./pages/myutd/myUtd.html">
@@ -68,14 +71,13 @@
             </ul>
 
 
-
             <div class="header-options">
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                 </div>
 
                 <div class="help-btn">
-                    <i class="help-icon ti-help-alt"></i>
+                    <i class="help-icon ti-help-alt" href="#questionModal" data-dismiss="modal" data-toggle="modal"></i>
                 </div>
 
                 <div class="header-sign" data-toggle="modal" data-target="#loginModal">
@@ -93,11 +95,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- End Header -->
 
 
-
+        <!-- Start Slider -->
         <div class="slider">
             <!-- Slider -->
             <div class="slider position-relative" style="width: 100%; padding-bottom: 2em;">
@@ -129,7 +131,10 @@
             <!-- End Slider -->
 
         </div>
+        <!-- End Slider -->
 
+
+        <!-- Start Content -->
         <div class="content">
             <!-- Matches / Tickets -->
             <div class="bg-dark m-auto my-4" style="width: 90%; height: 500px; border-radius: 25px;">
@@ -544,7 +549,6 @@
             <!-- End Matches / Tickets -->
 
 
-
             <!-- Manager -->
             <div class="manager" style="font-weight: 500;">
                 <div class="manager-image">
@@ -668,7 +672,6 @@
                 </div>
             </div>
             <!-- End Video background -->
-
 
 
             <!-- STORE -->
@@ -889,11 +892,10 @@
             </div>
             <!-- End cup tropies -->
         </div>
+        <!-- End Content -->
 
 
-
-
-        <!-- FOOTER -->
+        <!--START FOOTER -->
         <div class="footer" style="margin-bottom: -42px;">
             <div class="footer__social-links">
                 <div class="footer-logo ">
@@ -946,9 +948,41 @@
                 </div>
             </div>
         </div>
+        <!-- END Footer -->
 
 
-        <!-- modal login -->
+
+        <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4>Do you have any questions?</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="question1" placeholder="Your questions...">
+                                </div>
+                                <button type="button" class="btn btn-info btn-block btn-round">Submit</button>
+                            </form>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Start: modal login -->
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1066,20 +1100,6 @@
         <script src="./assests/js/timeCountDown.js"></script>
 
         <script>
-            $(function() {
-                $('.multiple-items-moments').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    arrows: false,
-                    autoplay: false,
-                    autoplaySpeed: 3000,
-                    dots: false,
-                    centerMode: true,
-                    centerPadding: '0',
-                    focusOnSelect: true
-                });
-            });
         </script>
 </body>
 
