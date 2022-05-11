@@ -77,6 +77,69 @@
     }
     .footer_copyright_text {
         font-size: 12px !important;
-        /* end social list */
     }
+    /* end social list */
+    /* Start: manager */
+    .manager-image {
+        flex-direction: column;
+    }
+    .site {
+        padding-bottom: 0 !important;
+        font-size: 1.5em !important;
+        left: 1em !important;
+    }
+    .site-name {
+        font-size: 1.4em !important;
+        width: 90% !important;
+        text-align: center;
+        margin: auto;
+        margin-top: -1em !important;
+    }
+    .image-message {
+        width: 90% !important;
+        font-size: 1.1em !important;
+        text-align: center;
+        margin: auto;
+    }
+    .image-statics {
+        flex-direction: row !important;
+        font-size: 0.9em!important;
+    }
+    .mana-match,
+    .wins,
+    .draws,
+    .loses,
+    .trophies {
+        margin-bottom: 0.7em !important;
+        margin-top: 0.7em !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .bio-title {
+        font-size: 1em !important;
+        margin-bottom: 0 !important;
+    }
+    /* .info-shortcut {
+        font-size: 0.9em !important;
+    } */
+    .manager-info {
+        width: 90% !important;
+        margin: 1em auto !important;
+    }
+    .bio-text {
+        margin-bottom: 0.7em !important;
+        font-size: 0.9em !important;
+    }
+    .items-inf {
+        font-size: 0.9em !important;
+    }
+    .flex-basis-3 {
+        flex-basis: 30% !important;
+        font-size: 0.9em !important;
+    }
+    .flex-basis-4 {
+        flex-basis: 40% !important;
+        font-size: 0.9em !important;
+    }
+    /* end: manager */
 }
