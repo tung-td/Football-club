@@ -112,7 +112,7 @@ $(function() {
                     arrows: false,
                     centerMode: true,
                     autoplay: true,
-                    autoplaySpeed: 3000,
+                    autoplaySpeed: 2000,
                     centerPadding: '0',
                     slidesToShow: 3
 

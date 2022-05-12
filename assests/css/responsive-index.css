@@ -32,6 +32,11 @@
     .header-options {
         position: absolute;
     }
+    .slider-previous,
+    .slider-next {
+        top: 10rem !important;
+        font-size: 70px !important;
+    }
     /* manager */
     .manager-info {
         width: 90% !important;
@@ -77,6 +82,11 @@
     /* end header */
     .slider {
         margin-top: 65px !important;
+    }
+    .slider-previous,
+    .slider-next {
+        top: 5rem !important;
+        font-size: 50px !important;
     }
     /* social list */
     .footer__social-links {
