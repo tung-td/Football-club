@@ -306,7 +306,7 @@ select {
 /* IPAD RESPONSIVE */
 @media only screen and (min-width: 768px)  {
 	.column_1 {
-		margin-bottom: 45px;
+		margin: 0 10px;
 	}
 	
 	.column_2 {
@@ -325,7 +325,6 @@ select {
 		max-width: 185px;
 	}
 	.footer  {
-		height: 764px;
 	}
 }
 

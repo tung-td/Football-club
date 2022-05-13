@@ -208,7 +208,13 @@
                 <div class="row row_product">
                     <div class="row_1">
                         <h3>Recently</h3>
-                        <div class="recently">
+                        <button id="hide" style="display: none">
+                            <i class="ti-angle-up"></i>
+                        </button>
+                        <button id="show" >
+                            <i class="ti-angle-down"></i>
+                        </button>
+                        <div class="recently" id="recently_1">
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
@@ -376,6 +382,19 @@
             </div>
         </div>
         <!-- End Recently & Also like -->
+
+        <script>
+            document.getElementById("show").onclick = function () {
+                document.getElementById("recently_1").style.display = 'flex';
+                document.getElementById("show").style.display = 'none';
+                document.getElementById("hide").style.display = 'block';
+            }
+            document.getElementById("hide").onclick = function () {
+                document.getElementById("recently_1").style.display = 'none';
+                document.getElementById("show").style.display = 'block';
+                document.getElementById("hide").style.display = 'none';
+            }
+        </script>
 
         <div class="footer_product">
             <div class="footer_1">
