@@ -19,6 +19,10 @@ body {
     justify-content: center;
 }
 
+#products {
+	width: 100%;
+}
+
 .detail {
 	display: flex;
 	height: 400px;
@@ -253,6 +257,7 @@ select {
 	margin-top: 30px;
 	margin-bottom: 30px;
     font-size: 1.5rem;
+	display: inline-block;
 }
 
 .footer_product {
