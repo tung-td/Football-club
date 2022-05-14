@@ -1,204 +1,219 @@
-/* PC */
-
-@media (min-width: 1025px) {
-    /* Cup */
-    .cups__slider .cup-items+.cup-items {
-        border-left: 1px solid #E6E6E6;
+    /* PC */
+    
+    @media (min-width: 1025px) {
+        /* Cup */
+        .cups__slider .cup-items+.cup-items {
+            border-left: 1px solid #E6E6E6;
+        }
     }
-}
-
-@media (min-width: 1024px) {
-    /* Header */
-    #header .mobile-menu-btn {
-        display: none;
+    
+    @media (min-width: 1024px) {
+        /* Header */
+        #header .mobile-menu-btn {
+            display: none;
+        }
+        .header-options {
+            position: absolute;
+        }
     }
-    .header-options {
-        position: absolute;
+    /* Tablet and mobile */
+    
+    @media (max-width: 1023px) {}
+    /* Tablet */
+    
+    @media (min-width: 740px) and (max-width: 1023px) {
+        #header .mobile-menu-btn {
+            display: none;
+        }
+        .header-options {
+            position: absolute;
+        }
+        .slider-previous,
+        .slider-next {
+            top: 10rem !important;
+            font-size: 70px !important;
+        }
+        /* manager */
+        .manager-info {
+            width: 90% !important;
+            margin: 2em auto !important;
+        }
+        .image-name {
+            font-size: 0.7em !important;
+        }
+        .site::after {
+            display: block;
+            content: " ";
+            height: 1.5px !important;
+            width: 110px !important;
+            background-color: red;
+        }
+        .image-message {
+            width: 170% !important;
+            font-size: 1.3em !important;
+        }
+        .image-text {
+            justify-content: flex-start !important;
+        }
     }
-}
-
-
-/* Tablet and mobile */
-
-@media (max-width: 1023px) {}
-
-
-/* Tablet */
-
-@media (min-width: 740px) and (max-width: 1023px) {
-    #header .mobile-menu-btn {
-        display: none;
-    }
-    .header-options {
-        position: absolute;
-    }
-    .slider-previous,
-    .slider-next {
-        top: 10rem !important;
-        font-size: 70px !important;
-    }
-    /* manager */
-    .manager-info {
-        width: 90% !important;
-        margin: 2em auto !important;
-    }
-    .image-name {
-        font-size: 0.7em !important;
-    }
-    .site::after {
-        display: block;
-        content: " ";
-        height: 1.5px !important;
-        width: 110px !important;
-        background-color: red;
-    }
-    .image-message {
-        width: 170% !important;
-        font-size: 1.3em !important;
-    }
-    .image-text {
-        justify-content: flex-start !important;
-    }
-}
-
-
-/* Mobile */
-
-@media (max-width: 739px) {
-    /* header */
-    #header {
-        height: 65px !important;
-    }
-    .header-logo img {
-        width: 50px !important;
-        height: 50px !important;
-    }
-    #header #nav {
-        display: none;
-    }
-    .header-options {
-        line-height: 65px !important;
-    }
-    /* end header */
-    .slider {
-        margin-top: 65px !important;
-    }
-    .slider-previous,
-    .slider-next {
-        top: 5rem !important;
-        font-size: 50px !important;
-    }
-    /* social list */
-    .footer__social-links {
-        flex-direction: column;
-        justify-content: center !important;
-        height: 155px !important;
-    }
-    .footer__social-links .social-list {
-        font-size: 20px !important;
-    }
-    .footer-logo {
-        display: flex;
-        justify-content: center;
-    }
-    .footer-logo img {
-        height: 50px !important;
-        text-align: center;
-        margin: 20px 20px !important;
-    }
-    .footer-sponsor {
-        padding-bottom: 20px !important;
-        padding-top: 20px !important;
-    }
-    .sponsor__primary {
-        height: 112px !important;
-        flex-wrap: wrap;
-    }
-    .sponsor__primary img {
-        height: 50px !important;
-    }
-    .sponsor__secondary img {
-        height: 35px !important;
-    }
-    .footer_copyright_text {
-        font-size: 12px !important;
-    }
-    /* end social list */
-    /* Start: manager */
-    .manager-image {
-        flex-direction: column;
-    }
-    .image-image {
-        display: flex;
-        align-self: center !important;
-    }
-    .site {
-        padding-bottom: 0 !important;
-        font-size: 1.5em !important;
-        left: 1em !important;
-    }
-    .site::after {
-        display: block;
-        content: " ";
-        height: 1.5px !important;
-        width: 110px !important;
-        background-color: red;
-    }
-    .site-name {
-        font-size: 1.4em !important;
-        width: 90% !important;
-        text-align: center;
-        margin: auto;
-        margin-top: -1em !important;
-    }
-    .image-message {
-        width: 90% !important;
-        font-size: 1.1em !important;
-        text-align: center;
-        margin: auto;
-    }
-    .image-statics {
-        flex-direction: row !important;
-        font-size: 0.9em!important;
-    }
-    .image-image-none {
-        display: none !important;
-    }
-    .mana-match,
-    .wins,
-    .draws,
-    .loses,
-    .trophies {
-        margin-bottom: 0.7em !important;
-        margin-top: 0.7em !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    .bio-title {
-        font-size: 1em !important;
-        margin-bottom: 0 !important;
-    }
-    /* .info-shortcut {
+    /* Mobile */
+    
+    @media (max-width: 739px) {
+        /* header */
+        #header {
+            height: 65px !important;
+        }
+        .header-logo img {
+            width: 50px !important;
+            height: 50px !important;
+        }
+        #header #nav {
+            display: none;
+        }
+        .header-options {
+            line-height: 65px !important;
+        }
+        /* end header */
+        .slider {
+            margin-top: 65px !important;
+        }
+        .slider-previous,
+        .slider-next {
+            top: 5rem !important;
+            font-size: 50px !important;
+        }
+        /* social list */
+        .footer__social-links {
+            flex-direction: column;
+            justify-content: center !important;
+            height: 155px !important;
+        }
+        .footer__social-links .social-list {
+            font-size: 20px !important;
+        }
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+        }
+        .footer-logo img {
+            height: 50px !important;
+            text-align: center;
+            margin: 20px 20px !important;
+        }
+        .footer-sponsor {
+            padding-bottom: 20px !important;
+            padding-top: 20px !important;
+        }
+        .sponsor__primary {
+            height: 112px !important;
+            flex-wrap: wrap;
+        }
+        .sponsor__primary img {
+            height: 50px !important;
+        }
+        .sponsor__secondary img {
+            height: 35px !important;
+        }
+        .footer_copyright_text {
+            font-size: 12px !important;
+        }
+        /* end social list */
+        /* Start: manager */
+        .manager-image {
+            flex-direction: column;
+        }
+        .image-image {
+            display: flex;
+            align-self: center !important;
+        }
+        .site {
+            padding-bottom: 0 !important;
+            font-size: 1.5em !important;
+            left: 1em !important;
+        }
+        .site::after {
+            display: block;
+            content: " ";
+            height: 1.5px !important;
+            width: 110px !important;
+            background-color: red;
+        }
+        .site-name {
+            font-size: 1.4em !important;
+            width: 90% !important;
+            text-align: center;
+            margin: auto;
+            margin-top: -1em !important;
+        }
+        .image-message {
+            width: 90% !important;
+            font-size: 1.1em !important;
+            text-align: center;
+            margin: auto;
+        }
+        .image-statics {
+            flex-direction: row !important;
+            font-size: 0.9em!important;
+        }
+        .image-image-none {
+            display: none !important;
+        }
+        .mana-match,
+        .wins,
+        .draws,
+        .loses,
+        .trophies {
+            margin-bottom: 0.7em !important;
+            margin-top: 0.7em !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .bio-title {
+            font-size: 1em !important;
+            margin-bottom: 0 !important;
+        }
+        /* .info-shortcut {
         font-size: 0.9em !important;
     } */
-    .manager-info {
-        width: 90% !important;
-        margin: 1em auto !important;
+        .manager-info {
+            width: 90% !important;
+            margin: 1em auto !important;
+        }
+        .bio-text {
+            margin-bottom: 0.7em !important;
+            font-size: 0.9em !important;
+        }
+        .items-inf {
+            font-size: 0.9em !important;
+        }
+        .flex-basis-3 {
+            flex-basis: 30% !important;
+            font-size: 0.9em !important;
+        }
+        .flex-basis-4 {
+            flex-basis: 40% !important;
+            font-size: 0.9em !important;
+        }
+        /* end: manager */
+        /* search navbar */
+        .search-button {
+            height: 60px;
+        }
+        .home-search__panel {
+            width: 100% !important;
+            justify-content: space-between !important;
+            padding: 6px !important;
+        }
+        .text-area {
+            width: 70% !important;
+            margin-left: 0 !important;
+        }
+        .sp-btn {
+            width: 20% !important;
+        }
+        .header-sign .sign-items,
+        .header-options .search-btn,
+        .header-options .help-btn {
+            font-size: 20px !important;
+        }
     }
-    .bio-text {
-        margin-bottom: 0.7em !important;
-        font-size: 0.9em !important;
-    }
-    .items-inf {
-        font-size: 0.9em !important;
-    }
-    .flex-basis-3 {
-        flex-basis: 30% !important;
-        font-size: 0.9em !important;
-    }
-    .flex-basis-4 {
-        flex-basis: 40% !important;
-        font-size: 0.9em !important;
-    }
-    /* end: manager */
-}

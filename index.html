@@ -35,6 +35,22 @@
     <div id="main" class="max-width: 100%">
 
         <!-- Start Header -->
+        <div id="search-display" class="search-button">
+            <div class="home-search__panel">
+                <div class="text-area">
+                    <input type="text" id="input-search" placeholder="What are you looking for?">
+                </div>
+                <div class="sp-btn">
+                    <a href="#" role="button">
+                        <span>Search</span>
+                    </a>
+                </div>
+                <div class="close-search" role="button" onclick="closeSearch()">
+                    <i class="ti-close"></i>
+                </div>
+            </div>
+        </div>
+
         <div id="header">
             <div class="header-logo">
                 <a href="./index.html">
@@ -73,7 +89,7 @@
 
             <div class="header-options">
                 <div class="search-btn">
-                    <i class="search-icon ti-search"></i>
+                    <i class="search-icon ti-search" onclick="openSearch()"></i>
                 </div>
 
                 <div class="help-btn">

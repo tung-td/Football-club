@@ -1067,3 +1067,67 @@ h3.h3 {
 
 
 /* end modal login */
+
+.search-button {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10000;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%) !important;
+    transition: all .25s ease-out;
+}
+
+.home-search__panel {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 24px;
+}
+
+.text-area {
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
+.text-area input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #f8f8f8;
+}
+
+.sp-btn:hover {
+    opacity: .8;
+}
+
+.sp-btn {
+    width: 10%;
+    background-color: #f8f8f8;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sp-btn a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.sp-btn a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.close-search {
+    font-size: 20px;
+    margin-top: 10px;
+}
