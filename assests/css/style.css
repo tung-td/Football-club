@@ -1072,7 +1072,7 @@ h3.h3 {
     display: none;
     position: fixed;
     background-color: #fff;
-    z-index: 10000;
+    z-index: 5;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%) !important;
     transition: all .25s ease-out;
@@ -1112,6 +1112,7 @@ h3.h3 {
     border-radius: 100px;
     cursor: pointer;
     position: relative;
+    text-transform: none;
 }
 
 .sp-btn a:hover {
@@ -1130,4 +1131,5 @@ h3.h3 {
 .close-search {
     font-size: 20px;
     margin-top: 10px;
+    color: #000;
 }
