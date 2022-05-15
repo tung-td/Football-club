@@ -7,6 +7,7 @@
     border-radius: 6px !important;
     padding-bottom: unset;
     height: auto;
+    border: 1px solid rgba(0, 0, 0, .125) !important; 
 }
 
 .card-title {
@@ -34,6 +35,11 @@
     padding: unset;
     border: unset;
 } 
+
+.un-border {
+    border: unset !important;
+    margin-bottom: unset !important;
+}
 
 .bg {
     font-size: 3em;
@@ -65,8 +71,15 @@
     top: unset;
 }
 
-.card-title.bg {
+.card-title {
+    font-size: 2rem;
+    line-height: .88;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
 
+.card-title.bg {
+    font-size: 70px;
 }
 
 .card-columns {
@@ -75,4 +88,21 @@
 
 .card.p-3 {
     padding: unset !important;
+}
+
+.card.mb-3.cs{
+    width: auto;
+    margin-bottom: unset !important;
+}
+
+.row.g-0 {
+    margin-bottom: unset;
+} 
+
+.card.mb-3.cs {
+    padding: unset;
+}
+
+.max-height {
+    height: 100%;
 }
