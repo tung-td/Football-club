@@ -12,26 +12,55 @@
 
     <title>Man Utd - First Men Team</title>
 
+    <link rel="stylesheet" href="../../assests/css/responsive-index.css">
+
+
     <link rel="stylesheet" href="../../assests/css/style.css">
     <link rel="stylesheet" href="../../assests/css/pages/myutd/myUtd.css">
+    <link rel="stylesheet" href="../../assests/css/responsive-myUtd.css">
+
     <link rel="stylesheet" href="../../assests/icons/themify-icons/themify-icons.css">
+
     <link rel="stylesheet" href="../../assests/js/index.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../assests/icons/font-awesome-4.7.0/css/font-awesome.css">
+
     <link rel="stylesheet" href="../../assests/css/slick.css">
+
     <link rel="stylesheet" href="../../assests/css/bootstrap_css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
 </head>
 
 <body>
     <div id="main__my-utd">
-        <!-- Start header -->
-        <div class="header">
-            <ul id="nav">
-                <div class="header-logo">
-                    <a href="../../index.html">
-                        <img src="../../assests/img/logo-mu.png" alt="">
+        <!-- Start Header -->
+        <div id="search-display" class="search-button">
+            <div class="home-search__panel">
+                <div class="text-area">
+                    <input type="text" id="input-search" placeholder="What are you looking for?">
+                </div>
+                <div class="sp-btn">
+                    <a href="#" role="button">
+                        <span>Search</span>
                     </a>
                 </div>
+                <div class="close-search" role="button" onclick="closeSearch()">
+                    <i class="ti-close"></i>
+                </div>
+            </div>
+        </div>
 
+        <div id="header">
+            <div class="header-logo">
+                <a href="../../index.html">
+                    <img src="../../assests/img/logo-mu.png" alt="">
+                </a>
+            </div>
+
+
+            <ul id="nav">
                 <li>
                     <a href="../../pages/myutd/myUtd.html">
                         My United
@@ -55,27 +84,36 @@
                         <li><a href="">Infomation</a></li>
                     </ul>
                 </li>
+
             </ul>
 
-            <div class="header-options">
-                <!-- <select name="Languages" id="">
-                <option value="lang">EN</option>
-                <option value="lang">Vietnamese</option>
-                <option value="lang">English</option>
-            </select> -->
 
-                <div class="header-sign">
-                    <a href="#" class="sign-items">Login</a> |
-                    <a href="#" class="sign-items">Sign up</a>
+            <div class="header-options">
+                <div class="search-btn">
+                    <i class="search-icon ti-search" onclick="openSearch()"></i>
                 </div>
 
-                <div class="search-btn">
-                    <i class="search-icon ti-search"></i>
+                <div class="help-btn">
+                    <i class="help-icon ti-help-alt" href="#questionModal" data-dismiss="modal" data-toggle="modal"></i>
+                </div>
+
+                <div class="header-sign" data-toggle="modal" data-target="#loginModal">
+                    <i class="sign-items fa fa-user-o"></i>
+                </div>
+
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                    <div class="subnav">
+                        <li><a href="../../pages/myutd/myUtd.html">My Utd</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="../../pages/shop/collections.html">Shop</a></li>
+                        <li><a href="../../pages/ticket/">Tickets</a></li>
+                        <li><a href="#">More</a></li>
+                    </div>
                 </div>
             </div>
-
         </div>
-        <!-- End header -->
+        <!-- End Header -->
 
 
         <!-- Start Slider -->
@@ -88,23 +126,18 @@
                 </div>
                 <div class="forSlickSlider single-item-slider">
                     <div class="item">
-                        <img src="../../assests/img/carousel/wall6.jpg" alt="img1">
+                        <img src="../../assests/img/wallPaper/Men/wp10690276.webp" alt="img1">
                     </div>
                     <div class="item">
-                        <img src="../../assests/img/carousel/wall2.jpg" alt="img2">
+                        <img src="../../assests/img/wallPaper/Men/first-team-training-man-utd.jpg" alt="img2">
                     </div>
                     <div class="item">
-                        <img src="../../assests/img/carousel/sirAlex.jpg" alt="img3">
+                        <img src="../../assests/img/wallPaper/Men/manchester-united-v-tottenham-hotspur-premier-league-scaled.jpg" alt="img3">
                     </div>
                     <div class="item">
-                        <img src="../../assests/img/carousel/wall1.jpg" alt="img4">
+                        <img src="../../assests/img/wallPaper/Men/skynews-cristiano-ronaldo-old-trafford_5508083.jpg" alt="img4">
                     </div>
-                    <div class="item">
-                        <img src="../../assests/img/carousel/wall4.jpg" alt="img5">
-                    </div>
-                    <div class="item">
-                        <img src="../../assests/img/carousel/cris2.jpeg" alt="img6">
-                    </div>
+
                 </div>
             </div>
 
@@ -125,7 +158,7 @@
                     <div class="position-names">Goalkeepers</div>
                     <div class="sub-position">
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Goalkeepers/davidDegea.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Goalkeepers/davidDegea.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">1</div>
                                 <div class="position-name">David Degea</div>
@@ -142,7 +175,7 @@
                     <div class="sub-position">
 
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Defenders/Dalot.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Defenders/Dalot.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">20</div>
                                 <div class="position-name">Diogo Dalot</div>
@@ -150,21 +183,21 @@
                         </div>
 
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Defenders/Varane.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Defenders/Varane.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">19</div>
                                 <div class="position-name">Raphael Varane</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Defenders/HarryMaguire.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Defenders/HarryMaguire.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">5</div>
                                 <div class="position-name">Harry Maguire</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Defenders/LukeShaw.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Defenders/LukeShaw.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">23</div>
                                 <div class="position-name">Luke Shaw</div>
@@ -180,21 +213,21 @@
                     <div class="position-names">Midfielders</div>
                     <div class="sub-position">
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Miderfields/Bruno.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Miderfields/Bruno.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">18</div>
                                 <div class="position-name">Bruno Fernandez</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Miderfields/Fred.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Miderfields/Fred.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">17</div>
                                 <div class="position-name">Fred</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Miderfields/PaulPocba.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Miderfields/PaulPocba.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">6</div>
                                 <div class="position-name">Paul Pocba</div>
@@ -210,21 +243,21 @@
                     <div class="position-names">Forwards</div>
                     <div class="sub-position">
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Forwards/JadonSancho.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Forwards/JadonSancho.jpg" alt="" class="position-img ml-05 ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">25</div>
                                 <div class="position-name">Jadon Sancho</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Forwards/Ronaldo.webp" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Forwards/Ronaldo.webp" alt="" class="position-img ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">7</div>
                                 <div class="position-name">Cristiano Ronaldo</div>
                             </div>
                         </div>
                         <div class="position-btn">
-                            <img src="/assests/img/playersAvatar/mans/Forwards/Rashford.jpg" alt="" class="position-img" style="margin-left: -1.5em;">
+                            <img src="/assests/img/playersAvatar/mans/Forwards/Rashford.jpg" alt="" class="position-img ml-15" style="">
                             <div class="position-info">
                                 <div class="position-number">10</div>
                                 <div class="position-name">Marcus Rashford</div>
@@ -583,11 +616,11 @@
                 </div>
 
                 <div class="social-list ">
-                    <a href=" "><i class="ti-facebook "></i></a>
-                    <a href=" "><i class="ti-youtube "></i></a>
-                    <a href=" "><i class="ti-twitter "></i></a>
-                    <a href=" "><i class="ti-instagram "></i></a>
-                    <a href=" "><i class="fab fa-tiktok fa-1x "></i></a>
+                    <a href="https://www.facebook.com/manchesterunited/ "><i class="ti-facebook "></i></a>
+                    <a href="https://www.youtube.com/manutd"><i class="ti-youtube "></i></a>
+                    <a href="https://twitter.com/ManUtd"><i class="ti-twitter "></i></a>
+                    <a href="https://www.instagram.com/manchesterunited/"><i class="ti-instagram "></i></a>
+                    <a href="https://www.tiktok.com/@manutd"><i class="fab fa-tiktok fa-1x "></i></a>
                 </div>
             </div>
 
@@ -631,6 +664,145 @@
     </div>
     <!-- End Footer -->
     </div>
+
+    <!-- Start: modal question -->
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Do you have any questions?</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question1" placeholder="Your questions...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Submit</button>
+                        </form>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Start: modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#sign-up_Modal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Sign Up</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal sign up -->
+    <div class="modal fade" id="sign-up_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Sign Up</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="name" placeholder="Enter your name...">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="password" class="form-control" id="password1_confirmation" placeholder="Retype password...">
+                            </div> -->
+                            <button type="button" class="btn btn-info btn-block btn-round">Sign Up</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                          </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">If you have an acount? <a href="#loginModal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Login</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+    <!--END: modal login -->
 
 
     <script src="../../assests/js/jquery.min.js"></script>

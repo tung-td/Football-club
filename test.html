@@ -1,94 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assests/css/bootstrap_css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assests/css/slick.css">
-    <link rel="stylesheet" href="./assests/icons/themify-icons/themify-icons.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Customized bootstrap login forms with multiple variants. Easy to customize.">
+    <meta name="keywords" content="Bootstrap Modal, Login Form, Modal Login, Registration Form, Form, Bootstrap, Login, Registration">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <title>Bootstrap Modal Login</title>
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./assests/css/style.css"> -->
+    <link rel="stylesheet" href="./assests/css/test.css">
 </head>
+
 <body>
 
-    <!-- Match List -->
-
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-      </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    <div class="search-button">
+        <div class="home-search__panel">
+            <div class="text-area">
+                <input type="text" id="input-search" placeholder="What are you looking for?">
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <div class="sp-btn">
+                <a href="#" role="button">
+                    <span>Search</span>
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- End Match List -->
-
-    <!-- Moments -->
-
-    <div class="container-fluid py-3">
-        <div class="d-flex m-auto p-3 multiple-items-moments" style="width: 90%; height: 400px; border-radius: 10px; background-color:rgba(0, 0, 0, 0.5);">
-            <div class="item bg-dark text-light mx-2" style="width: 310px; height: 360px; border-radius: 10px;">
-                <div class="position-absolute" style="width: inherit; height: inherit; border-radius: 10px; background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/14/50/930559/GettyImages-12767926291601305589675_small.jpg); background-size: cover;"></div>
-                <div class="position-absolute" style="width: inherit; height: inherit; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));"></div>
-                <div class="position-absolute d-flex flex-column justify-content-end" style="width: inherit; height: inherit;">
-                    <h1>OKE1</h1>
-                    <h1>OKE2</h1>
-                </div>
+            <div class="close-search" role="button">
+                x
             </div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="width: 310px; height: 360px; border-radius: 10px;"></div>
         </div>
     </div>
-
-    <div class="container-fluid py-3">
-        <div class="d-flex m-auto multiple-items-moments" style="width: 90%; height: 400px;">
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-            <div class="item bg-dark mx-2" style="height: 300px; border-radius: 10px;"></div>
-        </div>
-    </div>
-
-    <!-- End Moments -->
-
-    
-    <script src="./assests/js/jquery.min.js"></script>
-    <script src="./assests/js/slick.min.js"></script>
-    <script src="./assests/js/index.js"></script>
-
-    <script>
-        $(function() {
-            $('.multiple-items-moments').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                arrows: false,
-                autoplay: false,
-                autoplaySpeed: 3000,
-                dots: false,
-                centerMode: true,
-                centerPadding: '0',
-                focusOnSelect: true
-            });
-        });
-    </script>
 
 </body>
+
 </html>

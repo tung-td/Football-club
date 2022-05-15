@@ -13,9 +13,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- :root {
+:root {
     --main-bg-color: brown;
-    --basic-red: #b62f2f;
+    --basic-red: #c70101;
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
@@ -43,6 +43,10 @@ body {
     color: #F8F8F8;
     height: 650px;
     margin: 0em;
+}
+
+.ml-15 {
+    margin-left: -1.5em;
 }
 
 .content {}
@@ -268,6 +272,7 @@ body {
     cursor: pointer;
     background-color: #ccc;
     color: #000;
+    text-decoration: none;
 }
 
 .my-row {}
@@ -335,4 +340,14 @@ body {
 .sSize-players .player-btn {
     width: 240px !important;
     height: 235px !important;
+}
+
+.player-btn-legend {
+    width: 250px;
+    height: 250px !important;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
 }

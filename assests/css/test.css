@@ -1,0 +1,60 @@
+/* The navigation menu */
+
+body {
+    margin: 0;
+}
+
+.search-button {
+    position: relative;
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.home-search__panel {
+    /* margin: auto; */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* padding: 24px; */
+}
+
+.text-area {
+    width: 60%;
+    margin-left: 30px;
+}
+
+.text-area input {
+    padding: 12px;
+    width: 80%;
+    border-radius: 100px;
+}
+
+.sp-btn:hover {
+    opacity: .8;
+}
+
+.sp-btn {
+    width: 10%;
+    background-color: aliceblue;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sp-btn a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.close-search {
+    font-size: 20px;
+}
