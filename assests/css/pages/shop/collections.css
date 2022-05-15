@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +14,7 @@ body {
     margin: 86px auto
 }
 
-#header {
+#header-container {
     width: 100%;
     height: 60px;
     box-shadow: 5px 5px 15px #e8e8e8
@@ -24,6 +23,7 @@ body {
 .product-grid {
     height: 340px;
 }
+
 .col-md-3.col-sm-6 {
     margin-bottom: 14px;
 }
@@ -110,7 +110,6 @@ button.btn.btn-hide:hover {
     background-color: #fff;
     border: 1px solid #333
 }
-
 
 select {
     outline: none;
@@ -520,15 +519,12 @@ input[type=range]::-webkit-slider-thumb {
     #filterbar {
         width: 28%
     }
-
     .card {
         height: 350px
     }
-
     .price {
         font-size: 0.9rem
     }
-
     .product-name {
         font-size: 0.8rem
     }
@@ -546,11 +542,9 @@ input[type=range]::-webkit-slider-thumb {
         z-index: 2;
         background-color: #1d1c1cb2
     }
-
     #filterbar {
         width: 36%
     }
-
     #sort {
         background-color: inherit;
         color: #fff;
@@ -558,23 +552,19 @@ input[type=range]::-webkit-slider-thumb {
         margin-bottom: 20px;
         width: 100%
     }
-
     #sort option,
     #pro option {
         color: #000
     }
-
     #pro,
     #select2,
     .result {
         background-color: inherit;
         color: #fff
     }
-
     .card {
         height: 345px
     }
-
     .price {
         font-size: 0.85rem
     }
@@ -593,12 +583,10 @@ input[type=range]::-webkit-slider-thumb {
         margin-bottom: 20px;
         border-radius: 5px
     }
-
     #content.my-5 {
         margin-top: 20px !important;
         margin-bottom: 20px !important
     }
-
     .col-lg-4,
     .col-md-6 {
         padding-left: 0

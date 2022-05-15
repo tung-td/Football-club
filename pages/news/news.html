@@ -6,26 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://www.manutd.com/Assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://www.manutd.com/Assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://www.manutd.com/Assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.manutd.com/Assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.manutd.com/Assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.manutd.com/Assets/images/favicons/favicon-16x16.png" />
 
     <title>Manchester United Website</title>
 
+    <link rel="stylesheet" href="../../assests/css/responsive-index.css">
     <link rel="stylesheet" href="../../assests/css/style.css">
+
     <link rel="stylesheet" href="../../assests/icons/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../assests/icons/font-awesome-4.7.0/css/font-awesome.css">
+
     <link rel="stylesheet" href="../../assests/css/slick.css">
     <link rel="stylesheet" href="../../assests/css/bootstrap_css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../../assests/css/pages/shop/collections.css">
     <link rel="stylesheet" href="../../assests/css/pages/shop/product_detail.css">
-    <link rel="stylesheet" href="./news.css">
+
+    <link rel="stylesheet" href="../../assests/css/pages/news/news.css">
+
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -33,15 +40,32 @@
 </head>
 
 <body>
-    <!-- Start header -->
-    <div class="header">
-        <ul id="nav">
-            <div class="header-logo">
-                <a href="../../index.html">
-                    <img src="../../assests/img/logo-mu.png" alt="">
+    <!-- Start Header -->
+    <div id="search-display" class="search-button">
+        <div class="home-search__panel">
+            <div class="text-area">
+                <input type="text" id="input-search" placeholder="What are you looking for?">
+            </div>
+            <div class="sp-btn">
+                <a href="#" role="button">
+                    <span>Search</span>
                 </a>
             </div>
+            <div class="close-search" role="button" onclick="closeSearch()">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
 
+    <div id="header">
+        <div class="header-logo">
+            <a href="../../index.html">
+                <img src="../../assests/img/logo-mu.png" alt="">
+            </a>
+        </div>
+
+
+        <ul id="nav">
             <li>
                 <a href="../../pages/myutd/myUtd.html">
                     My United
@@ -53,7 +77,7 @@
                     <li><a href="../../pages/myutd/legendTeam.html">Legends</a></li>
                 </ul>
             </li>
-            <li><a href="./news.html">News</a></li>
+            <li><a href="../../pages/news/news.html">News</a></li>
             <li><a href="../../pages/shop/collections.html">Shop</a></li>
             <li><a href="../../pages/ticket/ticket_match.html">Tickets</a></li>
             <li>
@@ -65,30 +89,39 @@
                     <li><a href="">Infomation</a></li>
                 </ul>
             </li>
+
         </ul>
 
-        <div class="header-options">
-            <!-- <select name="Languages" id="">
-                    <option value="lang">EN</option>
-                    <option value="lang">Vietnamese</option>
-                    <option value="lang">English</option>
-                </select> -->
 
-            <div class="header-sign">
-                <a href="#" class="sign-items">Login</a> |
-                <a href="#" class="sign-items">Sign up</a>
+        <div class="header-options">
+            <div class="search-btn">
+                <i class="search-icon ti-search" onclick="openSearch()"></i>
             </div>
 
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
+            <div class="help-btn">
+                <i class="help-icon ti-help-alt" href="#questionModal" data-dismiss="modal" data-toggle="modal"></i>
+            </div>
+
+            <div class="header-sign" data-toggle="modal" data-target="#loginModal">
+                <i class="sign-items fa fa-user-o"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+                <div class="subnav">
+                    <li><a href="../../pages/myutd/myUtd.html">My Utd</a></li>
+                    <li><a href="../../pages/news/news.html">News</a></li>
+                    <li><a href="../../pages/shop/collections.html">Shop</a></li>
+                    <li><a href="../../pages/ticket/">Tickets</a></li>
+                    <li><a href="#">More</a></li>
+                </div>
             </div>
         </div>
-
     </div>
-    <!-- End header -->
+    <!-- End Header -->
+
 
     <!-- Content news -->
-
     <div class="container">
 
         <!-- Line 1 -->
@@ -97,8 +130,7 @@
                 <img class="card-img-top" src="/assests/img/news/young.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What our young Reds can expect tonight</h5>
-                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd,
-                        just as United Women did earlier this season. </p>
+                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd, just as United Women did earlier this season. </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -109,8 +141,7 @@
                 <img class="card-img-top" src="/assests/img/news/ten-hag.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What's Ten Hag like on the touchline?</h5>
-                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives
-                        his views on Donny van de Beek.</p>
+                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives his views on Donny van de Beek.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -121,8 +152,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -142,8 +172,7 @@
                     <div class="col-md-5">
                         <div class="card-body max-height">
                             <h5 class="card-title">‘Ten Hag made us better against big opponents’ </h5>
-                            <p class="card-text">Brighton defender Joel Veltman explains how Erik develops his players,
-                                having worked under him previously at Ajax.</p>
+                            <p class="card-text">Brighton defender Joel Veltman explains how Erik develops his players, having worked under him previously at Ajax.</p>
                             <div class="bottom-text">
                                 <p class="card-text"><small class="text-muted">5h | news</small></p>
                                 <i class="ti-new-window icon"></i>
@@ -161,8 +190,7 @@
                     <div class="col-md-5">
                         <div class="card-body max-height">
                             <h5 class="card-title">Get to know our FA Youth Cup finalists</h5>
-                            <p class="card-text">The low-down on the United Under-18s contesting Wednesday night's final
-                                against Nottingham Forest.</p>
+                            <p class="card-text">The low-down on the United Under-18s contesting Wednesday night's final against Nottingham Forest.</p>
                             <div class="bottom-text">
                                 <p class="card-text"><small class="text-muted">5h | news</small></p>
                                 <i class="ti-new-window icon"></i>
@@ -179,8 +207,7 @@
                 <img class="card-img-top" src="/assests/img/news/cr7.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Ronaldo excited by Ten Hag appointment</h5>
-                    <p class="card-text">Cristiano has given his thoughts on the new manager's imminent arrival for the
-                        first time.</p>
+                    <p class="card-text">Cristiano has given his thoughts on the new manager's imminent arrival for the first time.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">15h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -192,8 +219,7 @@
                 <img class="card-img-top" src="/assests/img/news/cup.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">An open letter from Nick Cox</h5>
-                    <p class="card-text">Our head of Academy has a message for the United supporters following
-                        Wednesday's FA Youth Cup final at Old Trafford.</p>
+                    <p class="card-text">Our head of Academy has a message for the United supporters following Wednesday's FA Youth Cup final at Old Trafford.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">15h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -204,8 +230,8 @@
                 <img class="card-img-top" src="/assests/img/news/coach.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Academy coaching update</h5>
-                    <p class="card-text">Neil Ryan, Under-23s assistant coach, will leave to take on a new role at the
-                        FA.</p>
+                    <p class="card-text">Neil Ryan, Under-23s assistant coach, will leave to take on a new role at the FA.
+                    </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">8h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -235,8 +261,7 @@
                 <img class="card-img-top" src="/assests/img/news/young.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What our young Reds can expect tonight</h5>
-                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd,
-                        just as United Women did earlier this season. </p>
+                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd, just as United Women did earlier this season. </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -247,8 +272,7 @@
                 <img class="card-img-top" src="/assests/img/news/ten-hag.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What's Ten Hag like on the touchline?</h5>
-                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives
-                        his views on Donny van de Beek.</p>
+                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives his views on Donny van de Beek.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -259,8 +283,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -271,8 +294,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -292,8 +314,7 @@
                     <div class="col-md-5">
                         <div class="card-body max-height">
                             <h5 class="card-title">‘Ten Hag made us better against big opponents’ </h5>
-                            <p class="card-text">Brighton defender Joel Veltman explains how Erik develops his players,
-                                having worked under him previously at Ajax.</p>
+                            <p class="card-text">Brighton defender Joel Veltman explains how Erik develops his players, having worked under him previously at Ajax.</p>
                             <div class="bottom-text">
                                 <p class="card-text"><small class="text-muted">5h | news</small></p>
                                 <i class="ti-new-window icon"></i>
@@ -311,8 +332,7 @@
                     <div class="col-md-5">
                         <div class="card-body max-height">
                             <h5 class="card-title">Get to know our FA Youth Cup finalists</h5>
-                            <p class="card-text">The low-down on the United Under-18s contesting Wednesday night's final
-                                against Nottingham Forest.</p>
+                            <p class="card-text">The low-down on the United Under-18s contesting Wednesday night's final against Nottingham Forest.</p>
                             <div class="bottom-text">
                                 <p class="card-text"><small class="text-muted">5h | news</small></p>
                                 <i class="ti-new-window icon"></i>
@@ -329,8 +349,7 @@
                 <img class="card-img-top" src="/assests/img/news/young.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What our young Reds can expect tonight</h5>
-                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd,
-                        just as United Women did earlier this season. </p>
+                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd, just as United Women did earlier this season. </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -341,8 +360,7 @@
                 <img class="card-img-top" src="/assests/img/news/ten-hag.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What's Ten Hag like on the touchline?</h5>
-                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives
-                        his views on Donny van de Beek.</p>
+                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives his views on Donny van de Beek.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -353,8 +371,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -370,8 +387,7 @@
                 <img class="card-img-top" src="/assests/img/news/young.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What our young Reds can expect tonight</h5>
-                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd,
-                        just as United Women did earlier this season. </p>
+                    <p class="card-text">Our Under-18s will play in front of a record-breaking Old Trafford crowd, just as United Women did earlier this season. </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -382,8 +398,7 @@
                 <img class="card-img-top" src="/assests/img/news/ten-hag.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">What's Ten Hag like on the touchline?</h5>
-                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives
-                        his views on Donny van de Beek.</p>
+                    <p class="card-text">Jaap Stam reveals all after going up against Erik as a manager, and gives his views on Donny van de Beek.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -394,8 +409,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -406,8 +420,7 @@
                 <img class="card-img-top" src="/assests/img/news/teamwork.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">'Teamwork is the base that Ten Hag builds on'</h5>
-                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we
-                        can expect from his Dutch compatriot.</p>
+                    <p class="card-text">Raimond van der Gouw speaks to features editor Steve Bartram about what we can expect from his Dutch compatriot.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -446,8 +459,7 @@
                 <img class="card-img-top" src="/assests/img/news/cr7.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Ronaldo excited by Ten Hag appointment</h5>
-                    <p class="card-text">Cristiano has given his thoughts on the new manager's imminent arrival for the
-                        first time.</p>
+                    <p class="card-text">Cristiano has given his thoughts on the new manager's imminent arrival for the first time.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">2h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -458,8 +470,7 @@
                 <img class="card-img-top" src="/assests/img/news/cup.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">An open letter from Nick Cox</h5>
-                    <p class="card-text">Our head of Academy has a message for the United supporters following
-                        Wednesday's FA Youth Cup final at Old Trafford.</p>
+                    <p class="card-text">Our head of Academy has a message for the United supporters following Wednesday's FA Youth Cup final at Old Trafford.</p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">3h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -470,8 +481,8 @@
                 <img class="card-img-top" src="/assests/img/news/coach.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Academy coaching update</h5>
-                    <p class="card-text">Neil Ryan, Under-23s assistant coach, will leave to take on a new role at the
-                        FA.</p>
+                    <p class="card-text">Neil Ryan, Under-23s assistant coach, will leave to take on a new role at the FA.
+                    </p>
                     <div class="bottom-text">
                         <p class="card-text"><small class="text-muted">5h | news</small></p>
                         <i class="ti-new-window icon"></i>
@@ -483,19 +494,19 @@
 
     <!-- End content news -->
 
-    <!-- Footer -->
-    <div class="footer ">
+    <!--START FOOTER -->
+    <div class="footer" style="margin-bottom: -42px;">
         <div class="footer__social-links">
             <div class="footer-logo ">
                 <img src="../../assests/img/logo/mu_black.png " alt=" ">
             </div>
 
             <div class="social-list ">
-                <a href=" "><i class="ti-facebook "></i></a>
-                <a href=" "><i class="ti-youtube "></i></a>
-                <a href=" "><i class="ti-twitter "></i></a>
-                <a href=" "><i class="ti-instagram "></i></a>
-                <a href=" "><i class="fab fa-tiktok fa-1x "></i></a>
+                <a href="https://www.facebook.com/manchesterunited/ "><i class="ti-facebook "></i></a>
+                <a href="https://www.youtube.com/manutd"><i class="ti-youtube "></i></a>
+                <a href="https://twitter.com/ManUtd"><i class="ti-twitter "></i></a>
+                <a href="https://www.instagram.com/manchesterunited/"><i class="ti-instagram "></i></a>
+                <a href="https://www.tiktok.com/@manutd"><i class="fab fa-tiktok fa-1x "></i></a>
             </div>
         </div>
 
@@ -516,7 +527,7 @@
                     <li><img src="../../assests/img/sponsor/chivas.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/DHL.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/ecolab.png " alt=" "></li>
-                    <li><img src="../../assests/img/sponsor/HCL.png " alt=" "></li>
+                    <!-- <li><img src="../../assests/img/sponsor/HCL.png " alt=" "></li> -->
                     <li><img src="../../assests/img/sponsor/KONAMI.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/marriott.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/MauiGim.png " alt=" "></li>
@@ -536,7 +547,147 @@
             </div>
         </div>
     </div>
-    <!-- End footer -->
+    <!-- END Footer -->
+
+
+    <!-- Start: modal question -->
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Do you have any questions?</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question1" placeholder="Your questions...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Submit</button>
+                        </form>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Start: modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#sign-up_Modal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Sign Up</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal sign up -->
+    <div class="modal fade" id="sign-up_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Sign Up</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="name" placeholder="Enter your name...">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="password" class="form-control" id="password1_confirmation" placeholder="Retype password...">
+                            </div> -->
+                            <button type="button" class="btn btn-info btn-block btn-round">Sign Up</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                          </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">If you have an acount? <a href="#loginModal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Login</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+    <!--END: modal login -->
 
     <script src="../shop/news.js"></script>
     <script src="../../assests/js/bootstrap_js/js/bootstrap.js"></script>

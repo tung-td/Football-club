@@ -1069,6 +1069,7 @@ h3.h3 {
 /* end modal login */
 
 .search-button {
+    top: 75px;
     display: none;
     position: fixed;
     background-color: #fff;
