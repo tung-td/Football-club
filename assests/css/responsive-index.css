@@ -201,19 +201,26 @@
         }
         .home-search__panel {
             width: 100% !important;
-            justify-content: space-between !important;
+            justify-content: space !important;
             padding: 6px !important;
         }
         .text-area {
-            width: 70% !important;
+            width: 90% !important;
             margin-left: 0 !important;
         }
         .sp-btn {
-            width: 20% !important;
+            width: 0% !important;
         }
         .header-sign .sign-items,
         .header-options .search-btn,
         .header-options .help-btn {
             font-size: 20px !important;
+        }
+        /* SEARCH */
+        .search-button {
+            top: 65px !important;
+        }
+        .sp-btn {
+            display: none !important;
         }
     }

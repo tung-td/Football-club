@@ -6,40 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://www.manutd.com/Assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://www.manutd.com/Assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://www.manutd.com/Assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.manutd.com/Assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.manutd.com/Assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.manutd.com/Assets/images/favicons/favicon-16x16.png" />
 
     <title>Manchester United Website</title>
 
+    <link rel="stylesheet" href="../../assests/css/responsive-index.css">
     <link rel="stylesheet" href="../../assests/css/style.css">
+
     <link rel="stylesheet" href="../../assests/icons/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../assests/icons/font-awesome-4.7.0/css/font-awesome.css">
+
     <link rel="stylesheet" href="../../assests/css/slick.css">
+
     <link rel="stylesheet" href="../../assests/css/bootstrap_css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../../assests/css/pages/shop/collections.css">
     <link rel="stylesheet" href="../../assests/css/pages/shop/product_detail.css">
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+
 
 
 </head>
 
 <body>
-    <!-- Start header -->
-    <div class="header">
-        <ul id="nav">
-            <div class="header-logo">
-                <a href="../../index.html">
-                    <img src="../../assests/img/logo-mu.png" alt="">
+    <!-- Start Header -->
+    <div id="search-display" class="search-button">
+        <div class="home-search__panel">
+            <div class="text-area">
+                <input type="text" id="input-search" placeholder="What are you looking for?">
+            </div>
+            <div class="sp-btn">
+                <a href="#" role="button">
+                    <span>Search</span>
                 </a>
             </div>
+            <div class="close-search" role="button" onclick="closeSearch()">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
 
+    <div id="header">
+        <div class="header-logo">
+            <a href="../../index.html">
+                <img src="../../assests/img/logo-mu.png" alt="">
+            </a>
+        </div>
+
+
+        <ul id="nav">
             <li>
                 <a href="../../pages/myutd/myUtd.html">
                     My United
@@ -51,7 +72,7 @@
                     <li><a href="../../pages/myutd/legendTeam.html">Legends</a></li>
                 </ul>
             </li>
-            <li><a href="">News</a></li>
+            <li><a href="../../pages/news/news.html">News</a></li>
             <li><a href="../../pages/shop/collections.html">Shop</a></li>
             <li><a href="../../pages/ticket/ticket_match.html">Tickets</a></li>
             <li>
@@ -63,162 +84,158 @@
                     <li><a href="">Infomation</a></li>
                 </ul>
             </li>
+
         </ul>
 
-        <div class="header-options">
-            <!-- <select name="Languages" id="">
-                <option value="lang">EN</option>
-                <option value="lang">Vietnamese</option>
-                <option value="lang">English</option>
-            </select> -->
 
-            <div class="header-sign">
-                <a href="#" class="sign-items">Login</a> |
-                <a href="#" class="sign-items">Sign up</a>
+        <div class="header-options">
+            <div class="search-btn">
+                <i class="search-icon ti-search" onclick="openSearch()"></i>
             </div>
 
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
+            <div class="help-btn">
+                <i class="help-icon ti-help-alt" href="#questionModal" data-dismiss="modal" data-toggle="modal"></i>
+            </div>
+
+            <div class="header-sign" data-toggle="modal" data-target="#loginModal">
+                <i class="sign-items fa fa-user-o"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+                <div class="subnav">
+                    <li><a href="../../pages/myutd/myUtd.html">My Utd</a></li>
+                    <li><a href="../../pages/news/news.html">News</a></li>
+                    <li><a href="../../pages/shop/collections.html">Shop</a></li>
+                    <li><a href="../../pages/ticket/ticket_match.html">Tickets</a></li>
+                    <li><a href="#">More</a></li>
+                </div>
             </div>
         </div>
-
     </div>
-    <!-- End header -->
+    <!-- End Header -->
 
     <!-- Product guide -->
     <a href=""></a>
     <div class="guide">
-            <a href="">MANCHESTER UNITED</a>
-            <a href="">/ MANCHESTER UNITED FOOTBALL KITS</a>
-            <a href="">/ PRODUCT ID: 12052601</a>
+        <a href="">MANCHESTER UNITED</a>
+        <a href="">/ MANCHESTER UNITED FOOTBALL KITS</a>
+        <a href="">/ PRODUCT ID: 12052601</a>
     </div>
     <!-- End product guide -->
     <hr>
 
     <div id="content-wrapper">
 
-        <!-- Image-->
-        <div class="column_1">
-            <div id="img-container">
-                <img id=featured src="../../assests/img/Shop/home_1.jpg">
-            </div>
-            <div id="slide-wrapper">
-                <div id="slider">
-                    <img class="thumbnail active" src="../../assests/img/Shop/home_1.jpg">
-                    <img class="thumbnail" src="../../assests/img/Shop/home_2.jpg">
-                    <img class="thumbnail" src="../../assests/img/Shop/Home_kit_1.jpg">
+        <div class="product_container">
 
+            <!-- Image-->
+            <div class="column_1">
+                <div id="img-container">
+                    <img id=featured src="../../assests/img/Shop/home_1.jpg">
+                </div>
+                <div id="slide-wrapper">
+                    <div id="slider">
+                        <img class="thumbnail active" src="../../assests/img/Shop/home_1.jpg">
+                        <img class="thumbnail" src="../../assests/img/Shop/home_2.jpg">
+                        <img class="thumbnail" src="../../assests/img/Shop/home_3.jpg">
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End image -->
+            <!-- End image -->
 
-        <!-- Cart information-->
-        <div class="column_2">
-            <h3>Manchester United Home Shirt 2021-22</h3>
-            <hr>
-            <h5>$42.00</h5>
-            <div class="product_cart">
-                <div class="size">Size</div>
-                <div class="stuff">
-                    <div class="button" tabindex="1">
-                        <h1>S</h1>
-                    </div>
-                    <div class="button" tabindex="2">
-                        <h1>M</h1>
-                    </div>
-                    <div class="button" tabindex="3">
-                        <h1>L</h1>
-                    </div>
-                    <div style="width: 60px;" class="button" tabindex="3">
-                        <h1>XL</h1>
-                    </div>
-                    <div style="width: 70px;" class="button" tabindex="3">
-                        <h1>XXL</h1>
-                    </div>
-                </div>
-                <div class="buy_column">
-                    <div class="quantity">
-                        <div class="size">Quantity</div>
-                        <div class="number_quantity">
-                            <select>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+            <!-- Cart information-->
+            <div class="column_2">
+                <h3>Manchester United Home Shirt 2021-22</h3>
+                <hr>
+                <h5>$42.00</h5>
+                <div class="product_cart">
+                    <div class="size">Size</div>
+                    <div class="stuff">
+                        <div class="button" tabindex="1">
+                            <h1>S</h1>
+                        </div>
+                        <div class="button" tabindex="2">
+                            <h1>M</h1>
+                        </div>
+                        <div class="button" tabindex="3">
+                            <h1>L</h1>
+                        </div>
+                        <div style="width: 60px;" class="button" tabindex="3">
+                            <h1>XL</h1>
+                        </div>
+                        <div style="width: 70px;" class="button" tabindex="3">
+                            <h1>XXL</h1>
                         </div>
                     </div>
-                    <div class="buy_button">
-                        <button id="add_to">Add To Cart</button>
-                        <button id="buy_it">Buy It Now</button>
+                    <div class="buy_column">
+                        <div class="quantity">
+                            <div class="size">Quantity</div>
+                            <div class="number_quantity">
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buy_button">
+                            <button id="add_to">Add To Cart</button>
+                            <button id="buy_it">Buy It Now</button>
+                        </div>
                     </div>
+
+                </div>
+                <hr>
+                <div class="shiping">
+
+                    <h6 class="icon_product"><i class="ti-truck"></i> Shipping</h6>
+                    <li>This item usually ships within one business day. Please allow an extra 3 days for delivery of items with personalisation.</li>
+                </div>
+                <hr>
+                <div class="detail_box">
+                    <h6 class="icon_product"><i class="ti-search"></i> Details</h6>
+                    <ul id="detail_product">
+                        <li>Product ID: 12052601</li>
+                        <li>Inner back neck signoff</li>
+                        <li>Devil signoff below back collar</li>
+                        <li>Regular fit</li>
+                        <li>Ribbed crewneck</li>
+                        <li>100% recycled polyester piqué</li>
+                        <li>Moisture absorbing</li>
+                        <li>Ribbed cuffs</li>
+                        <li>AEROREADY</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="description">
+                    <h6 class="icon_product"><i class="ti-pencil-alt"></i> Description</h6>
+                    <p>Youth. Courage. Success. The three pillars of Manchester United's motto have brought the club more than a century of triumphs. With its clean red design and white ribbed crewneck, this adidas home jersey takes inspiration from the
+                        iconic kit that carried them to some of their most memorable moments. Made for fans, its soft fabric and moisture-absorbing AEROREADY will keep you comfortable as a new generation of players target supremacy. A woven badge on the
+                        chest and devil signoff under the back collar put your football loyalty on display.</p>
                 </div>
 
             </div>
-            <hr>
-            <div class="shiping">
-
-                <h6 class="icon_product"><i class="ti-truck"></i> Shipping</h6>
-                <li>This item usually ships within one business day. Please allow an extra 3 days for delivery of items
-                    with personalisation.</li>
-            </div>
-            <hr>
-            <div class="detail_box">
-                <h6 class="icon_product"><i class="ti-search"></i> Details</h6>
-                <ul id="detail_product">
-                    <li>Product ID: 12052601</li>
-                    <li>Inner back neck signoff</li>
-                    <li>Devil signoff below back collar</li>
-                    <li>Regular fit</li>
-                    <li>Ribbed crewneck</li>
-                    <li>100% recycled polyester piqué</li>
-                    <li>Moisture absorbing</li>
-                    <li>Ribbed cuffs</li>
-                    <li>AEROREADY</li>
-                </ul>
-            </div>
-            <hr>
-            <div class="description">
-                <h6 class="icon_product"><i class="ti-pencil-alt"></i> Description</h6>
-                <p>Youth. Courage. Success. The three pillars of Manchester United's motto have brought the club more
-                    than a century of triumphs. With its clean red design and white ribbed crewneck, this adidas home
-                    jersey takes inspiration from the iconic kit that carried them to some of their most memorable
-                    moments. Made for fans, its soft fabric and moisture-absorbing AEROREADY will keep you comfortable
-                    as a new generation of players target supremacy. A woven badge on the chest and devil signoff under
-                    the back collar put your football loyalty on display.</p>
-            </div>
+            <!-- End Cart information -->
 
         </div>
-        <!-- End Cart information -->
 
         <!-- Recently & Also like -->
         <div id="products">
             <div class="row mx-0">
                 <div class="row row_product">
                     <div class="row_1">
-                       <h3>Recently</h3>
-                        <div class="recently">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-grid">
-                                    <div class="product-image">
-                                        <a href="#" class="image">
-                                            <img class="pic-1" src="../../assests/img/Shop/away_1.jpg">
-                                            <img class="pic-2" src="../../assests/img/Shop/away_2.jpg">
-                                        </a>
-                                        <ul class="product-links">
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3 class="title"><a href="#">Manchester United Away Shirt 2021-22</a></h3>
-                                        <div class="price">$32.00</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Recently</h3>
+                        <button id="hide_re">
+                            <i class="ti-angle-up"></i>
+                        </button>
+                        <button id="show_re" style="display: none">
+                            <i class="ti-angle-down"></i>
+                        </button>
+                        <div class="recently" id="recently_button">
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
@@ -236,25 +253,6 @@
                                         <h3 class="title"><a href="#">Manchester United adidas CR7 T-Shirt</a>
                                         </h3>
                                         <div class="price">$13.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-grid">
-                                    <div class="product-image">
-                                        <a href="#" class="image">
-                                            <img class="pic-1" src="../../assests/img/Shop/Home_kit_1.jpg">
-                                            <img class="pic-2" src="../../assests/img/Shop/Home_kit_2.jpg">
-                                        </a>
-                                        <ul class="product-links">
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3 class="title"><a href="#">Manchester United Home Minikit 2021-22</a></h3>
-                                        <div class="price">$29.50</div>
                                     </div>
                                 </div>
                             </div>
@@ -320,46 +318,13 @@
                     </div>
                     <div class="row_2">
                         <h3>You may also like</h3>
-                        <div class="also_like">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-grid">
-                                    <div class="product-image">
-                                        <a href="#" class="image">
-                                            <img class="pic-1" src="../../assests/img/Shop/away_1.jpg">
-                                            <img class="pic-2" src="../../assests/img/Shop/away_2.jpg">
-                                        </a>
-                                        <ul class="product-links">
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3 class="title"><a href="#">Manchester United Away Shirt 2021-22</a></h3>
-                                        <div class="price">$32.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-grid">
-                                    <div class="product-image">
-                                        <a href="#" class="image">
-                                            <img class="pic-1" src="../../assests/img/Shop/third_1.jpg">
-                                            <img class="pic-2" src="../../assests/img/Shop/third_2.jpg">
-                                        </a>
-                                        <ul class="product-links">
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3 class="title"><a href="#">
-                                                Manchester United Third Shirt 2021-22</a></h3>
-                                        <div class="price">$42.00</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <button id="hide_al">
+                            <i class="ti-angle-up"></i>
+                        </button>
+                        <button id="show_al" style="display: none">
+                            <i class="ti-angle-down"></i>
+                        </button>
+                        <div class="also_like" id="also_like_button">
                             <div class="col-md-3 col-sm-6">
                                 <div class="product-grid">
                                     <div class="product-image">
@@ -453,7 +418,7 @@
                 <a href="">Size Chart</a>
             </div>
             <div class="footer_2">
-                <h4>Worry Free Shopping</h4>
+                <h4>Free Shopping</h4>
                 <a href="">Safe Shopping</a>
                 <a href="">Delivery & Shipping</a>
                 <a href="">90-Day Returns</a>
@@ -474,19 +439,19 @@
 
     <!-- End product detail -->
 
-    <!-- Footer -->
-    <div class="footer ">
+    <!--START FOOTER -->
+    <div class="footer" style="margin-bottom: -42px;">
         <div class="footer__social-links">
             <div class="footer-logo ">
                 <img src="../../assests/img/logo/mu_black.png " alt=" ">
             </div>
 
             <div class="social-list ">
-                <a href=" "><i class="ti-facebook "></i></a>
-                <a href=" "><i class="ti-youtube "></i></a>
-                <a href=" "><i class="ti-twitter "></i></a>
-                <a href=" "><i class="ti-instagram "></i></a>
-                <a href=" "><i class="fab fa-tiktok fa-1x "></i></a>
+                <a href="https://www.facebook.com/manchesterunited/ "><i class="ti-facebook "></i></a>
+                <a href="https://www.youtube.com/manutd"><i class="ti-youtube "></i></a>
+                <a href="https://twitter.com/ManUtd"><i class="ti-twitter "></i></a>
+                <a href="https://www.instagram.com/manchesterunited/"><i class="ti-instagram "></i></a>
+                <a href="https://www.tiktok.com/@manutd"><i class="fab fa-tiktok fa-1x "></i></a>
             </div>
         </div>
 
@@ -507,7 +472,7 @@
                     <li><img src="../../assests/img/sponsor/chivas.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/DHL.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/ecolab.png " alt=" "></li>
-                    <li><img src="../../assests/img/sponsor/HCL.png " alt=" "></li>
+                    <!-- <li><img src="../../assests/img/sponsor/HCL.png " alt=" "></li> -->
                     <li><img src="../../assests/img/sponsor/KONAMI.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/marriott.png " alt=" "></li>
                     <li><img src="../../assests/img/sponsor/MauiGim.png " alt=" "></li>
@@ -527,7 +492,149 @@
             </div>
         </div>
     </div>
-    <!-- End footer -->
+    <!-- END Footer -->
+
+
+    <!-- Start: modal question -->
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Do you have any questions?</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question1" placeholder="Your questions...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Submit</button>
+                        </form>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Start: modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#sign-up_Modal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Sign Up</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal sign up -->
+    <div class="modal fade" id="sign-up_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Sign Up</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="name" placeholder="Enter your name...">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="password" class="form-control" id="password1_confirmation" placeholder="Retype password...">
+                            </div> -->
+                            <button type="button" class="btn btn-info btn-block btn-round">Sign Up</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                          </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                          </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">If you have an acount? <a href="#loginModal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Login</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+    <!--END: modal login -->
+
+
     <script src="../../assests/js/bootstrap_js/js/bootstrap.js"></script>
     <script src="../../assests/js/jquery.min.js"></script>
     <script src="../../assests/js/slick.min.js"></script>
@@ -537,6 +644,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../../assests/js/bootstrap_js/js/bootstrap.bundle.min_V4.js"></script>
     <script src="../../assests/js/pages/shop/product_detail.js"></script>
+    <script src="../../assests/js/pages/shop/demo.js"></script>
 
 </body>
 
