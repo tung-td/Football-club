@@ -427,9 +427,23 @@ ul {
     width: inherit;
     display: flex;
     justify-content: center;
-    background-color: #3F3F3F;
+    /* background-color: #3F3F3F; */
+    background: url(../img/oldTraford/OT1.jpg) center / cover;
     padding-top: 3em;
+    opacity: 1;
 }
+
+
+/* .image-text,
+.manager-image-items,
+.image-name,
+.site,
+.site-name,
+.image-message,
+.image-statics,
+.image-image img {
+    opacity: 1 !important;
+} */
 
 .image-text {
     width: inherit;
@@ -464,6 +478,7 @@ ul {
 .site-name {
     font-size: 1.6em;
     width: 90%;
+    font-weight: 500;
 }
 
 .image-message {
@@ -471,6 +486,7 @@ ul {
     font-size: 1.5em;
     font-style: italic;
     font-weight: lighter;
+    font-weight: 400;
 }
 
 .image-image {
