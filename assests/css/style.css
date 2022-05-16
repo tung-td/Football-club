@@ -428,13 +428,12 @@ ul {
     display: flex;
     justify-content: center;
     /* background-color: #3F3F3F; */
-    background: url(../img/oldTraford/OT1.jpg) center / cover;
+    background: url(../img/background/ticket_background_2.jpg) center / cover;
     padding-top: 3em;
     opacity: 1;
 }
 
-
-/* .image-text,
+.image-text,
 .manager-image-items,
 .image-name,
 .site,
@@ -443,7 +442,7 @@ ul {
 .image-statics,
 .image-image img {
     opacity: 1 !important;
-} */
+}
 
 .image-text {
     width: inherit;
