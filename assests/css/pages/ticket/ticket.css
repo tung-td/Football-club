@@ -1,3 +1,14 @@
+:root {
+    --main-bg-color: brown;
+    --basic-red: #c70101;
+    --dark-red: #990101;
+    --basic-black: #1A1A1A;
+    --dirty-white: #F8F8F8;
+    --basic-grey: #2A2A2A;
+    --text-grey: #666666;
+    --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
+}
+
 /* Next Match */
 .next-match {
     width: 100%;
@@ -39,8 +50,42 @@
 
 .next-match .content .match-button .btn {
     width: 200px;
+    background-color: var(--basic-red);
+    color: white;
+}
+
+.next-match .content .match-button .btn:hover {
+    background-color: var(--dark-red);
 }
 /* End Next Match */
+
+/* Match List */
+.component-title-after {
+    width: 100px; border: 1px solid var(--basic-red);
+}
+
+.match-list-item .item-head, .match-list-item .logo-tournament img, .match-list-item .buy-ticket .btn {
+    background-color: var(--basic-red);
+    color: white;
+}
+
+.match-list-item .buy-ticket .btn:hover {
+    background-color: var(--dark-red);
+}
+
+#matchList1 .logo-team1 img, #matchList1 .logo-team2 img {
+    width: 70px;
+}
+
+#matchList2 .container {
+    flex-wrap: wrap;
+}
+
+#matchList2 .match-list-item {
+    width: 300px; height: 350px;
+}
+
+/* Ened Match List */
 
 /* Match Category */
 .match-category {
@@ -49,9 +94,21 @@
 
 .match-category .ticket-cate-item  {
     overflow: hidden;
-    width: 25%;
+    width: 310px;
     height: 400px;
     border-radius: 10px;
+}
+
+.ticket-cate-item .ticket-cate-progress {
+    width: 50%; border: 1px solid var(--basic-red);
+}
+
+.ticket-cate-item button {
+    background-color: var(--basic-red); border-radius: 25px;
+}
+
+.ticket-cate-item button:hover {
+    background-color: var(--dark-red);
 }
 
 .ticket-cate-item:hover img {
@@ -74,8 +131,8 @@
     RESPONSIVE
 */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 739px and down) */
+@media only screen and (max-width: 739px) {
     /* next match */
     .next-match {
         height: 400px;
@@ -121,26 +178,73 @@
     }
     /* end next match */
 
+    /* match list */
+    .match-list {
+        width: 100% !important;
+    }
+
+    #matchList1, .match-list .filter .month, .match-list .filter .way-to-show {
+        display: none;
+    }
+
+    #matchList2 {
+        display: contents !important;
+    }
+
+    .match-list .filter .input-group {
+        width: 100% !important;
+        height: inherit;
+    }
+    
+    .match-list .match-list-item {
+        margin-bottom: 15px;
+    }
+    /* end match list */
+
     /* match category */
+    .container.category-match {
+        width: 100% !important;
+    }
+
     .match-category {
         display: contents;
     }
 
     .match-category .ticket-cate-item {
-        width: 100% !important;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+        display: block;
+        width: 300px;
     }
     /* end match category */
+}
 
-    /* match list */
+/* Small devices (portrait tablets and large phones, 739px and up) */
+@media (min-width: 739px) and (max-width: 1024px) {
+    /* match category */
     .match-list .filter .month {
         display: none;
     }
-    /* end match list */
+
+    .match-list .filter .input-group {
+        width: 30% !important;
+    }
+
+    .match-category {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .match-category .ticket-cate-item {
+        margin-bottom: 15px;
+    }
+
+    .container.category-match {
+        width: 100% !important;
+    }
+    /* end match category */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {} 
