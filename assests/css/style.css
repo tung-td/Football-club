@@ -12,7 +12,7 @@ html {
     font-family: 'Emojis', Arial, Helvetica, sans-serif;
 }
 
- :root {
+:root {
     --main-bg-color: brown;
     --basic-red: #c70101;
     --basic-black: #1A1A1A;
@@ -1043,6 +1043,7 @@ h3.h3 {
     .modal-dialog {
         max-width: 400px;
     }
+
     .modal-dialog .modal-content {
         padding: 1rem;
     }
@@ -1078,7 +1079,7 @@ h3.h3 {
 }
 
 .text-inf {
-    color: #c70101!important;
+    color: #c70101 !important;
 }
 
 
@@ -1151,6 +1152,73 @@ h3.h3 {
     color: #000;
 }
 
-/* Next match */
+/* Matches/Tickets */
 
-/* End next match */
+.content .matches-tickets {
+    width: 90%;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.content .matches-tickets .matches-background {
+    border-radius: 25px;
+    width: 90%;
+    height: inherit;
+    opacity: 0.3;
+    background-image: url(../../assests/img/background/bgTicket.jpg);
+}
+
+.matches-tickets .matches-content {
+    border-radius: 25px;
+    width: 90%;
+    height: inherit;
+}
+
+.matches-content .content-head .first-team-matches {
+    font-size: 60px;
+}
+
+.matches-content .matches-next,
+.matches-content .matches-previous {
+    font-size: 70px;
+    opacity: 0.7;
+}
+
+.matches-content .content-body .matches.item {
+    width: 300px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.matches-content .content-body .matches.item .item-background {
+    width: inherit;
+    height: inherit;
+    opacity: 0.3;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+.matches-content .content-body .matches.item .item-background.view-all-result {
+    background-image: url(https://i2-prod.manchestereveningnews.co.uk/incoming/article22944172.ece/ALTERNATES/s1200b/0_GettyImages-1350244896.jpg);
+}
+
+.matches-content .content-body .matches.item .item-content {
+    width: 300px;
+    height: inherit;
+}
+
+.matches.item .match-head {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 231, 3, 1) 0%, rgba(220, 86, 2, 1) 0%, rgba(199, 1, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 22px 22px 0 0;
+}
+
+/* item next match */
+.matches-content .next-match {
+    width: 500px !important;
+    height: 350px;
+    border-radius: 25px;
+}
+
+/* end item next match */
+
+/* End Matches/Tickets */

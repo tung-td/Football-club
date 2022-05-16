@@ -16,11 +16,13 @@
             position: absolute;
         }
     }
+
     /* Tablet and mobile */
     
     @media (max-width: 1023px) {}
+
+
     /* Tablet */
-    
     @media (min-width: 740px) and (max-width: 1023px) {
         #header .mobile-menu-btn {
             display: none;
@@ -33,6 +35,7 @@
             top: 10rem !important;
             font-size: 70px !important;
         }
+
         /* manager */
         .manager-info {
             width: 90% !important;
@@ -55,10 +58,37 @@
         .image-text {
             justify-content: flex-start !important;
         }
+
+        /* CONTENT */
+        /* Matches/Tickets */
+
+        .content .matches-tickets {
+            height: 450px !important;
+        }
+
+        .matches-content .content-head .first-team-matches {
+            font-size: 35px!important;
+        }
+
+        .ticket-cownt-down .cownt-down-value {
+            font-size: 25px!important;
+            margin: 0px;
+        }
+
+        .ticket-cownt-down .cownt-down-unit {
+            font-size: 10px!important;
+        }
+
+        .matches-next, .matches-previous {
+            display: none;
+        }
+
+        /* End Matches/Tickets */
     }
+
     /* Mobile */
-    
     @media (max-width: 739px) {
+
         /* header */
         #header {
             height: 65px !important;
@@ -73,6 +103,7 @@
         .header-options {
             line-height: 65px !important;
         }
+
         /* end header */
         .slider {
             margin-top: 65px !important;
@@ -82,6 +113,7 @@
             top: 5rem !important;
             font-size: 50px !important;
         }
+
         /* social list */
         .footer__social-links {
             flex-direction: column;
@@ -118,6 +150,7 @@
             font-size: 12px !important;
         }
         /* end social list */
+
         /* Start: manager */
         .manager-image {
             flex-direction: column;
@@ -195,6 +228,7 @@
             font-size: 0.9em !important;
         }
         /* end: manager */
+
         /* search navbar */
         .search-button {
             height: 60px;
@@ -216,6 +250,7 @@
         .header-options .help-btn {
             font-size: 20px !important;
         }
+
         /* SEARCH */
         .search-button {
             top: 65px !important;
@@ -223,4 +258,64 @@
         .sp-btn {
             display: none !important;
         }
+
+        /* CONTENT */
+        /* Matches/Tickets */
+
+        .content .matches-tickets {
+            height: 450px !important;
+        }
+
+        .matches-content .content-head .first-team-matches {
+            font-size: 20px!important;
+            margin: 0px;
+        }
+
+        .ticket-cownt-down .cownt-down-value {
+            font-size: 25px!important;
+            margin: 0px;
+        }
+
+        .ticket-cownt-down .cownt-down-unit {
+            font-size: 10px!important;
+        }
+
+        .matches-content .matches-next, .matches-previous {
+            display: none !important;
+        }
+
+        .matches-content .content-body .next-match {
+            width: 300px !important;
+            height: 250px;
+        }
+        
+        .matches.item .item-head .head-right {
+            font-size: 20px;
+        }
+
+        .matches.item .match-team img {
+            width: 100px !important;
+        }
+
+        .matches.item .match-title {
+            font-size: 20px !important;
+        }
+
+        .matches.item .buy-ticket, .matches.item .see-more {
+            font-size: 18px !important;
+        }
+
+        .matches.item .responsive-hide {
+            display: none !important;
+        }
+
+        .matches.item .responsive-show {
+            display: contents !important;
+        }
+
+        .matches.item .px-3 {
+            padding: 5px !important;
+        }
+
+        /* End Matches/Tickets */
     }
