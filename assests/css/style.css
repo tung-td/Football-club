@@ -15,6 +15,7 @@ html {
 :root {
     --main-bg-color: brown;
     --basic-red: #c70101;
+    --dark-red: #990101;
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
@@ -1207,18 +1208,36 @@ h3.h3 {
     height: inherit;
 }
 
-.matches.item .match-head {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 231, 3, 1) 0%, rgba(220, 86, 2, 1) 0%, rgba(199, 1, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    border-radius: 22px 22px 0 0;
-}
-
-/* item next match */
-.matches-content .next-match {
+.matches-content .match-main {
     width: 500px !important;
     height: 350px;
     border-radius: 25px;
 }
 
-/* end item next match */
+.matches.item .item-head {
+    background-color: var(--basic-red);
+    border-radius: 22px 22px 0 0;
+}
+
+.matches.item .logo-tournament {
+    background-color: var(--basic-red);
+    width: 100px; border-radius: 10px;
+}
+
+.matches.item .buy-ticket, .matches.item .see-more {
+    background-color: var(--basic-red);
+    color: white;
+    border-radius: 10px;
+}
+
+.matches.item .buy-ticket:hover, .matches.item .see-more:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.matches.item .match-head {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 231, 3, 1) 0%, rgba(220, 86, 2, 1) 0%, rgba(199, 1, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 22px 22px 0 0;
+}
 
 /* End Matches/Tickets */
