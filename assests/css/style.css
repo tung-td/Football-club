@@ -241,7 +241,10 @@ ul {
 /* Slider */
 
 .slider {
-    margin-top: 75px;
+    margin-top: 75px !important;
+    height: auto !important;
+    margin-left: unset !important;
+    margin-right: unset !important;
 }
 
 .forSlickSlider {
@@ -584,19 +587,37 @@ h3.h3 {
     text-transform: capitalize;
     font-size: 22px;
     opacity: 0.7;
-    margin-top: 50px;
+    margin-bottom: 72px;
     font-weight: 550;
+    margin-top: -33px;
 }
 
 .container {
     font-family: var(--font-moments);
 }
 
+.container.store-container {
+    max-width: unset !important;
+    max-width: 1500px !important;
+    margin-bottom: 114px !important;
+}
+
+@media only screen and (max-width:1280px) {
+    .container.store-container {
+        margin-bottom: 60px !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .container.store-container {
+        margin-bottom: unset !important;
+    }
+}
+
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 80px 0px;
 }
 
 .col-md-3.col-sm-6 {
@@ -1157,7 +1178,7 @@ h3.h3 {
 
 .content .matches-tickets {
     width: 90%;
-    height: 500px;
+    height: 586px;
     border-radius: 25px;
 }
 

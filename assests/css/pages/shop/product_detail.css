@@ -247,6 +247,13 @@ select {
 	width: 90%;	
 }
 
+#show_re,
+#hide_re,
+#hide_al,
+#show_al {
+	background-color: #fff;
+}
+
 .row_1,
 .row_2 {
 	margin-top: 20px;
