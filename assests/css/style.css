@@ -1065,7 +1065,6 @@ h3.h3 {
     .modal-dialog {
         max-width: 400px;
     }
-
     .modal-dialog .modal-content {
         padding: 1rem;
     }
@@ -1174,6 +1173,7 @@ h3.h3 {
     color: #000;
 }
 
+
 /* Matches/Tickets */
 
 .content .matches-tickets {
@@ -1237,22 +1237,27 @@ h3.h3 {
 }
 
 .matches.item .item-head {
-    background-color: var(--basic-red);
+    background: linear-gradient(90deg, rgba(25, 18, 147, 1) 0%, rgba(131, 10, 79, 1) 50%, rgba(255, 0, 0, 1) 100%);
     border-radius: 22px 22px 0 0;
 }
 
 .matches.item .logo-tournament {
-    background-color: var(--basic-red);
-    width: 100px; border-radius: 10px;
-}
-
-.matches.item .buy-ticket, .matches.item .see-more {
-    background-color: var(--basic-red);
-    color: white;
+    /* background-color: var(--basic-red); */
+    width: 100px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
-.matches.item .buy-ticket:hover, .matches.item .see-more:hover {
+.matches.item .buy-ticket,
+.matches.item .see-more {
+    /* background-color: var(--basic-red); */
+    /* color: white; */
+    border-color: #666666;
+    border-radius: 50px;
+}
+
+.matches.item .buy-ticket:hover,
+.matches.item .see-more:hover {
     background-color: var(--dark-red);
     color: white;
 }
@@ -1261,5 +1266,6 @@ h3.h3 {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 231, 3, 1) 0%, rgba(220, 86, 2, 1) 0%, rgba(199, 1, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
     border-radius: 22px 22px 0 0;
 }
+
 
 /* End Matches/Tickets */
