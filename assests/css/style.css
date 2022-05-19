@@ -106,8 +106,10 @@ ul {
 }
 
 #nav li:hover .subnav {
-    display: block;
-    border-radius: 5px;
+    display: flex;
+    /* border-radius: 5px; */
+    flex-direction: row !important;
+    /* padding: 15px; */
 }
 
 #nav>li:hover::after,
@@ -119,6 +121,10 @@ ul {
     background-color: var(--dirty-white);
     transform: scale(0);
     transition: all 0.5s;
+}
+
+#nav .subnav {
+    padding-left: 72px;
 }
 
 #nav .subnav,
@@ -136,14 +142,14 @@ ul {
 #header .mobile-menu-btn .subnav li:hover {
     color: #000 !important;
     background-color: #ccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 #nav .subnav a,
 #header .mobile-menu-btn .subnav a {
     color: #000;
-    padding: 0 12px;
-    line-height: 40px;
+    padding: 0px 15px;
+    line-height: 55px;
 }
 
 .header-options {
