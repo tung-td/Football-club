@@ -432,7 +432,7 @@ ul {
     display: flex;
     justify-content: center;
     /* background-color: #3F3F3F; */
-    background: url(../img/oldTraford/OT1.jpg) center / cover;
+    background: url(../img/background/old.png) center / cover;
     padding-top: 3em;
     opacity: 1;
 }
@@ -487,7 +487,7 @@ ul {
 
 .image-message {
     width: 70%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: lighter;
     font-weight: 400;
@@ -504,6 +504,7 @@ ul {
 }
 
 .image-statics {
+    margin-top: 85px;
     display: flex;
     flex-direction: column;
 }
@@ -1179,7 +1180,7 @@ h3.h3 {
 .content .matches-tickets {
     width: 90%;
     height: 586px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .content .matches-tickets .matches-background {
@@ -1192,7 +1193,7 @@ h3.h3 {
 }
 
 .matches-tickets .matches-content {
-    border-radius: 25px;
+    border-radius: 10px;
     width: 90%;
     height: inherit;
 }
@@ -1269,3 +1270,9 @@ h3.h3 {
 
 
 /* End Matches/Tickets */
+
+.container-index {}
+
+.border-radius {
+    border-radius: 50px !important;
+}
