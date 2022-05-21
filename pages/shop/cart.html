@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="../../assests/css/pages/shop/cart.css">
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -84,21 +86,38 @@
     </div>
     <!-- End Header -->
 
+    <!-- Product guide -->
+    <a href=""></a>
+    <div class="guide">
+        <a href="">MANCHESTER UNITED</a>
+        <a href="">/ MANCHESTER UNITED FOOTBALL KITS</a>
+        <a href="">/ PRODUCT ID: 12052601 / CART</a>
+    </div>
+    <hr>
+    <!-- End product guide -->
+
     <!-- Body - Carts container -->
     <div class="cart-container">
         <div class="container">
+            <div class="title-cart">
+                <h1>
+                    Your Cart
+                    <i class="ti-shopping-cart"></i>
+                </h1>
+
+            </div>
             <hr>
             <div class="row align-items-start">
-                <div class="col-4">
+                <div class="col-4 product-title">
                     Product Name
                 </div>
-                <div class="col-1">
+                <div class="col-1 quantity-title">
                     Quantity
                 </div>
-                <div class="col-1">
+                <div class="col-1 subtotal-title">
                     Subtotal
                 </div>
-                <div class="col-1">
+                <div class="col-1 discount-title">
                     Discount
                 </div>
                 <div class="col-1">
@@ -112,7 +131,9 @@
                 <div class="col-4">
                     <a href="./product_detail.html">
                         <img src="../../assests/img/Shop/home_1.jpg" class="rounded img-thumbnail" alt="...">
+                        <p>Manchester United Home Shirt 2021-22</p>
                     </a>
+
                 </div>
                 <div class="col-1">
                     <div class="number_quantity">
@@ -125,10 +146,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     $32.00
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     $5.00
                 </div>
                 <div class="col-1 trash-button">
@@ -142,7 +163,9 @@
                 <div class="col-4">
                     <a href="./product_detail.html">
                         <img src="../../assests/img/Shop/away_1.jpg" class="rounded img-thumbnail" alt="...">
+                        <p>Manchester United Away Shirt 2021-22</p>
                     </a>
+
                 </div>
                 <div class="col-1">
                     <div class="number_quantity">
@@ -155,10 +178,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     $42.00
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     -
                 </div>
                 <div class="col-1 trash-button">
@@ -172,7 +195,9 @@
                 <div class="col-4">
                     <a href="./product_detail.html">
                         <img src="../../assests/img/Shop/bag_1.jpg" class="rounded img-thumbnail" alt="...">
+                        <p>Manchester United Tote Bag</p>
                     </a>
+
                 </div>
                 <div class="col-1">
                     <div class="number_quantity">
@@ -185,10 +210,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     $46.00
                 </div>
-                <div class="col-1">
+                <div class="col-1 mr-1">
                     -
                 </div>
                 <div class="col-1 trash-button">
@@ -201,9 +226,9 @@
             <div class="row align-items-end">
                 <div class="coupon-form">
                     <div class="col-3 cs-3">
-                        <input class="form-control" type="text" placeholder="Coupon Code: #">
+                        <input class="form-control" type="text" placeholder="# Coupon Code">
                     </div>
-                    <button class="col-1 cs-1">
+                    <button class="col-1 cs-1 ip">
                         Apply Coupon
                     </button>
                 </div>
@@ -213,6 +238,7 @@
             <div class="row submit-button">
                 <div class="col-5 hd-5">
                     <a href="./collections.html" class="col-1 cs-1" id="back-shop">
+                        <i class="ti-arrow-circle-left bc-1"></i>
                         Back to Shopping
                     </a>
                 </div>
@@ -220,11 +246,13 @@
                     <div class="col-1 hd-1">
                         <button class="col-1 cs-1" id="update-cart">
                             Update Cart
+                            <i class="ti-reload bc-2"></i>
                         </button>
                     </div>
                     <div class="col-1 hd-1">
                         <button class="col-1 cs-1" id="checkout-cart">
                             Checkout
+                            <i class="ti-shopping-cart bc-2"></i>
                         </button>
                     </div>
                 </div>
