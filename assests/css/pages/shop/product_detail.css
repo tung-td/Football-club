@@ -194,6 +194,12 @@ select {
 	animation: effect_dylan 0.8s ease-out;
 }
 
+#buy_it > a,
+#add_to > a {
+	text-decoration: unset;
+	color: unset;
+}
+
 .buy_column {
 	display: flex;
 }
@@ -208,9 +214,13 @@ select {
 	
 }
 
-.buy_button button {
+.buy_button a {
 	height: 42px;
-	border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: unset;
+    display: flex;
+    justify-content: center;
+    line-height: 42px;
 } 
 
 #add_to {
@@ -226,6 +236,7 @@ select {
 
 #buy_it {
 	background-color: #d34646;
+	color: #fff;
 }
 
 #detail_product {

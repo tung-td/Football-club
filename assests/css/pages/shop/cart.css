@@ -11,9 +11,15 @@
 .align-items-start > .col-4 {
     font-weight: 600;
 }
+.align-items-center {
+    margin: 26px 0px;
+}
 .col-1 {
     font-size: 14px;
     padding: unset;
+}
+hr:not([size]) {
+    color: #c3b5b5;
 }
 #clear-cart {
     color: #dc3545ed;
@@ -41,3 +47,139 @@
     margin-bottom: 10px;  
     border: unset;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.form-control {
+    display: block;
+    width: auto;
+    padding: .375rem 23px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 23px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.align-items-end {
+    display: flex;
+    margin: unset;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1296px;
+}
+
+.coupon-form {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.col-3.cs-3 {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin: 0px 62px;
+}
+
+input {
+    width: 62%;
+    background-color: #ced4da;
+}
+
+.col-1.cs-1 {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    border: 1px solid #b62f2f;
+    border-radius: 5px;
+    line-height: 29px;
+    color: #b62f2f;
+    width: auto;
+    padding: 0 10px;
+}
+
+.col-1.cs-1:hover {
+    background-color: #b62f2f;
+    color: #fff;
+}
+.subtotal {
+    width: auto;
+    line-height: 45px;
+}
+
+.row.submit-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.col-2.cs-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: unset;
+    width: 19%;
+}
+
+.col-5.hd-5,
+.col-1.hd-1 {
+    width: auto;
+    margin: 0 5px;
+}
+
+.col-5.hd-5 > a {
+ text-decoration: unset;
+}
+
+#back-shop {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid gray;
+    color: gray;
+}
+
+#back-shop:hover {
+    color: #fff;
+    background-color: gray;
+}
+
+#update-cart {
+    color: #fff;
+    background-color: blue;
+    border: unset;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.7;
+}
+
+#checkout-cart {
+    color: #fff;
+    background-color: green;
+    border: unset;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.7;
+}
+
+#checkout-cart:hover,
+#update-cart:hover {
+    opacity: 1;
+}
+
+

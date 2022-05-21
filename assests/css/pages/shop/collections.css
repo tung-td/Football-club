@@ -716,7 +716,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .product-grid .product-links li a:hover {
     color: #fff;
-    background-color: #ed1d24;
+    background-color: #b62f2f;
 }
 
 .product-grid .product-content {
@@ -756,11 +756,11 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .product-grid .title a:hover {
-    color: #ed1d24;
+    color: #b62f2f;
 }
 
 .product-grid .price {
-    color: #ed1d24;
+    color: #b62f2f;
     font-size: 16px;
     font-weight: 700;
 }

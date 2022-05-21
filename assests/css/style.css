@@ -546,6 +546,11 @@ html {
     border-radius: 5px;
 }
 
+.heart-focus:focus {
+    background-color: #000;
+    color: #f0f0f0;
+}
+
 #nav>li:hover::after,
 
 /* .search-btn:hover:after, */
