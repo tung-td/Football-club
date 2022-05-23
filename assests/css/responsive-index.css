@@ -145,6 +145,9 @@
         }
         /* end social list */
         /* Start: manager */
+        .manager {
+            padding-top: 0 !important;
+        }
         .manager-image {
             flex-direction: column;
         }
@@ -296,4 +299,57 @@
             padding: 5px !important;
         }
         /* End Matches/Tickets */
+        /* SHOP */
+        .col-md-3.col-sm-6 {
+            width: 170px !important;
+        }
+        .product-grid {
+            height: 260px !important;
+        }
+        .col-md-3.col-sm-6 {
+            margin-bottom: 0px !important;
+        }
+        h3.h3 {
+            font-size: 20px !important;
+            margin-bottom: 32px !important;
+            margin-top: 16px !important;
+        }
+        /* cup */
+        .content__cup {
+            margin-top: 30px !important;
+            margin-bottom: 22px !important;
+        }
+        .cup-items figcaption {
+            margin-top: 8px !important;
+        }
+        .cup-items p {
+            font-size: 1.2em !important;
+            min-height: 40px !important;
+        }
+        .cup-items strong {
+            margin-top: -16px !important;
+            font-size: 1.7em !important;
+        }
+        /* NEWS */
+        .card {
+            margin: 10px 10px !important;
+        }
+        .card-title {
+            font-size: 1.4rem !important;
+        }
+        /* content */
+        .content {
+            padding-top: 20PX !important;
+        }
+        /* video background */
+        .video-btn {
+            font-size: 35px !important;
+        }
+        /* match */
+        .container {
+            margin-top: 0px !important;
+        }
+        .see-more {
+            display: none !important;
+        }
     }

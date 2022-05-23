@@ -247,7 +247,7 @@ ul {
 /* Slider */
 
 .slider {
-    margin-top: 75px !important;
+    margin-top: 75px;
     height: auto !important;
     margin-left: unset !important;
     margin-right: unset !important;
@@ -1190,7 +1190,7 @@ h3.h3 {
 }
 
 .content .matches-tickets .matches-background {
-    border-radius: 25px;
+    border-radius: 10px;
     width: 90%;
     height: inherit;
     opacity: 0.3;
