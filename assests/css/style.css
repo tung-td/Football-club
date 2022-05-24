@@ -847,8 +847,17 @@ h3.h3 {
     margin: auto;
 }
 
-.Moment_slide.multiple-items {
-    height: 470px;
+.heart-focus:focus {
+    background-color: #000;
+    color: #f0f0f0;
+}
+
+#nav>li:hover::after,
+
+/* .search-btn:hover:after, */
+
+.sign-items:hover::after {
+    transform: scale(1);
 }
 
 .Moment_slide .items {}
