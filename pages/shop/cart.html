@@ -32,15 +32,32 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-        <ul id="nav">
-            <div class="header-logo">
-                <a href="../../index.html">
-                    <img src="../../assests/img/logo-mu.png" alt="">
+    <!-- Start Header -->
+    <div id="search-display" class="search-button">
+        <div class="home-search__panel">
+            <div class="text-area">
+                <input type="text" id="input-search" placeholder="What are you looking for?">
+            </div>
+            <div class="sp-btn">
+                <a href="#" role="button">
+                    <span>Search</span>
                 </a>
             </div>
+            <div class="close-search" role="button" onclick="closeSearch()">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+    </div>
 
+    <div id="header">
+        <div class="header-logo">
+            <a href="../../index.html">
+                <img src="../../assests/img/logo-mu.png" alt="">
+            </a>
+        </div>
+
+
+        <ul id="nav">
             <li>
                 <a href="../../pages/myutd/myUtd.html">
                     My United
@@ -52,7 +69,7 @@
                     <li><a href="../../pages/myutd/legendTeam.html">Legends</a></li>
                 </ul>
             </li>
-            <li><a href="./news.html">News</a></li>
+            <li><a href="../../pages/news/news.html">News</a></li>
             <li><a href="../../pages/shop/collections.html">Shop</a></li>
             <li><a href="../../pages/ticket/ticket_match.html">Tickets</a></li>
             <li>
@@ -64,25 +81,34 @@
                     <li><a href="">Infomation</a></li>
                 </ul>
             </li>
+
         </ul>
 
-        <div class="header-options">
-            <!-- <select name="Languages" id="">
-                <option value="lang">EN</option>
-                <option value="lang">Vietnamese</option>
-                <option value="lang">English</option>
-            </select> -->
 
-            <div class="header-sign">
-                <a href="#" class="sign-items">Login</a> |
-                <a href="#" class="sign-items">Sign up</a>
+        <div class="header-options">
+            <div class="search-btn">
+                <i class="search-icon ti-search" onclick="openSearch()"></i>
             </div>
 
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
+            <div class="help-btn">
+                <i class="help-icon ti-help-alt" href="#questionModal" data-dismiss="modal" data-toggle="modal"></i>
+            </div>
+
+            <div class="header-sign" data-toggle="modal" data-target="#loginModal">
+                <i class="sign-items fa fa-user-o"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+                <div class="subnav">
+                    <li><a href="../../pages/myutd/myUtd.html">My Utd</a></li>
+                    <li><a href="../../pages/news/news.html">News</a></li>
+                    <li><a href="../../pages/shop/collections.html">Shop</a></li>
+                    <li><a href="../../pages/ticket/ticket_match.html">Tickets</a></li>
+                    <li><a href="#">More</a></li>
+                </div>
             </div>
         </div>
-
     </div>
     <!-- End Header -->
 
