@@ -155,10 +155,13 @@
             display: flex;
             align-self: center !important;
         }
+        .image-image img {
+            width: 100% !important;
+        }
         .site {
             padding-bottom: 0 !important;
             font-size: 1.5em !important;
-            left: 1em !important;
+            padding-left: 1em !important;
         }
         .site::after {
             display: block;
@@ -272,15 +275,26 @@
         .matches-previous {
             display: none !important;
         }
+        .matches-content .content-body .matches.item {
+            width: 290px;
+        }
+        .matches-content .content-body .matches.item .item-content {
+            width: 290px;
+            height: inherit;
+        }
         .matches-content .content-body .next-match {
-            width: 300px !important;
+            width: 290px !important;
+            height: 250px;
+        }
+        .matches-content .match-main {
+            width: 290px !important;
             height: 250px;
         }
         .matches.item .item-head .head-right {
             font-size: 20px;
         }
         .matches.item .match-team img {
-            width: 100px !important;
+            width: 90px !important;
         }
         .matches.item .match-title {
             font-size: 20px !important;
@@ -297,6 +311,12 @@
         }
         .matches.item .px-3 {
             padding: 5px !important;
+        }
+        .matches.item .buy-ticket,.matches.item .see-more{
+            width: 50% !important;
+        }
+        .matches.item .buy-ticket h3,.matches.item .see-more h3{
+            font-size: 16px !important;
         }
         /* End Matches/Tickets */
         /* SHOP */

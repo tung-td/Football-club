@@ -68,13 +68,18 @@
     box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 25%) !important;
 }
 
-.match-list-item .item-head, .match-list-item .logo-tournament img, .match-list-item .buy-ticket .btn {
-    background-color: var(--basic-red);
+.match-list-item .item-head, .match-list-item .buy-ticket .btn {
+    /* background-color: var(--basic-red); */
+    background: linear-gradient(90deg, rgba(25, 18, 147, 1) 0%, rgba(131, 10, 79, 1) 50%, rgba(255, 0, 0, 1) 100%);
     color: white;
 }
 
 .match-list-item .buy-ticket .btn:hover {
     background-color: var(--dark-red);
+}
+
+#matchList1 .logo-tournament img {
+    width: 100px !important;
 }
 
 #matchList1 .logo-team1 img, #matchList1 .logo-team2 img {
