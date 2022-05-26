@@ -12,9 +12,10 @@ html {
     font-family: 'Emojis', Arial, Helvetica, sans-serif;
 }
 
- :root {
+:root {
     --main-bg-color: brown;
     --basic-red: #c70101;
+    --dark-red: #990101;
     --basic-black: #1A1A1A;
     --dirty-white: #F8F8F8;
     --basic-grey: #2A2A2A;
@@ -105,8 +106,10 @@ ul {
 }
 
 #nav li:hover .subnav {
-    display: block;
-    border-radius: 5px;
+    display: flex;
+    /* border-radius: 5px; */
+    flex-direction: row !important;
+    /* padding: 15px; */
 }
 
 #nav>li:hover::after,
@@ -118,6 +121,10 @@ ul {
     background-color: var(--dirty-white);
     transform: scale(0);
     transition: all 0.5s;
+}
+
+#nav .subnav {
+    padding-left: 72px;
 }
 
 #nav .subnav,
@@ -135,14 +142,14 @@ ul {
 #header .mobile-menu-btn .subnav li:hover {
     color: #000 !important;
     background-color: #ccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 #nav .subnav a,
 #header .mobile-menu-btn .subnav a {
     color: #000;
-    padding: 0 12px;
-    line-height: 40px;
+    padding: 0px 15px;
+    line-height: 55px;
 }
 
 .header-options {
@@ -241,6 +248,9 @@ ul {
 
 .slider {
     margin-top: 75px;
+    height: auto !important;
+    margin-left: unset !important;
+    margin-right: unset !important;
 }
 
 .forSlickSlider {
@@ -428,12 +438,13 @@ ul {
     display: flex;
     justify-content: center;
     /* background-color: #3F3F3F; */
-    background: url(../img/background/ticket_background_2.jpg) center / cover;
+    background: url(../img2/background/22102021_Var-MyDinh-3.jpg) bottom / cover;
     padding-top: 3em;
     opacity: 1;
 }
 
-.image-text,
+
+/* .image-text,
 .manager-image-items,
 .image-name,
 .site,
@@ -442,7 +453,7 @@ ul {
 .image-statics,
 .image-image img {
     opacity: 1 !important;
-}
+} */
 
 .image-text {
     width: inherit;
@@ -481,8 +492,8 @@ ul {
 }
 
 .image-message {
-    width: 70%;
-    font-size: 1.5em;
+    width: 90%;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: lighter;
     font-weight: 400;
@@ -499,6 +510,7 @@ ul {
 }
 
 .image-statics {
+    margin-top: 85px;
     display: flex;
     flex-direction: column;
 }
@@ -560,7 +572,7 @@ ul {
     padding-top: 0;
 }
 
-.germany {
+.korea {
     position: relative;
     padding-right: 0.5em;
     width: 30px;
@@ -582,19 +594,37 @@ h3.h3 {
     text-transform: capitalize;
     font-size: 22px;
     opacity: 0.7;
-    margin-top: 50px;
+    margin-bottom: 72px;
     font-weight: 550;
+    margin-top: -33px;
 }
 
 .container {
     font-family: var(--font-moments);
 }
 
+.container.store-container {
+    max-width: unset !important;
+    max-width: 1500px !important;
+    margin-bottom: 114px !important;
+}
+
+@media only screen and (max-width:1280px) {
+    .container.store-container {
+        margin-bottom: 60px !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .container.store-container {
+        margin-bottom: unset !important;
+    }
+}
+
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 80px 0px;
 }
 
 .col-md-3.col-sm-6 {
@@ -1077,7 +1107,7 @@ h3.h3 {
 }
 
 .text-inf {
-    color: #c70101!important;
+    color: #c70101 !important;
 }
 
 
@@ -1148,4 +1178,107 @@ h3.h3 {
     font-size: 20px;
     margin-top: 10px;
     color: #000;
+}
+
+
+/* Matches/Tickets */
+
+.content .matches-tickets {
+    width: 90%;
+    height: 586px;
+    border-radius: 10px;
+}
+
+.content .matches-tickets .matches-background {
+    border-radius: 10px;
+    width: 90%;
+    height: inherit;
+    opacity: 0.3;
+    background-image: url(../../assests/img/background/bgTicket.jpg);
+    background-size: cover;
+}
+
+.matches-tickets .matches-content {
+    border-radius: 10px;
+    width: 90%;
+    height: inherit;
+}
+
+.matches-content .content-head .first-team-matches {
+    font-size: 60px;
+}
+
+.matches-content .matches-next,
+.matches-content .matches-previous {
+    font-size: 70px;
+    opacity: 0.7;
+}
+
+.matches-content .content-body .matches.item {
+    width: 300px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.matches-content .content-body .matches.item .item-background {
+    width: inherit;
+    height: inherit;
+    opacity: 0.3;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+.matches-content .content-body .matches.item .item-background.view-all-result {
+    background-image: url(https://i2-prod.manchestereveningnews.co.uk/incoming/article22944172.ece/ALTERNATES/s1200b/0_GettyImages-1350244896.jpg);
+}
+
+.matches-content .content-body .matches.item .item-content {
+    width: 300px;
+    height: inherit;
+}
+
+.matches-content .match-main {
+    width: 500px !important;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.matches.item .item-head {
+    background: linear-gradient(90deg, rgba(25, 18, 147, 1) 0%, rgba(131, 10, 79, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 22px 22px 0 0;
+}
+
+.matches.item .logo-tournament {
+    /* background-color: var(--basic-red); */
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.matches.item .buy-ticket,
+.matches.item .see-more {
+    /* background-color: var(--basic-red); */
+    /* color: white; */
+    border-color: #666666;
+    border-radius: 50px;
+}
+
+.matches.item .buy-ticket:hover,
+.matches.item .see-more:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.matches.item .match-head {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 231, 3, 1) 0%, rgba(220, 86, 2, 1) 0%, rgba(199, 1, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 22px 22px 0 0;
+}
+
+
+/* End Matches/Tickets */
+
+.container-index {}
+
+.border-radius {
+    border-radius: 50px !important;
 }

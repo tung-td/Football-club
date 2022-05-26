@@ -414,14 +414,14 @@ label {
     margin-top: 25px
 }
 
-.slider {
+.slider-price {
     position: relative;
     z-index: 1;
     height: 5px;
     margin: 0 15px
 }
 
-.slider>.track {
+.slider-price>.track {
     position: absolute;
     z-index: 1;
     left: 0;
@@ -432,7 +432,7 @@ label {
     background-color: #ddd
 }
 
-.slider>.range {
+.slider-price>.range {
     position: absolute;
     z-index: 2;
     left: 25%;
@@ -443,7 +443,7 @@ label {
     background-color: #36a31b
 }
 
-.slider>.thumb {
+.slider-price>.thumb {
     position: absolute;
     top: 2px;
     z-index: 3;
@@ -455,7 +455,7 @@ label {
     transition: box-shadow .3s ease-in-out
 }
 
-.slider>.thumb::after {
+.slider-price>.thumb::after {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -466,21 +466,21 @@ label {
     background-color: #fff
 }
 
-.slider>.thumb.left {
+.slider-price>.thumb.left {
     left: 25%;
     transform: translate(-15px, -10px)
 }
 
-.slider>.thumb.right {
+.slider-price>.thumb.right {
     right: 25%;
     transform: translate(15px, -10px)
 }
 
-.slider>.thumb.hover {
+.slider-price>.thumb.hover {
     box-shadow: 0 0 0 10px rgba(125, 230, 134, 0.507)
 }
 
-.slider>.thumb.active {
+.slider-price>.thumb.active {
     box-shadow: 0 0 0 10px rgba(63, 204, 75, 0.623)
 }
 

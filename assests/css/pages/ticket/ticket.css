@@ -1,8 +1,118 @@
+:root {
+    --main-bg-color: brown;
+    --basic-red: #c70101;
+    --dark-red: #990101;
+    --basic-black: #1A1A1A;
+    --dirty-white: #F8F8F8;
+    --basic-grey: #2A2A2A;
+    --text-grey: #666666;
+    --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
+}
 
+/* Next Match */
+.next-match {
+    width: 100%;
+    height: 450px;
+    background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/16/148/1086499/GettyImages_13932859561650979223520.jpg);
+    background-size: cover;
+}
+
+.next-match .overlay {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.next-match .overlay, .next-match .content {
+    width: inherit;
+    height: inherit;
+}
+
+.next-match .content .team-left,
+.next-match .content .team-right {
+    width: 40%;
+}
+
+.next-match .content .match-vs {
+    width: 20%;
+}
+
+.next-match .content .logo-tournament img {
+    width: 200px;
+}
+
+.next-match .content .team-left img, .next-match .content .team-right img {
+    width: 150px;
+}
+
+.next-match .content .responsive.match-date, .next-match .content .match-vs h2, .next-match .content .responsive.match-kick-off {
+    display: none;
+}
+
+.next-match .content .match-button .btn {
+    width: 200px;
+    background-color: var(--basic-red);
+    color: white;
+}
+
+.next-match .content .match-button .btn:hover {
+    background-color: var(--dark-red);
+}
+/* End Next Match */
+
+/* Match List */
+.component-title-after {
+    width: 100px; border: 1px solid var(--basic-red);
+}
+
+.match-list .filter .way-to-show:focus, .match-list .filter .way-to-show:checked {
+    box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 25%) !important;
+}
+
+.match-list-item .item-head, .match-list-item .logo-tournament img, .match-list-item .buy-ticket .btn {
+    background-color: var(--basic-red);
+    color: white;
+}
+
+.match-list-item .buy-ticket .btn:hover {
+    background-color: var(--dark-red);
+}
+
+#matchList1 .logo-team1 img, #matchList1 .logo-team2 img {
+    width: 70px;
+}
+
+#matchList2 .container {
+    flex-wrap: wrap;
+}
+
+#matchList2 .match-list-item {
+    width: 300px; height: 350px;
+}
+
+/* Ened Match List */
 
 /* Match Category */
-.ticket-cate-item {
+.match-category {
+    display: flex;
+}
+
+.match-category .ticket-cate-item  {
     overflow: hidden;
+    width: 310px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.ticket-cate-item .ticket-cate-progress {
+    width: 50%; border: 1px solid var(--basic-red);
+}
+
+.ticket-cate-item button {
+    background-color: var(--basic-red); border-radius: 25px;
+}
+
+.ticket-cate-item button:hover {
+    background-color: var(--dark-red);
 }
 
 .ticket-cate-item:hover img {
@@ -20,3 +130,135 @@
 }
 
 /* End Match Category */
+
+/* 
+    RESPONSIVE
+*/
+
+/* Extra small devices (phones, 739px and down) */
+@media only screen and (max-width: 739px) {
+    /* next match */
+    .next-match {
+        height: 400px;
+    }
+    
+    .next-match .content .logo-tournament img {
+        width: 150px;
+    }
+
+    .next-match .content .team-left,
+    .next-match .content .team-right {
+        width: 42%;
+    }
+
+    .next-match .content .match-vs {
+        width: 16%;
+    }
+    
+    .next-match .content .team-left img,
+    .next-match .content .team-right img {
+        width: 70px;
+    }
+
+    .next-match .content .team-left h1,
+    .next-match .content .team-right h1 {
+        font-size: 20px;
+    }
+
+    .next-match .content .match-date,
+    .next-match .content .match-vs h1,
+    .next-match .content .match-kick-off {
+        display: none;
+    }
+    
+    .next-match .content .responsive.match-date,
+    .next-match .content .match-vs h2,
+    .next-match .content .responsive.match-kick-off {
+        display: contents;
+    }
+    
+    .next-match .content .match-button .btn {
+        width: 110px;
+    }
+    /* end next match */
+
+    /* match list */
+    .match-list {
+        width: 100% !important;
+    }
+
+    #matchList1, .match-list .filter .month, .match-list .filter .way-to-show {
+        display: none;
+    }
+
+    #matchList2 {
+        display: contents !important;
+    }
+
+    .match-list .filter .input-group {
+        width: 100% !important;
+        height: inherit;
+    }
+    
+    .match-list .match-list-item {
+        margin-bottom: 15px;
+    }
+    /* end match list */
+
+    /* match category */
+    .container.category-match {
+        width: 100% !important;
+    }
+
+    .match-category {
+        display: contents;
+    }
+
+    .match-category .ticket-cate-item {
+        margin-bottom: 15px;
+        display: block;
+        width: 300px;
+    }
+    /* end match category */
+}
+
+/* Small devices (portrait tablets and large phones, 739px and up) */
+@media (min-width: 739px) and (max-width: 1024px) {
+    /* match category */
+    .match-list .filter .month {
+        display: none;
+    }
+
+    .match-list .filter .input-group {
+        width: 30% !important;
+    }
+
+    .match-category {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .match-category .ticket-cate-item {
+        margin-bottom: 15px;
+    }
+
+    .container.category-match {
+        width: 100% !important;
+    }
+    /* end match category */
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* 
+    END RESPONSIVE
+*/

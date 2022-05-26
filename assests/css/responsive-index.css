@@ -15,6 +15,12 @@
         .header-options {
             position: absolute;
         }
+        .container,
+        .container-index {
+            max-width: 90% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
     }
     /* Tablet and mobile */
     
@@ -55,6 +61,26 @@
         .image-text {
             justify-content: flex-start !important;
         }
+        /* CONTENT */
+        /* Matches/Tickets */
+        .content .matches-tickets {
+            height: 450px !important;
+        }
+        .matches-content .content-head .first-team-matches {
+            font-size: 35px!important;
+        }
+        .ticket-cownt-down .cownt-down-value {
+            font-size: 25px!important;
+            margin: 0px;
+        }
+        .ticket-cownt-down .cownt-down-unit {
+            font-size: 10px!important;
+        }
+        .matches-next,
+        .matches-previous {
+            display: none;
+        }
+        /* End Matches/Tickets */
     }
     /* Mobile */
     
@@ -119,6 +145,9 @@
         }
         /* end social list */
         /* Start: manager */
+        .manager {
+            padding-top: 0 !important;
+        }
         .manager-image {
             flex-direction: column;
         }
@@ -129,7 +158,7 @@
         .site {
             padding-bottom: 0 !important;
             font-size: 1.5em !important;
-            left: 1em !important;
+            padding-left: 1em !important;
         }
         .site::after {
             display: block;
@@ -179,6 +208,9 @@
             width: 90% !important;
             margin: 1em auto !important;
         }
+        .image-image img {
+            width: 100% !important;
+        }
         .bio-text {
             margin-bottom: 0.7em !important;
             font-size: 0.9em !important;
@@ -221,6 +253,106 @@
             top: 65px !important;
         }
         .sp-btn {
+            display: none !important;
+        }
+        /* CONTENT */
+        /* Matches/Tickets */
+        .content .matches-tickets {
+            height: 450px !important;
+        }
+        .matches-content .content-head .first-team-matches {
+            font-size: 20px!important;
+            margin: 0px;
+        }
+        .ticket-cownt-down .cownt-down-value {
+            font-size: 25px!important;
+            margin: 0px;
+        }
+        .ticket-cownt-down .cownt-down-unit {
+            font-size: 10px!important;
+        }
+        .matches-content .matches-next,
+        .matches-previous {
+            display: none !important;
+        }
+        .matches-content .content-body .next-match {
+            width: 300px !important;
+            height: 250px;
+        }
+        .matches.item .item-head .head-right {
+            font-size: 20px;
+        }
+        .matches.item .match-team img {
+            width: 100px !important;
+        }
+        .matches.item .match-title {
+            font-size: 20px !important;
+        }
+        .matches.item .buy-ticket,
+        .matches.item .see-more {
+            font-size: 18px !important;
+        }
+        .matches.item .responsive-hide {
+            display: none !important;
+        }
+        .matches.item .responsive-show {
+            display: contents !important;
+        }
+        .matches.item .px-3 {
+            padding: 5px !important;
+        }
+        /* End Matches/Tickets */
+        /* SHOP */
+        .col-md-3.col-sm-6 {
+            width: 170px !important;
+        }
+        .product-grid {
+            height: 260px !important;
+        }
+        .col-md-3.col-sm-6 {
+            margin-bottom: 0px !important;
+        }
+        h3.h3 {
+            font-size: 20px !important;
+            margin-bottom: 32px !important;
+            margin-top: 16px !important;
+        }
+        /* cup */
+        .content__cup {
+            margin-top: 30px !important;
+            margin-bottom: 22px !important;
+        }
+        .cup-items figcaption {
+            margin-top: 8px !important;
+        }
+        .cup-items p {
+            font-size: 1.2em !important;
+            min-height: 40px !important;
+        }
+        .cup-items strong {
+            margin-top: -16px !important;
+            font-size: 1.7em !important;
+        }
+        /* NEWS */
+        .card {
+            margin: 10px 10px !important;
+        }
+        .card-title {
+            font-size: 1.4rem !important;
+        }
+        /* content */
+        .content {
+            padding-top: 20PX !important;
+        }
+        /* video background */
+        .video-btn {
+            font-size: 35px !important;
+        }
+        /* match */
+        .container {
+            margin-top: 0px !important;
+        }
+        .see-more {
             display: none !important;
         }
     }
