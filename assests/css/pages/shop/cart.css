@@ -1,37 +1,62 @@
-.cart-container {
-}
+.cart-container {}
+
 .container {
     margin: 40px auto;
 }
+
+.guide {
+	margin-top: 84px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.guide > a {
+	margin-left: 10px;
+	font-size: 11px;
+	text-decoration: unset!important;
+	color: rgb(58, 52, 52);
+}
+
+.guide > a:hover{
+    color: #0056b3;
+    text-decoration: unset!important;
+}
+
 .title-cart {
     display: flex;
     align-items: center;
     margin-bottom: 26px;
 }
-.title-cart > h1 {
+
+.title-cart>h1 {
     margin: auto;
     font-size: 42px !important;
     font-family: 'Bebas Neue', cursive;
 }
+
 .align-items-start {
     margin-bottom: unset;
 }
-.align-items-start > .col-1,
-.align-items-start > .col-4 {
-    font-weight:bolder;
+
+.align-items-start>.col-1,
+.align-items-start>.col-4 {
+    font-weight: bolder;
     font-size: 16px;
     color: #000000;
 }
+
 .align-items-center {
     margin: 26px 0px;
 }
+
 .col-1 {
     font-size: 14px;
     padding: unset;
 }
+
 hr:not([size]) {
     color: #c3b5b5;
 }
+
 #clear-cart {
     color: #dc3545ed;
     border: 1px solid #dc3545;
@@ -40,22 +65,26 @@ hr:not([size]) {
     width: 90px;
     margin-top: -5px;
 }
+
 .trash {
     font-size: 20px;
     color: #dc3545;
     background-color: transparent;
 }
+
 .col-1.trash-button {
     display: flex;
     justify-content: center;
 }
+
 #clear-cart:hover {
     color: #fff;
     background-color: #dc3545;
 }
+
 .img-thumbnail {
     max-width: 29%;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     border: unset;
 }
 
@@ -130,6 +159,7 @@ input {
     background-color: #b62f2f;
     color: #fff;
 }
+
 .subtotal {
     width: auto;
     line-height: 45px;
@@ -141,16 +171,29 @@ input {
     padding: 0 5px;
 }
 
-.col-4 > a {
+.col-4>a {
     display: flex;
     text-decoration: unset;
     color: #000000;
 }
 
-.col-4 > a > p{
+.col-4>a>p {
     text-decoration: unset;
     padding: 23px;
     font-size: 15px;
+}
+
+.col-4>a>p:hover {
+    color: #b62f2f;
+}
+
+.col-4>a {
+    height: 100px !important;
+    transition: width 0.5s, height 0.5s;
+}
+
+.col-4>a:hover {
+    height: 120px !important;
 }
 
 .col-2.cs-2 {
@@ -166,8 +209,8 @@ input {
     margin: 0 5px;
 }
 
-.col-5.hd-5 > a {
- text-decoration: unset;
+.col-5.hd-5>a {
+    text-decoration: unset;
 }
 
 #back-shop {
@@ -209,6 +252,7 @@ input {
     margin-right: 7px;
     line-height: 41.5px;
 }
+
 .bc-2 {
     margin-left: 7px;
     line-height: 41.5px;
@@ -220,16 +264,20 @@ input {
     .container {
         margin: 50px auto;
     }
+
     .col-3.cs-3 {
         margin: 0px 88px;
     }
+
     .ip {
         margin-left: 10px;
     }
+
     .col-2.cs-2 {
         width: 38%;
     }
-    .col-4 > a > p {
+
+    .col-4>a>p {
         padding: unset;
         font-size: 11px;
     }
@@ -266,7 +314,7 @@ input {
         width: 20%;
     }
 
-    .row.align-items-center > .col-1 {
+    .row.align-items-center>.col-1 {
         margin-bottom: 7px;
     }
 
@@ -279,16 +327,16 @@ input {
         width: 100%;
     }
 
-    .col-4 > a {
+    .col-4>a {
         display: flex;
         justify-content: center;
     }
 
-    .col-4 > a > p {
+    .col-4>a>p {
         font-size: 14px;
     }
 
-    .product-title.col-4{
+    .product-title.col-4 {
         width: 25%;
     }
 
@@ -299,12 +347,14 @@ input {
     .row.align-items-end {
         display: block;
     }
+
     .coupon-form {
         display: flex;
         align-items: center;
         width: 100%;
         justify-content: space-between;
     }
+
     .subtotal {
         direction: rtl;
         margin-top: 15px;
@@ -313,6 +363,7 @@ input {
     .col-5.hd-5 {
         display: none;
     }
+
     .col-2.cs-2 {
         width: 100%;
         display: block;
@@ -321,7 +372,7 @@ input {
     #update-cart,
     #checkout-cart {
         width: 100%;
-        margin: 15px 0 ;
+        margin: 15px 0;
     }
 
     .mr-1 {
@@ -329,5 +380,3 @@ input {
     }
 
 }
-
-
