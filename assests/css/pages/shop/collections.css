@@ -604,6 +604,7 @@ input[type=range]::-webkit-slider-thumb {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     transition: all 0.3s ease 0s;
+    height: auto;
 }
 
 .product-grid:hover {
