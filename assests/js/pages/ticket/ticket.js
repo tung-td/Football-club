@@ -10,3 +10,14 @@ function ticketWaytoShow(i) {
         matchList2.classList.remove("d-none");
     }
 }
+
+// SVG tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+$('svg #standA').tooltip({
+title: '<h4>Acre</h4>',
+html: true,
+placement: 'top',
+container: 'body'
+});

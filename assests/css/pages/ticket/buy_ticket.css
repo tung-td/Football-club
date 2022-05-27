@@ -1,0 +1,124 @@
+:root {
+    --main-bg-color: brown;
+    --basic-red: #c70101;
+    --dark-red: #990101;
+    --basic-black: #1A1A1A;
+    --dirty-white: #F8F8F8;
+    --basic-grey: #2A2A2A;
+    --text-grey: #666666;
+    --font-moments: 'Emojis', Arial, Helvetica, sans-serif;
+}
+
+/* GENERAL */
+
+.stadium-title {
+    color: aqua !important;
+}
+
+.buy-ticket {
+    display: flex;
+    margin-top: 75px;
+}
+/* END GENERAL */
+
+/* STADIUM */
+.stadium {
+    display: block;
+    width: 65%;
+}
+
+.stadium tspan {
+    font-size: 50px !important;
+}
+
+.stadium-svg {
+    width: 100%;
+    height: fit-content;
+}
+
+/* .stadium .background-stadium {
+    background: linear-gradient(to right, rgba(255,255,255,0) 20%,
+    rgba(255,255,255,1)) !important;
+} */
+
+.stadium .stand, .stadium .door {
+    transition: 0.1s;
+}
+
+.stadium .stand:hover,
+g .door:hover ~ g .stand {
+    fill-opacity: 0.7 !important;
+}
+
+.stadium .door:hover {
+    fill-opacity: 1 !important;
+}
+
+.stadium .doorvip:hover {
+    /* can not hover, only for vip */
+}
+/* END STADIUM */
+
+/* STADIUM CHOOSE */
+.stadium-choose {
+    width: 35%;
+    height: inherit;
+    padding: 2%;
+}
+
+.stadium-choose .part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.choose-quantity, .choose-stand, .choose-category, .choose-door {
+    width: 49%;
+}
+
+/* button choose seat */
+.choose-seat button {
+    width: 100%;
+    padding: 7px;
+    margin: 10px 0px;
+    background-color: var(--basic-red);
+    color: white;
+}
+
+.choose-seat button:hover {
+    background-color: var(--dark-red);
+}
+
+/* annotate */
+.class-4 {
+    fill: rgb(248,107,62) !important;
+}
+.class-2 {
+    fill: rgb(253,221,76) !important;
+}
+.class-3 {
+    fill: rgb(114,184,0) !important;
+}
+.class-4 {
+    fill: rgb(248,107,62) !important;
+}
+.class-sold-out {
+    fill: rgb(66, 66, 66) !important;
+}
+.bg-class-1 {
+    background-color: rgb(49,168,247) !important;
+}
+.bg-class-2 {
+    background-color: rgb(253,221,76) !important;
+}
+.bg-class-3 {
+    background-color: rgb(114,184,0) !important;
+}
+.bg-class-4 {
+    background-color: rgb(248,107,62) !important;
+}
+.bg-class-sold-out {
+    background-color: rgb(66, 66, 66) !important;
+}
+
+/* END STADIUM CHOOSE */
