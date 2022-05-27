@@ -76,7 +76,9 @@ g .door:hover~g .stand {
 .choose-quantity,
 .choose-stand,
 .choose-category,
-.choose-door {
+.choose-door,
+.choose-row,
+.choose-column {
     width: 49%;
 }
 

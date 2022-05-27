@@ -232,6 +232,20 @@
         width: 300px;
     }
     /* end match category */
+
+    /* buy ticket - choose seat */
+    .stadium {
+        display: none !important;
+    }
+    .stadium-choose {
+        width: 100% !important;
+    }
+    .part-hide {
+        display: flex !important;
+    }
+    .part-show {
+        display: none !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 739px and up) */
