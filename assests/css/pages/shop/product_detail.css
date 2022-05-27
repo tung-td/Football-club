@@ -26,6 +26,7 @@ body {
 
 #products {
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 .detail {
@@ -334,7 +335,6 @@ select {
 }
 
 .col-md-3.col-sm-6 {
-	max-width: 248px;
 }
 
 .also_like, .recently {
@@ -374,11 +374,19 @@ select {
 		width: auto;
 		margin-bottom: 20px;
 	}
+	
+	#featured {
+		max-width: 472px;
+		max-height: 472px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
 
 	.column_2 {
 		width: 394px;
     	padding: 10px;
 		margin: unset;
+		padding:0 12px !important
 	}
 
 	.product_cart {
