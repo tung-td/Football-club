@@ -224,7 +224,7 @@ body {
 .slider_my-utd {
     margin-top: 75px;
     padding-top: 50%;
-    background: url(/assests/img/oldTraford/wallpaper3.jpg) top center / cover;
+    background: url(/assests/img2/carousel/hinh-nen-laptop-pc-full-hd-co-vu-doi-tuyen-bong-da-viet-nam.jpg) top center / cover;
     position: relative;
 }
 
@@ -259,7 +259,7 @@ body {
 .my-btn a {
     border-radius: 10px !important;
     color: #fff;
-    background-color: #ff2850;
+    background: linear-gradient(90deg, rgba(25, 18, 147, 1) 0%, rgba(131, 10, 79, 1) 50%, rgba(255, 0, 0, 1) 100%);
     text-decoration: none;
     padding: 11px 16px;
     display: block;
@@ -292,19 +292,19 @@ body {
 }
 
 .man {
-    background: url(/assests/img/oldTraford/firstteam1.jpg) top / cover;
+    background: url(/assests/img2/carousel/DTVN_V3-1627318094380.jpg) top / cover;
 }
 
 .woman {
-    background: url(/assests/img/oldTraford/womenteam.jpg) top / cover;
+    background: url(/assests/img2/carousel/pic8.jpeg) top / cover;
 }
 
 .youngs {
-    background: url(/assests/img/oldTraford/academy-min.jpg) top / cover;
+    background: url(/assests/img2/carousel/t13a.jpg) center / cover;
 }
 
 .legends {
-    background: url(/assests/img/oldTraford/legendteam.webp) center / cover;
+    background: url(/assests/img2/carousel/huyenthoai3.jpg) center / cover;
 }
 
 .my-team .my-heading {

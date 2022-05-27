@@ -438,7 +438,7 @@ ul {
     display: flex;
     justify-content: center;
     /* background-color: #3F3F3F; */
-    background: url(../img/background/old.png) center / cover;
+    background: url(../img2/background/22102021_Var-MyDinh-3.jpg) bottom / cover;
     padding-top: 3em;
     opacity: 1;
 }
@@ -492,7 +492,7 @@ ul {
 }
 
 .image-message {
-    width: 70%;
+    width: 90%;
     font-size: 1.3em;
     font-style: italic;
     font-weight: lighter;
@@ -572,7 +572,7 @@ ul {
     padding-top: 0;
 }
 
-.germany {
+.korea {
     position: relative;
     padding-right: 0.5em;
     width: 30px;
@@ -852,12 +852,8 @@ h3.h3 {
     color: #f0f0f0;
 }
 
-#nav>li:hover::after,
-
-/* .search-btn:hover:after, */
-
-.sign-items:hover::after {
-    transform: scale(1);
+.Moment_slide.multiple-items {
+    height: 470px;
 }
 
 .Moment_slide .items {}
@@ -1025,7 +1021,7 @@ h3.h3 {
 .sponsor__primary {
     display: flex;
     justify-content: center;
-    height: 70px;
+    height: 85px;
 }
 
 .sponsor__primary img {
@@ -1054,7 +1050,7 @@ h3.h3 {
 .sponsor__secondary img {
     padding: 0 12px 12px;
     margin-top: 12px;
-    height: 40px;
+    height: 55px;
     opacity: 1;
 }
 
@@ -1203,7 +1199,7 @@ h3.h3 {
     width: 90%;
     height: inherit;
     opacity: 0.3;
-    background-image: url(../../assests/img/background/bgTicket.jpg);
+    background-image: url(../../assests/img2/background/Chao_lua_My_Dinh_ruc_ro_co_To_quoc_tiep_lua_U23_Viet_Nam_2__NDSK.jpg);
     background-size: cover;
 }
 
@@ -1238,7 +1234,7 @@ h3.h3 {
 }
 
 .matches-content .content-body .matches.item .item-background.view-all-result {
-    background-image: url(https://i2-prod.manchestereveningnews.co.uk/incoming/article22944172.ece/ALTERNATES/s1200b/0_GettyImages-1350244896.jpg);
+    background-image: url(/assests/img2/carousel/pic2.jpg);
 }
 
 .matches-content .content-body .matches.item .item-content {
