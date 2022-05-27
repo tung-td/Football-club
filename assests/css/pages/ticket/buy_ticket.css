@@ -19,6 +19,7 @@
     display: flex;
     margin-top: 75px;
 }
+
 /* END GENERAL */
 
 /* STADIUM */
@@ -36,27 +37,27 @@
     height: fit-content;
 }
 
-/* .stadium .background-stadium {
-    background: linear-gradient(to right, rgba(255,255,255,0) 20%,
-    rgba(255,255,255,1)) !important;
-} */
-
-.stadium .stand, .stadium .door {
+.stadium .stand,
+.stadium .door {
     transition: 0.1s;
 }
 
 .stadium .stand:hover,
-g .door:hover ~ g .stand {
+g .door:hover~g .stand {
     fill-opacity: 0.7 !important;
+    cursor: pointer;
 }
 
 .stadium .door:hover {
     fill-opacity: 1 !important;
+    cursor: pointer;
 }
 
-.stadium .doorvip:hover {
-    /* can not hover, only for vip */
+.stadium .door.active {
+    fill-opacity: 1 !important;
+    cursor: pointer;
 }
+
 /* END STADIUM */
 
 /* STADIUM CHOOSE */
@@ -72,12 +73,16 @@ g .door:hover ~ g .stand {
     margin-bottom: 10px;
 }
 
-.choose-quantity, .choose-stand, .choose-category, .choose-door {
+.choose-quantity,
+.choose-stand,
+.choose-category,
+.choose-door {
     width: 49%;
 }
 
 /* button choose seat */
-.choose-seat button {
+.choose-seat button,
+#modalChooseSeat .modal-footer button {
     width: 100%;
     padding: 7px;
     margin: 10px 0px;
@@ -85,40 +90,345 @@ g .door:hover ~ g .stand {
     color: white;
 }
 
-.choose-seat button:hover {
+.choose-seat button:hover,
+#modalChooseSeat .modal-footer button:hover {
     background-color: var(--dark-red);
 }
 
 /* annotate */
 .class-4 {
-    fill: rgb(248,107,62) !important;
+    fill: rgb(248, 107, 62) !important;
 }
+
 .class-2 {
-    fill: rgb(253,221,76) !important;
+    fill: rgb(253, 221, 76) !important;
 }
+
 .class-3 {
-    fill: rgb(114,184,0) !important;
+    fill: rgb(114, 184, 0) !important;
 }
+
 .class-4 {
-    fill: rgb(248,107,62) !important;
+    fill: rgb(248, 107, 62) !important;
 }
+
 .class-sold-out {
     fill: rgb(66, 66, 66) !important;
 }
+
 .bg-class-1 {
-    background-color: rgb(49,168,247) !important;
+    background-color: rgb(49, 168, 247) !important;
 }
+
 .bg-class-2 {
-    background-color: rgb(253,221,76) !important;
+    background-color: rgb(253, 221, 76) !important;
 }
+
 .bg-class-3 {
-    background-color: rgb(114,184,0) !important;
+    background-color: rgb(114, 184, 0) !important;
 }
+
 .bg-class-4 {
-    background-color: rgb(248,107,62) !important;
+    background-color: rgb(248, 107, 62) !important;
 }
+
 .bg-class-sold-out {
     background-color: rgb(66, 66, 66) !important;
 }
 
+/* Modal Choose Seat */
+
+#modalChooseSeat .modal-dialog {
+    max-width: fit-content !important;
+}
+
+.door-modal {
+    padding-top: 32px;
+}
+
+.door-name {
+    margin-top: -72px;
+    margin-left: -15px;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.door-modal, .door-seats {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.door-seats .seat {
+    cursor: pointer;
+    color: white;
+}
+
+.door-seats .seat div {
+    width: inherit;
+    text-align: center !important;
+}
+
+.door-seats .seat:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+.door-seats .seat.active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+}
+
+/* .door-seats .seat.invisible {
+    opacity: 0 !important;
+} */
+
+/* Left Seat */
+.left .door-row {
+    transform: skew(-7deg);
+    margin: 0 6px;
+}
+
+.left .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    background: rgb(49, 168, 247);
+    margin-bottom: 10px;
+    transform: skew(10deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+/* Right Seats */
+
+.right {
+    margin-left: 70px;
+}
+
+.right .door-row {
+    transform: skew(7deg);
+    margin: 0 6px;
+}
+
+.right .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    background: rgb(49, 168, 247);
+    margin-bottom: 10px;
+    transform: skew(-10deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+/* Input Seat */
+.input-seats {
+    display: flex !important;
+}
+.input-seat {
+    width: fit-content !important;
+    margin-right: 5px;
+}
+.input-seat i:hover {
+    cursor: pointer;
+}
 /* END STADIUM CHOOSE */
+
+
+
+/* backup */
+
+/* 
+#modalChooseSeat {
+    width: fit-content !important;
+}
+#modalChooseSeat .modal-body {
+    width: fit-content !important;
+}
+
+.door-modal {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.door-seats {
+    display: flex;
+}
+
+.door-seats .seat {
+    cursor: pointer;
+}
+
+.door-seats .seat:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+.door-seats .seat.active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+}
+
+left seat
+
+.left .door-row {
+    transform: skew(-15deg);
+    margin: 0 6px;
+}
+
+.left .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+    margin-bottom: 10px;
+    transform: skew(20deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+.left .row-2 {
+    transform: skew(-13deg);
+}
+
+.left .row-2 .seat {
+    transform: skew(18deg);
+}
+
+.left .row-3 {
+    transform: skew(-12deg);
+}
+
+.left .row-3 .seat {
+    transform: skew(16deg);
+}
+
+.left .row-4 {
+    transform: skew(-11deg);
+}
+
+.left .row-4 .seat {
+    transform: skew(15deg);
+}
+
+.left .row-5 {
+    transform: skew(-10deg);
+}
+
+.left .row-5 .seat {
+    transform: skew(12deg);
+}
+
+.left .row-6 {
+    transform: skew(-9deg);
+}
+
+.left .row-6 .seat {
+    transform: skew(10deg);
+}
+
+.left .row-7 {
+    transform: skew(-7deg);
+}
+
+.left .row-7 .seat {
+    transform: skew(8deg);
+}
+
+Right Seats
+
+.right {
+    margin-left: 70px;
+}
+
+.right .door-row {
+    transform: skew(7deg);
+    margin: 0 6px;
+}
+
+.right .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+    margin-bottom: 10px;
+    transform: skew(-8deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+.right .row-2 {
+    transform: skew(9deg);
+}
+
+.right .row-2 .seat {
+    transform: skew(-10deg);
+}
+
+.right .row-3 {
+    transform: skew(10deg);
+}
+
+.right .row-3 .seat {
+    transform: skew(-12deg);
+}
+
+.right .row-4 {
+    transform: skew(11deg);
+}
+
+.right .row-4 .seat {
+    transform: skew(-15deg);
+}
+
+.right .row-5 {
+    transform: skew(12deg);
+}
+
+.right .row-5 .seat {
+    transform: skew(-16deg);
+}
+
+.right .row-6 {
+    transform: skew(13deg);
+}
+
+.right .row-6 .seat {
+    transform: skew(-18deg);
+}
+
+.right .row-7 {
+    transform: skew(15deg);
+}
+
+.right .row-7 .seat {
+    transform: skew(-20deg);
+}
+*/
