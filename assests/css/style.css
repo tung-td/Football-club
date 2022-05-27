@@ -70,7 +70,7 @@ ul {
 }
 
 .header-logo img {
-    width: 60px;
+    /* width: 60px; */
     height: 60px;
 }
 
@@ -821,8 +821,8 @@ h3.h3 {
 
 .header_logo {
     display: block;
-    width: 60px;
-    height: 60px;
+    /* width: 60px; */
+    height: 80px;
     margin: auto;
 }
 
@@ -1257,7 +1257,7 @@ h3.h3 {
     /* background-color: var(--basic-red); */
     width: 100px;
     font-size: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .matches.item .buy-ticket,

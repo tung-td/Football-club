@@ -13,7 +13,8 @@
 .next-match {
     width: 100%;
     height: 450px;
-    background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/16/148/1086499/GettyImages_13932859561650979223520.jpg);
+    /* background-image: url('../../../img2/background/svdmydinhbackground.webp'); */
+    background-image: url(https://www.footballticketnet.com/theme/images/venues_cover/Buy-Milliy_Stadium-Football-Tickets-FootballTicketNet-Cover.png);
     background-size: cover;
 }
 
@@ -37,7 +38,8 @@
 }
 
 .next-match .content .logo-tournament img {
-    width: 200px;
+    width: 100px;
+    margin: 20px;
 }
 
 .next-match .content .team-left img, .next-match .content .team-right img {
@@ -81,11 +83,13 @@
 }
 
 #matchList1 .logo-tournament img {
-    width: 100px !important;
+    /* width: 100px !important; */
 }
 
 #matchList1 .logo-team1 img, #matchList1 .logo-team2 img {
     width: 70px;
+    margin: 10px;
+    border: 1px solid grey;
 }
 
 #matchList2 .container {
@@ -122,12 +126,12 @@
     background-color: var(--dark-red);
 }
 
-.ticket-cate-item:hover img {
+.ticket-cate-item:hover .image {
     transform: scale(1.1);
     transition-duration: 1.5s;
 }
 
-.ticket-cate-item img, .ticket-cate-item .ticket-cate-progress {
+.ticket-cate-item .image, .ticket-cate-item .ticket-cate-progress {
     transition-duration: 1.5s;
 }
 
@@ -150,7 +154,8 @@
     }
     
     .next-match .content .logo-tournament img {
-        width: 150px;
+        /* width: 100px; */
+        margin-top: -30px;
     }
 
     .next-match .content .team-left,
