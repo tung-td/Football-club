@@ -438,7 +438,7 @@ ul {
     display: flex;
     justify-content: center;
     /* background-color: #3F3F3F; */
-    background: url(../img2/background/22102021_Var-MyDinh-3.jpg) bottom / cover;
+    background: url(../img/background/ticket_background_2.jpg) bottom / cover;
     padding-top: 3em;
     opacity: 1;
 }
@@ -606,12 +606,12 @@ h3.h3 {
 .container.store-container {
     max-width: unset !important;
     max-width: 1500px !important;
-    margin-bottom: 114px !important;
+    margin-bottom: 0px !important;
 }
 
 @media only screen and (max-width:1280px) {
     .container.store-container {
-        margin-bottom: 60px !important;
+        margin-bottom: 0px !important;
     }
 }
 
