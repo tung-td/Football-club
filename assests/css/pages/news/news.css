@@ -26,6 +26,11 @@
     line-height: 20px !important;
 }
 
+.container .card-group {
+    color: black;
+    text-decoration: unset;
+}
+
 .card-text {
     font-size: 13px;
     flex: auto;
