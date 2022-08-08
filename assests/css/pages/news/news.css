@@ -65,12 +65,9 @@
     display: inline-block;
 }
 
-/* .card-img-top {
-    width: 50%;
-    border-top-left-radius: calc(.25rem - 1px) !important;
-    height: 60%;
-    border-top-right-radius: calc(.25rem - 1px) !important;
-} */
+.card-img-top {
+    max-height: 268px;
+}
 
 .icon {
     color: #6c757d!important;

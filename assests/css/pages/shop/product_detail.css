@@ -192,6 +192,7 @@ select {
 	transform: scale(0.001, 0.001);
 }
 
+
 .button:focus {
 	outline: 0;
 	color: #fff;
@@ -250,9 +251,21 @@ select {
 	color: #fff;
 }
 
+.top_bt {
+	display: flex;
+    justify-content: space-between;
+}
+
 #detail_product {
+	display: flex;
+    flex-direction: column;
 	margin-left: 18px;
     font-size: 14px;
+}
+
+#description_product {
+	display: flex;
+    flex-direction: column;
 }
 
 .description > p,
@@ -261,12 +274,17 @@ select {
 }
 
 .icon_product {
+	display: inline-block;
 	font-size: 1rem;
     margin-top: 12px;
     font-weight: 600;
 }
 .row_product {
 	width: 90%;	
+}
+
+.ff {
+	background-color: #fff;
 }
 
 #show_re,
@@ -307,14 +325,20 @@ select {
 
 }
 
-.footer_4 > button {
+
+.footer_4 > .btl {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
 	background-color: #000;
     color: #fff;
-    width: 212px;
-    height: 54px;
+    width: 212px !important;
+    height: 54px !important;
+	text-decoration: unset!important;
 }
 
-.footer_4 > button:hover {
+.footer_4 > .btl:hover {
 	background-color: #999 !important;
 }
 

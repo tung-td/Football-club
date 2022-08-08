@@ -182,13 +182,28 @@
                 </div>
                 <hr>
                 <div class="shiping">
-
-                    <h6 class="icon_product"><i class="ti-truck"></i> Shipping</h6>
-                    <li>This item usually ships within one business day. Please allow an extra 3 days for delivery of items with personalisation.</li>
+                    <div class="top_bt">
+                        <h6 class="icon_product"><i class="ti-truck"></i> Shipping</h6> 
+                        <button id="hide_sh" class="ff">
+                            <i class="ti-arrow-circle-up"></i>
+                        </button>
+                        <button id="show_sh" style="display: none" class="ff">
+                            <i class="ti-arrow-circle-down"></i>
+                        </button>
+                    </div>
+                    <li id="shipping_button">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with personalisation.</li>
                 </div>
                 <hr>
                 <div class="detail_box">
-                    <h6 class="icon_product"><i class="ti-search"></i> Details</h6>
+                    <div class="top_bt">
+                        <h6 class="icon_product"><i class="ti-search"></i> Details</h6>
+                        <button id="hide_dt" class="ff">
+                            <i class="ti-arrow-circle-up"></i>
+                        </button>
+                        <button id="show_dt" style="display: none" class="ff">
+                            <i class="ti-arrow-circle-down"></i>
+                        </button>
+                    </div>
                     <ul id="detail_product">
                         <li>Product ID: 12052601</li>
                         <li>Inner back neck signoff</li>
@@ -203,16 +218,26 @@
                 </div>
                 <hr>
                 <div class="description">
-                    <h6 class="icon_product"><i class="ti-pencil-alt"></i> Description</h6>
-                    <p>
-                        - Youth. Courage. Success. The three pillars of VIETNAM's motto have brought the club more than a century of triumphs.
-                    </p>
-                    <p>
-                        - With its clean red design and white ribbed crewneck, this adidas home jersey takes inspiration from the iconic kit that carried them to some of their most memorable moments.
-                    </p>
-                    <p>
-                        - Made for fans, its soft fabric and moisture-absorbing Grand Sport will keep you comfortable as a new generation of players target supremacy. A woven badge on the chest and devil signoff under the back collar put your football loyalty on display.
-                    </p>
+                    <div class="top_bt">
+                        <h6 class="icon_product"><i class="ti-pencil-alt"></i> Description</h6>
+                        <button id="hide_de" style="display: none" class="ff">
+                            <i class="ti-arrow-circle-up"></i>
+                        </button>
+                        <button id="show_de"  class="ff">
+                            <i class="ti-arrow-circle-down"></i>
+                        </button>
+                    </div>
+                    <div id="description_product" style="display: none;">
+                        <p>
+                            - Youth. Courage. Success. The three pillars of VIETNAM's motto have brought the club more than a century of triumphs.
+                        </p>
+                        <p>
+                            - With its clean red design and white ribbed crewneck, this adidas home jersey takes inspiration from the iconic kit that carried them to some of their most memorable moments.
+                        </p>
+                        <p>
+                            - Made for fans, its soft fabric and moisture-absorbing Grand Sport will keep you comfortable as a new generation of players target supremacy. A woven badge on the chest and devil signoff under the back collar put your football loyalty on display.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -424,8 +449,7 @@
             </div>
             <div class="footer_4">
                 <p style="font-weight: 600">Stay updated on sales new items and more</p>
-                <p></p>
-                <button>SIGN UP & SAVE 10%</button>
+                <a href="#sign-up_Modal" data-dismiss="modal" data-toggle="modal" class="btl"><p>SIGN UP & SAVE 10%</p></a>
             </div>
         </div>
 
