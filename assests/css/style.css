@@ -338,6 +338,7 @@ ul {
 }
 
 
+
 /* .forSlickSlider:hover~.slider-previous,
 .forSlickSlider:hover~.slider-next {
     opacity: 0.3;
@@ -625,9 +626,10 @@ h3.h3 {
     text-transform: capitalize;
     font-size: 22px;
     opacity: 0.7;
-    margin-bottom: 72px;
+    margin-bottom: 49px;
     font-weight: 550;
     margin-top: -33px;
+    padding-top: 20px;
 }
 
 .container {
@@ -1319,3 +1321,18 @@ h3.h3 {
     border-radius: 50px !important;
 }
 
+.carousel-inner,
+.position-relative {
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+    max-height: 500px;
+}
+
+.position-relative.sld-tickets {
+    width: 84.3% !important;
+    margin: auto;
+    border-radius: 5px;
+    max-height: 500px;
+    margin-bottom: 40px;
+}
