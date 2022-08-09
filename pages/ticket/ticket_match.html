@@ -16,13 +16,17 @@
     <link rel="stylesheet" href="../../assests/css/style.css">
 
     <link rel="stylesheet" href="../../assests/icons/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="../../assests/icons/font-awesome-4.7.0/css/font-awesome.css">
 
     <link rel="stylesheet" href="../../assests/css/slick.css">
     <link rel="stylesheet" href="../../assests/css/pages/ticket/ticket.css">
 
     <link rel="stylesheet" href="../../assests/css/bootstrap_css/bootstrap.min.css">
+    <!-- AOS -->
+    <link href="../../assests/aos-master/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
@@ -64,8 +68,8 @@
             <ul id="nav">
                 <li>
                     <a href="../../pages/myutd/myUtd.html">
-                    VN Squad
-                </a>
+                        VN Squad
+                    </a>
                     <ul class="subnav">
                         <li><a href="../../pages/myutd/firstTeam.html">Men</a></li>
                         <li><a href="../../pages/myutd/womenTeam.html">Women</a></li>
@@ -119,21 +123,23 @@
 
     </div>
 
-    <div class="content">
+    <div class="content" style="margin-top:75px">
 
         <!-- Next Match -->
         <div class="next-match mt-5">
             <div class="overlay position-absolute"></div>
             <div class="content position-absolute text-light text-center mt-4">
                 <div class="logo-tournament">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" alt="logo-tournament">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png"
+                        alt="logo-tournament">
                     <div class="responsive match-date">
                         <h5>22:00 Thursday 02 June 2022</h5>
                     </div>
                 </div>
                 <div class="row m-0">
                     <div class="team-left text-end">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png" alt="team-left">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png"
+                            alt="team-left">
                         <h1><b>U23 VIETNAM</b></h1>
                     </div>
                     <div class="match-vs d-flex flex-column justify-content-center">
@@ -148,7 +154,8 @@
                         </div>
                     </div>
                     <div class="team-right text-start">
-                        <img src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg" alt="team-right">
+                        <img src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg"
+                            alt="team-right">
                         <h1><b>U23 THAILAND</b></h1>
                     </div>
                 </div>
@@ -240,10 +247,12 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <button type="radio" class="btn way-to-show border mx-2" onclick="ticketWaytoShow(1)" name="options" id="option1" autocomplete="off" checked>
+                        <button type="radio" class="btn way-to-show border mx-2" onclick="ticketWaytoShow(1)"
+                            name="options" id="option1" autocomplete="off" checked>
                             <h3 class="ti-menu-alt mb-0"></h3>
                         </button>
-                        <button type="radio" class="btn way-to-show border" onclick="ticketWaytoShow(2)" name="options" id="option2" autocomplete="off">
+                        <button type="radio" class="btn way-to-show border" onclick="ticketWaytoShow(2)" name="options"
+                            id="option2" autocomplete="off">
                             <h3 class="ti-menu-alt mb-0" style="transform: rotate(90deg);"></h3>
                         </button>
                     </div>
@@ -254,7 +263,7 @@
                     <div class="container border rounded mt-3 p-3">
 
                         <!-- match 1 -->
-                        <div class="match-list-item container border d-flex justify-content-between rounded p-2 mb-3">
+                        <div data-aos="fade-right" class="match-list-item container border d-flex justify-content-between rounded p-2 mb-3">
                             <div class="d-flex">
                                 <div class="ticket-info mx-2">
                                     <div class="ticket-title text-start">
@@ -262,7 +271,9 @@
                                     </div>
                                     <div class="ticket-info-details d-flex align-items-center">
                                         <div class="logo-tournament" style="margin-right: 20px;">
-                                            <img class="rounded" style="height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" alt="logo-tournament">
+                                            <img class="rounded" style="height: 30px;"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png"
+                                                alt="logo-tournament">
                                         </div>
                                         <div class="ticket-date d-flex">
                                             <div class="ti-calendar"></div>
@@ -281,10 +292,12 @@
                             </div>
                             <div class="d-flex">
                                 <div class="logo-team1">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png" alt="logo-team1">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png"
+                                        alt="logo-team1">
                                 </div>
                                 <div class="logo-team2">
-                                    <img src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg" alt="logo-team2">
+                                    <img src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg"
+                                        alt="logo-team2">
                                 </div>
                                 <div class="buy-ticket d-flex align-items-center">
                                     <div class="btn">BUY TICKET</div>
@@ -293,7 +306,7 @@
                         </div>
 
                         <!-- match 2 -->
-                        <div class="match-list-item container border d-flex justify-content-between rounded p-2 mb-3">
+                        <div data-aos="fade-right" class="match-list-item container border d-flex justify-content-between rounded p-2 mb-3">
                             <div class="d-flex">
                                 <div class="ticket-info mx-2">
                                     <div class="ticket-title text-start">
@@ -301,7 +314,9 @@
                                     </div>
                                     <div class="ticket-info-details d-flex align-items-center">
                                         <div class="logo-tournament" style="margin-right: 20px;">
-                                            <img class="rounded" style="height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" alt="logo-tournament">
+                                            <img class="rounded" style="height: 30px;"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png"
+                                                alt="logo-tournament">
                                         </div>
                                         <div class="ticket-date d-flex">
                                             <div class="ti-calendar"></div>
@@ -320,10 +335,12 @@
                             </div>
                             <div class="d-flex">
                                 <div class="logo-team1">
-                                    <img src="../../assests/img2/playersAvatar/managers/Flag_of_South_Korea.svg.webp" alt="logo-team1">
+                                    <img src="../../assests/img2/playersAvatar/managers/Flag_of_South_Korea.svg.webp"
+                                        alt="logo-team1">
                                 </div>
                                 <div class="logo-team2">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png" alt="logo-team2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png"
+                                        alt="logo-team2">
                                 </div>
                                 <div class="buy-ticket d-flex align-items-center">
                                     <div class="btn">BUY TICKET</div>
@@ -338,7 +355,8 @@
                     <div class="container d-flex border rounded mt-3 p-3" style="width: 100%;">
 
                         <!-- match 1 -->
-                        <div class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0">
+                        <div
+                            data-aos="fade-right" class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0">
                             <div class="item-head d-flex justify-content-between rounded-top text-light">
                                 <div class="d-flex">
                                     <div class="p-2">
@@ -362,7 +380,9 @@
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div>
-                                        <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png" alt="manutd">
+                                        <img style="width: 80px;"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png"
+                                            alt="manutd">
                                     </div>
                                     <div class="text-dark px-1">
                                         <div>
@@ -375,12 +395,16 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <img style="width: 80px;" src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg" alt="brentford">
+                                        <img style="width: 80px;"
+                                            src="https://vcdn-vnexpress.vnecdn.net/2017/03/16/thailand-2103-1489654634.jpg"
+                                            alt="brentford">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center text-dark pt-2">
                                     <div class="logo-tournament px-2">
-                                        <img class="rounded" style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" alt="PremierLeague">
+                                        <img class="rounded" style="width: 100px;"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png"
+                                            alt="PremierLeague">
                                     </div>
                                 </div>
                                 <div class="text-dark pt-2">
@@ -397,7 +421,8 @@
                         </div>
 
                         <!-- match 2 -->
-                        <div class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0">
+                        <div
+                            data-aos="fade-right" class="match-list-item container d-flex flex-column justify-content-between border rounded mx-2 px-0">
                             <div class="item-head d-flex justify-content-between rounded-top text-light">
                                 <div class="d-flex">
                                     <div class="p-2">
@@ -421,7 +446,9 @@
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div>
-                                        <img class="border" style="width: 80px;" src="../../assests/img2/playersAvatar/managers/Flag_of_South_Korea.svg.webp" alt="manutd">
+                                        <img class="border" style="width: 80px;"
+                                            src="../../assests/img2/playersAvatar/managers/Flag_of_South_Korea.svg.webp"
+                                            alt="manutd">
                                     </div>
                                     <div class="text-dark px-1">
                                         <div>
@@ -434,12 +461,16 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png" alt="brentford">
+                                        <img style="width: 80px;"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/230px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png"
+                                            alt="brentford">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center text-dark pt-2">
                                     <div class="logo-tournament px-2">
-                                        <img class="rounded" style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" alt="PremierLeague">
+                                        <img class="rounded" style="width: 100px;"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png"
+                                            alt="PremierLeague">
                                     </div>
                                 </div>
                                 <div class="text-dark pt-2">
@@ -472,11 +503,22 @@
                 </div>
                 <div class="match-category justify-content-center mb-3">
 
+<<<<<<< Updated upstream
                     <div class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
                         <div class="position-absolute image" style="width: 100%; height: 400px; border-radius: 10px; background-image: url(https://sport5.mediacdn.vn/thumb_w/700/158855217956261888/2022/5/19/2dfdaf22119bd0c5898a95-16529705979981368577869.jpg); background-size: cover;" alt="match-category"></div>
                         <div class="position-absolute" style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+=======
+                    <div data-aos="flip-left"
+                        class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
+                        <div class="position-absolute image"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: url(https://sport5.mediacdn.vn/thumb_w/700/158855217956261888/2022/5/19/2dfdaf22119bd0c5898a95-16529705979981368577869.jpg); background-size: cover;"
+                            alt="match-category"></div>
+                        <div class="position-absolute"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+>>>>>>> Stashed changes
                         </div>
-                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3" style="width: 100%; height: inherit;">
+                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3"
+                            style="width: 100%; height: inherit;">
                             <div style="width: 50%; overflow: hidden;">
                                 <div class="ticket-cate-progress mb-2"></div>
                             </div>
@@ -488,11 +530,16 @@
                         </div>
                     </div>
 
-                    <div class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
-                        <div class="position-absolute image" style="width: 100%; height: 400px; border-radius: 10px; background-image: url(https://secure3.vncdn.vn/ttnew/r/2022/02/07/8-16441574132331208797852-1644224093.jpg); background-size: cover;" alt="match-category"></div>
-                        <div class="position-absolute" style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+                    <div data-aos="flip-left"
+                        class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
+                        <div class="position-absolute image"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: url(https://secure3.vncdn.vn/ttnew/r/2022/02/07/8-16441574132331208797852-1644224093.jpg); background-size: cover;"
+                            alt="match-category"></div>
+                        <div class="position-absolute"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
                         </div>
-                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3" style="width: 100%; height: inherit;">
+                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3"
+                            style="width: 100%; height: inherit;">
                             <div style="width: 50%; overflow: hidden;">
                                 <div class="ticket-cate-progress mb-2"></div>
                             </div>
@@ -504,11 +551,16 @@
                         </div>
                     </div>
 
-                    <div class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
-                        <div class="position-absolute image" style="width: 100%; height: 400px; border-radius: 10px; background-image: url(http://image.vietnamnews.vn/uploadvnnews/Article/2022/2/13/201018_p28a.jpeg); background-size: cover;" alt="match-category"></div>
-                        <div class="position-absolute" style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+                    <div data-aos="flip-left"
+                        class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
+                        <div class="position-absolute image"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: url(http://image.vietnamnews.vn/uploadvnnews/Article/2022/2/13/201018_p28a.jpeg); background-size: cover;"
+                            alt="match-category"></div>
+                        <div class="position-absolute"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
                         </div>
-                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3" style="width: 100%; height: inherit;">
+                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3"
+                            style="width: 100%; height: inherit;">
                             <div style="width: 50%; overflow: hidden;">
                                 <div class="ticket-cate-progress mb-2"></div>
                             </div>
@@ -520,11 +572,16 @@
                         </div>
                     </div>
 
-                    <div class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
-                        <div class="position-absolute image" style="width: 100%; height: 400px; border-radius: 10px; background-image: url(http://image.vietnamnews.vn/uploadvnnews/Article/2020/6/14/93042_vn.jpg); background-size: cover;" alt="match-category"></div>
-                        <div class="position-absolute" style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+                    <div data-aos="flip-left"
+                        class="ticket-cate-item position-relative d-flex flex-column justify-content-center bg-dark text-light mx-2">
+                        <div class="position-absolute image"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: url(http://image.vietnamnews.vn/uploadvnnews/Article/2020/6/14/93042_vn.jpg); background-size: cover;"
+                            alt="match-category"></div>
+                        <div class="position-absolute"
+                            style="width: 100%; height: 400px; border-radius: 10px; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
                         </div>
-                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3" style="width: 100%; height: inherit;">
+                        <div class="ticket-cate-content position-absolute d-flex flex-column justify-content-end text-start p-3"
+                            style="width: 100%; height: inherit;">
                             <div style="width: 50%; overflow: hidden;">
                                 <div class="ticket-cate-progress mb-2"></div>
                             </div>
@@ -541,33 +598,37 @@
         <!-- End Match Category -->
 
         <!-- Slider -->
-        <div class="slider position-relative" style="width: 100%; margin-top: 10px !important;">
-            <div class="d-flex " style="position: absolute; width: inherit; ">
-                <div class="slider-previous ti-angle-left " style="top: 17rem ;"></div>
-                <div class="slider-next ti-angle-right " style="top: 17rem ;"></div>
-            </div>
-            <div class="forSlickSlider single-item-slider " style="max-height: 800px !important;">
-                <div class="item ">
-                    <img src="../../assests/img2/carousel/u23-3.jpeg" alt="img1 ">
-                </div>
-                <div class="item ">
-                    <img src="../../assests/img2/carousel/pic8.jpeg " alt="img2 ">
-                </div>
-                <div class="item ">
-                    <img src="../../assests/img2/carousel/pic10.jpg " alt="img3 ">
-                </div>
-                <!-- <div class="item ">
-                    <img src="../../assests/img2/carousel/park-hang-seo-5-1646382083579751322421.jpg" alt="img4 ">
-                </div>
-                <div class="item ">
-                    <img src="../../assests/img2/carousel/t13a.jpg " alt="img5 ">
-                </div> -->
-                <div class="item ">
-                    <img src="../../assests/img2/carousel/fanHamMo.jpg " alt="img6 ">
+        <div class="slider-homepage">
+            <div class=" position-relative sld-tickets" data-aos="zoom-in">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../../assests/img2/carousel/u23-3.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../../assests/img2/carousel/pic8.jpeg " alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../../assests/img2/carousel/fanHamMo.jpg "
+                                alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- End Slider -->
 
     </div>
 
@@ -619,7 +680,8 @@
 
 
     <!-- Start: modal question -->
-    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
@@ -634,7 +696,8 @@
                     <div class="d-flex flex-column text-center">
                         <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                                <input type="email" class="form-control" id="email1"
+                                    placeholder="Your email address...">
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="question1" placeholder="Your questions...">
@@ -650,7 +713,8 @@
     </div>
 
     <!--Start: modal login -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
@@ -665,23 +729,28 @@
                     <div class="d-flex flex-column text-center">
                         <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                                <input type="email" class="form-control" id="email1"
+                                    placeholder="Your email address...">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                                <input type="password" class="form-control" id="password1"
+                                    placeholder="Your password...">
                             </div>
                             <button type="button" class="btn btn-info btn-block btn-round">Login</button>
                         </form>
 
                         <div class="text-center text-muted delimiter">or use a social network</div>
                         <div class="d-flex justify-content-center social-buttons">
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Facebook">
                                 <i class="fab fa-facebook"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Linkedin">
                                 <i class="fab fa-linkedin"></i>
                             </button>
                             </di>
@@ -689,7 +758,8 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <div class="signup-section">Not a member yet? <a href="#sign-up_Modal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Sign Up</a>.</div>
+                    <div class="signup-section">Not a member yet? <a href="#sign-up_Modal" data-dismiss="modal"
+                            data-toggle="modal" class="text-inf"> Sign Up</a>.</div>
                 </div>
             </div>
         </div>
@@ -697,7 +767,8 @@
     <!--END: modal login -->
 
     <!-- modal sign up -->
-    <div class="modal fade" id="sign-up_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="sign-up_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
@@ -715,10 +786,12 @@
                                 <input type="name" class="form-control" id="name" placeholder="Enter your name...">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                                <input type="email" class="form-control" id="email1"
+                                    placeholder="Your email address...">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                                <input type="password" class="form-control" id="password1"
+                                    placeholder="Your password...">
                             </div>
                             <!-- <div class="form-group">
                                 <input type="password" class="form-control" id="password1_confirmation" placeholder="Retype password...">
@@ -728,13 +801,16 @@
 
                         <div class="text-center text-muted delimiter">or use a social network</div>
                         <div class="d-flex justify-content-center social-buttons">
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Facebook">
                                 <i class="fab fa-facebook"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Linkedin">
                                 <i class="fab fa-linkedin"></i>
                             </button>
                             </di>
@@ -742,7 +818,8 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <div class="signup-section">If you have an acount? <a href="#loginModal" data-dismiss="modal" data-toggle="modal" class="text-inf"> Login</a>.</div>
+                    <div class="signup-section">If you have an acount? <a href="#loginModal" data-dismiss="modal"
+                            data-toggle="modal" class="text-inf"> Login</a>.</div>
                 </div>
             </div>
         </div>
@@ -764,6 +841,16 @@
     <script src="../../assests/js/bootstrap_js/js/bootstrap.min.js"></script>
     <script src="../../assests/js/timeCountDown.js"></script>
     <script src="../../assests/js/pages/ticket/ticket.js"></script>
+
+    <!-- michalsnik -->
+    <script src="../../assests/aos-master/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
 
 </body>
 
