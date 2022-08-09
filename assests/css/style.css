@@ -42,7 +42,10 @@ ul {
 }
 
 
-/* #main {} */
+#main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 #header {
     /* display: flex; */
