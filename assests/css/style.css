@@ -41,7 +41,6 @@ ul {
     border-radius: 50px;
 }
 
-
 #main {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -89,8 +88,6 @@ ul {
     list-style-type: none;
 }
 
-
-
 #nav>li {
     display: inline-block;
 }
@@ -100,7 +97,6 @@ ul {
     border-bottom: #fff 3px solid;
     cursor: pointer;
 }
-
 
 #nav li {
     /* position: relative; */
@@ -124,9 +120,7 @@ ul {
     text-decoration: none;
 }
 
-
-
-#nav li > ul > li > a:hover {
+#nav li>ul>li>a:hover {
     border-bottom: unset;
     opacity: 0.7;
 }
@@ -336,7 +330,6 @@ ul {
 .slider-next {
     font-size: 100px;
 }
-
 
 
 /* .forSlickSlider:hover~.slider-previous,
@@ -1327,6 +1320,11 @@ h3.h3 {
     margin: auto;
     border-radius: 5px;
     max-height: 500px;
+}
+
+.carousel-inner-imp {
+    width: 100% !important;
+    max-height: 650px !important;
 }
 
 .position-relative.sld-tickets {
