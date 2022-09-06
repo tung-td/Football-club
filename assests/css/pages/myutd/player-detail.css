@@ -1,0 +1,302 @@
+.player-image-image img {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.player {
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.player-image-bg {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: #3F3F3F;
+    /* background: url(../img/background/ticket_background_2.jpg) bottom / cover; */
+    padding-top: 3em;
+    opacity: 1;
+}
+
+
+/* .image-text,
+.player-image-items,
+.image-name,
+.site,
+.site-name,
+.image-message,
+.image-statics,
+.image-image img {
+    opacity: 1 !important;
+} */
+
+.player-image-text {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.player-image-items {
+    flex-basis: 20%;
+}
+
+.player-image-name {
+    text-transform: uppercase;
+    margin-top: -13em;
+}
+
+.player-site {
+    padding-bottom: 0;
+    font-size: 1.9em;
+    position: relative;
+    top: 0;
+}
+
+.player-site::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 30px;
+    background-color: red;
+}
+
+.player-site-name {
+    font-size: 1.6em;
+    width: 90%;
+    font-weight: 500;
+}
+
+.player-image-message {
+    width: 90%;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: lighter;
+    font-weight: 400;
+}
+
+.player-image-image {
+    display: flex;
+    align-self: flex-end;
+}
+
+.player-image-statics {
+    align-items: center;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-mana-match,
+.player-wins,
+.player-trophies {
+    margin-bottom: 3em;
+}
+
+.player-info {
+    width: 60%;
+    margin: 3em auto;
+    color: black;
+}
+
+.player-info-bio {
+    border-bottom: grey solid 1px;
+}
+
+.player-bio-title {
+    text-transform: uppercase;
+    color: grey;
+}
+
+.player-bio-text {
+    text-transform: none;
+}
+
+.player-info-shortcut {
+    display: flex;
+    text-transform: capitalize;
+}
+
+.player-shortcut-items {
+    flex-basis: 33.33333%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-sub-items {
+    /* flex: 1; */
+}
+
+.player-items-title {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.player-items-date {
+    font-size: 1.3em;
+    color: red;
+    margin-bottom: 0;
+    margin-top: 0em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.korea {
+    position: relative;
+    padding-right: 0.5em;
+    width: 30px;
+}
+
+.small {
+    font-size: smaller;
+}
+
+
+/* End player */
+
+@media (min-width: 1024px) {
+    /* Header */
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* player */
+    .player-info {
+        width: 90% !important;
+        margin: 2em auto !important;
+    }
+    .player-image-name {
+        font-size: 0.7em !important;
+        margin-top: 0em !important;
+    }
+    .player-site {
+        padding-bottom: 0 !important;
+        font-size: 1.9em;
+        position: relative;
+        top: 0px !important;
+    }
+    .player-image-items {
+        flex-basis: 30%;
+    }
+    .player-site::after {
+        display: block;
+        content: " ";
+        height: 1.5px !important;
+        width: 30px !important;
+        background-color: red;
+    }
+    .player-image-message {
+        width: 170% !important;
+        font-size: 1.3em !important;
+    }
+    .player-image-text {
+        justify-content: flex-start !important;
+    }
+}
+
+@media (max-width: 739px) {
+    /* Start: manager */
+    .player {
+        padding-top: 0 !important;
+        margin-top: 40px;
+    }
+    .player-site {
+        padding-bottom: 0;
+        top: 0;
+    }
+    .player-image-name {
+        margin-top: -4em !important;
+    }
+    .player-image-bg {
+        flex-direction: column;
+        padding-top: 60px !important;
+    }
+    .player-image-image {
+        display: flex;
+        align-self: center !important;
+    }
+    .player-image-image img {
+        width: 100% !important;
+        margin-top: -15px;
+    }
+    .player-site {
+        padding-bottom: 0 !important;
+        font-size: 1.5em !important;
+        padding-left: 1em !important;
+    }
+    .player-site::after {
+        display: block;
+        content: " ";
+        height: 1.5px !important;
+        width: 30px !important;
+        background-color: red;
+    }
+    .player-site-name {
+        font-size: 1.4em !important;
+        width: 90% !important;
+        text-align: center;
+        margin: auto;
+        /* margin-top: -1em !important; */
+    }
+    .player-site {
+        position: relative;
+        top: 30px;
+    }
+    .player-image-message {
+        width: 90% !important;
+        font-size: 1.1em !important;
+        text-align: center;
+        margin: auto;
+    }
+    .player-info {
+        width: 90% !important;
+        margin: 2em auto !important;
+    }
+    .player-image-statics {
+        flex-direction: row !important;
+        font-size: 0.9em!important;
+    }
+    .player-image-image-none {
+        display: none !important;
+    }
+    .player-mana-match,
+    .player-wins,
+    .player-draws,
+    .player-loses,
+    .player-trophies {
+        margin-bottom: 0.7em !important;
+        margin-top: 0.7em !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .player-bio-title {
+        font-size: 1em !important;
+        margin-bottom: 0 !important;
+    }
+    /* .player-info-shortcut {
+    font-size: 0.9em !important;
+} */
+    .player-manager-info {
+        width: 90% !important;
+        margin: 1em auto !important;
+    }
+    .player-bio-text {
+        margin-bottom: 0.7em !important;
+        font-size: 0.9em !important;
+    }
+    .player-items-inf {
+        font-size: 0.9em !important;
+    }
+    .flex-basis-3 {
+        flex-basis: 30% !important;
+        font-size: 0.9em !important;
+    }
+    .flex-basis-4 {
+        flex-basis: 40% !important;
+        font-size: 0.9em !important;
+    }
+    /* end: manager */
+}
