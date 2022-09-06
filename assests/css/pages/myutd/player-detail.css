@@ -92,6 +92,9 @@
 .player-wins,
 .player-trophies {
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .player-info {
@@ -153,6 +156,10 @@
 
 .small {
     font-size: smaller;
+}
+
+.number-1 {
+    font-size: 2em;
 }
 
 
